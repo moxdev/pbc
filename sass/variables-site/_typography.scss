@@ -1,4 +1,36 @@
-$font__main: sans-serif;
+@font-face {
+  font-family: 'NotoSans';
+  src: url('fonts/NotoSans.eot?#iefix') format('embedded-opentype'),  url('fonts/NotoSans.woff') format('woff'), url('fonts/NotoSans.ttf')  format('truetype'), url('fonts/NotoSans.svg#NotoSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans-Bold';
+  src: url('fonts/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/NotoSans-Bold.woff') format('woff'), url('fonts/NotoSans-Bold.ttf')  format('truetype'), url(fonts/'NotoSans-Bold.svg#NotoSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans-Italic';
+  src: url('fonts/NotoSans-Italic.eot?#iefix') format('embedded-opentype'),  url('fonts/NotoSans-Italic.woff') format('woff'), url('fonts/NotoSans-Italic.ttf')  format('truetype'), url(fonts/'NotoSans-Italic.svg#NotoSans-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Black';
+  src: url('fonts/SourceSansPro-Black.eot?#iefix') format('embedded-opentype'),  url(fonts/'SourceSansPro-Black.woff') format('woff'), url('fonts/SourceSansPro-Black.ttf')  format('truetype'), url('fonts/SourceSansPro-Black.svg#SourceSansPro-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$font__main: 'NotoSans', sans-serif;
+$font__bold: 'NotoSans-Bold', sans-serif;
+$font__italic: 'NotoSans-Italic', sans-serif;
+$font__black: 'SourceSansPro-Black', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;

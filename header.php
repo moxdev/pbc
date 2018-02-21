@@ -55,19 +55,31 @@
 
 	<?php if( is_front_page() && has_post_thumbnail() ) : ?>
 
-    <section class="header-hero">
+    <section class="hero">
 	    <figure class="feature-img">
 	  	  <?php the_post_thumbnail('home-feature'); ?>
 	    </figure>
-      <p class="hero-title">white title <span class="colored-title">colored title span</span></p>
-      <button>Get Started</button>
+
+      <?php if ( function_exists( 'get_field' ) ) :
+        $hero_title        = get_field( 'home_hero_title' );
+        $hero_accent_title = get_field( 'home_hero_title_accent_color' );
+        $hero_btn_text     = get_field( 'home_hero_button_text' ); ?>
+
+        <div class="title-wrapper">
+          <span class="hero-title"><?php echo wp_kses_post( $hero_title ); ?></span>
+          <span class="accent-title"><?php echo wp_kses_post( $hero_accent_title ); ?></span>
+          <button><?php echo wp_kses_post( $hero_btn_text ); ?></button>
+        </div>
+
+      <?php endif; ?>
+
     </section>
 
 	<?php endif; ?>
 
   <?php if( !is_front_page() && has_post_thumbnail() ) : ?>
 
-    <section class="header-hero">
+    <section class="hero">
 	    <figure class="feature-img">
 	  	  <?php the_post_thumbnail('home-feature'); ?>
 	    </figure>
@@ -76,3 +88,5 @@
 	<?php endif; ?>
 
 	<div id="content" class="site-content">
+
+

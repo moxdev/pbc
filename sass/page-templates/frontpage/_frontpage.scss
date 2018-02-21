@@ -1,17 +1,9 @@
-// @import "../layout/content-sidebar";
-// @import "../layout/sidebar-content";
 /*--------------------------------------------------------------
-## Posts and pages
+### Hero
 --------------------------------------------------------------*/
-@import "primary/posts-and-pages";
+@import "hero";
 
 /*--------------------------------------------------------------
-## Comments
+### Main Content
 --------------------------------------------------------------*/
-@import "primary/comments";
-
-#primary {
-  @include padding-left-right;
-}
-
-
+@import "main-content";

@@ -58,6 +58,130 @@
 		"oAP": "\/comments.php",
 		"oF": 0
 		},
+	"\/fonts\/NotoSans-Bold.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/NotoSans-Bold.eot",
+		"oF": 0
+		},
+	"\/fonts\/NotoSans-Bold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/NotoSans-Bold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/NotoSans-Bold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/NotoSans-Bold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/NotoSans-Bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/NotoSans-Bold.woff",
+		"oF": 0
+		},
+	"\/fonts\/NotoSans-Italic.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/NotoSans-Italic.eot",
+		"oF": 0
+		},
+	"\/fonts\/NotoSans-Italic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/NotoSans-Italic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/NotoSans-Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/NotoSans-Italic.ttf",
+		"oF": 0
+		},
+	"\/fonts\/NotoSans-Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/NotoSans-Italic.woff",
+		"oF": 0
+		},
+	"\/fonts\/NotoSans.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/NotoSans.eot",
+		"oF": 0
+		},
+	"\/fonts\/NotoSans.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/NotoSans.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/NotoSans.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/NotoSans.ttf",
+		"oF": 0
+		},
+	"\/fonts\/NotoSans.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/NotoSans.woff",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-Black.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/SourceSansPro-Black.eot",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-Black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/SourceSansPro-Black.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/SourceSansPro-Black.ttf",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-Black.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/SourceSansPro-Black.woff",
+		"oF": 0
+		},
 	"\/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -360,6 +484,20 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/174c4e45432b62951835a84473c2587376ebae8f\/_variables-site.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_frontpage.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_frontpage.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_hero.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_hero.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/3c719737cbe93fc1bb2c29c76d72dbee56fa7894\/_widgets.scssc": {
@@ -858,19 +996,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/page-templates\/_frontpage.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/page-templates\/_frontpage.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/page-templates\/_page-templates.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -880,6 +1005,45 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/_page-templates.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/frontpage\/_frontpage.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/frontpage\/_frontpage.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/frontpage\/_hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/frontpage\/_hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/frontpage\/_main-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/frontpage\/_main-content.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

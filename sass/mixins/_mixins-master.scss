@@ -4,6 +4,12 @@
 	font-size: $sizeValue * 1rem;
 }
 
+// Font Smoothing
+@mixin font-smooth {
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 // Center block
 @mixin center-block {
 	display: block;

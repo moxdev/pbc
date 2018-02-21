@@ -1,0 +1,17 @@
+.home {
+
+  #primary {
+    background-color: $color__brand-1;
+    text-align: center;
+
+     .hentry {
+       padding-top: 2rem;
+       padding-bottom: 2rem;
+       @include font-smooth;
+     }
+
+    h1 {
+      color: #fff;
+    }
+  }
+}
