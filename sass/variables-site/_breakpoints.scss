@@ -1,0 +1,20 @@
+$breakpoints: (
+	'x-small': 36em,
+	'small': 46.875em,
+	'medium': 59.375em,
+	'large': 75em,
+	'x-large': 90em,
+	'xx-large': 125em
+);
+
+$breakpoints_vert: (
+	'small': 44em,
+	'medium': 65em
+);
+
+$outer_spacing: (
+	'small': 1.875,
+	'medium': 2.25
+);
+
+$max_content_width: 72em;

@@ -1,0 +1,27 @@
+html {
+	@include font-size(0.8125);
+
+	@include respond-to(small) {
+		@include font-size(0.9375);
+	}
+
+	@include respond-to(large) {
+		@include font-size(1.1875);
+	}
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+}
+
+@import "headings";
+
+@import "copy";
