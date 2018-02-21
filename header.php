@@ -63,12 +63,13 @@
       <?php if ( function_exists( 'get_field' ) ) :
         $hero_title        = get_field( 'home_hero_title' );
         $hero_accent_title = get_field( 'home_hero_title_accent_color' );
-        $hero_btn_text     = get_field( 'home_hero_button_text' ); ?>
+        $hero_btn_text     = get_field( 'home_hero_button_text' );
+        $hero_btn_link     = get_field( 'home_hero_button_page_link' ); ?>
 
         <div class="title-wrapper">
           <span class="hero-title"><?php echo wp_kses_post( $hero_title ); ?></span>
           <span class="accent-title"><?php echo wp_kses_post( $hero_accent_title ); ?></span>
-          <button><?php echo wp_kses_post( $hero_btn_text ); ?></button>
+          <a href="<?php echo wp_kses_post( $hero_btn_link ); ?>"><button><?php echo wp_kses_post( $hero_btn_text ); ?></button></a>
         </div>
 
       <?php endif; ?>

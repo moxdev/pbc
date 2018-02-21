@@ -1086,8 +1086,10 @@ object {
   z-index: 5;
   width: 100%;
   height: 250px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-/* line 9, sass/page-templates/frontpage/_hero.scss */
+/* line 10, sass/page-templates/frontpage/_hero.scss */
 .home .hero:after {
   content: "";
   top: 0;
@@ -1098,7 +1100,7 @@ object {
   background-color: #72523a;
   opacity: 0.75;
 }
-/* line 20, sass/page-templates/frontpage/_hero.scss */
+/* line 21, sass/page-templates/frontpage/_hero.scss */
 .home .hero img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1108,7 +1110,7 @@ object {
   position: absolute;
   z-index: -1;
 }
-/* line 29, sass/page-templates/frontpage/_hero.scss */
+/* line 30, sass/page-templates/frontpage/_hero.scss */
 .home .hero .title-wrapper {
   position: absolute;
   width: 100%;
@@ -1122,23 +1124,21 @@ object {
   font-size: 2em;
   text-shadow: 0 0 10px black;
 }
-/* line 41, sass/page-templates/frontpage/_hero.scss */
+/* line 42, sass/page-templates/frontpage/_hero.scss */
 .home .hero .title-wrapper span {
   display: block;
   font-family: "SourceSansPro-Black", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-/* line 48, sass/page-templates/frontpage/_hero.scss */
+/* line 47, sass/page-templates/frontpage/_hero.scss */
 .home .hero .title-wrapper .hero-title {
   color: white;
   margin: 0;
 }
-/* line 53, sass/page-templates/frontpage/_hero.scss */
+/* line 52, sass/page-templates/frontpage/_hero.scss */
 .home .hero .title-wrapper .accent-title {
   color: yellow;
 }
-/* line 57, sass/page-templates/frontpage/_hero.scss */
+/* line 56, sass/page-templates/frontpage/_hero.scss */
 .home .hero .title-wrapper button {
   background-color: #1cbcaf;
 }
