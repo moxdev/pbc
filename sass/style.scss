@@ -33,6 +33,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Accessibility
 # Alignments
 # Clearings
+# Flickity Carousel
 # Widgets
 # Content
 	## Posts and pages
@@ -47,6 +48,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   ## Front Page
     ### Hero
     ### Main Content
+    ### Video Carousel
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -90,6 +92,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Clearings
 --------------------------------------------------------------*/
 @import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Flickity Carousel
+--------------------------------------------------------------*/
+@import "modules/flickity";
 
 /*--------------------------------------------------------------
 # Widgets

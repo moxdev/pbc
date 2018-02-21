@@ -127,7 +127,7 @@ function promo_box_club_scripts() {
 
   wp_enqueue_script('promo_box_club-object-fit-library', get_template_directory_uri() . '/js/min/ofi.min.js', NULL, NULL, TRUE);
 
-  if ( if_front_page() && function_exists( 'promo_box_club_home_video_carousel') ) {
+  if ( is_front_page() && function_exists( 'promo_box_club_home_video_carousel_section') ) {
     wp_enqueue_script('promo_box_club-flickity', get_template_directory_uri() . '/js/min/flickity-min.js', NULL, NULL, TRUE);
     wp_enqueue_script('promo_box_club-home-video-carousel', get_template_directory_uri() . '/js/min/home-video-carousel-min.js', NULL, NULL, TRUE);
   }
@@ -190,7 +190,7 @@ function promo_box_club_create_custom_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'home_video_carousel', $args );
+	register_post_type( 'home_videos', $args );
 
 }
 add_action( 'init', 'promo_box_club_create_custom_post_type', 0 );
@@ -240,3 +240,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 include_once( get_template_directory() . '/plugins/mm4-you-contact-form/mm4-you-cf.php' );
 
+/**
+ * Home Page Video Carousel.
+ */
+require get_template_directory() . '/inc/home-video-carousel.php';

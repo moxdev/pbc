@@ -224,6 +224,13 @@
 		"oAP": "\/inc\/customizer.php",
 		"oF": 0
 		},
+	"\/inc\/home-video-carousel.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/home-video-carousel.php",
+		"oF": 0
+		},
 	"\/inc\/jetpack.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -638,6 +645,13 @@
 		"oAP": "\/sass\/.sass-cache\/921774257de891eff9b361da71ea6f5e38bf2981\/_clearings.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/921774257de891eff9b361da71ea6f5e38bf2981\/_flickity.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/921774257de891eff9b361da71ea6f5e38bf2981\/_flickity.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/921774257de891eff9b361da71ea6f5e38bf2981\/_infinite-scroll.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -991,6 +1005,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/modules\/_flickity.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/modules\/_flickity.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/modules\/_infinite-scroll.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1091,6 +1118,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/frontpage\/_main-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/frontpage\/_video-carousel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/frontpage\/_video-carousel.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

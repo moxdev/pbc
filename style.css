@@ -32,6 +32,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Accessibility
 # Alignments
 # Clearings
+# Flickity Carousel
 # Widgets
 # Content
 	## Posts and pages
@@ -46,6 +47,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   ## Front Page
     ### Hero
     ### Main Content
+    ### Video Carousel
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'NotoSans';
@@ -872,6 +874,169 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+# Flickity Carousel
+--------------------------------------------------------------*/
+/* line 1, sass/modules/_flickity.scss */
+.flickity-enabled {
+  position: relative;
+}
+
+/* line 5, sass/modules/_flickity.scss */
+.flickity-enabled:focus {
+  outline: none;
+}
+
+/* line 9, sass/modules/_flickity.scss */
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+/* line 15, sass/modules/_flickity.scss */
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+/* line 23, sass/modules/_flickity.scss */
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 32, sass/modules/_flickity.scss */
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+/* line 38, sass/modules/_flickity.scss */
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- previous/next buttons ---- */
+/* line 45, sass/modules/_flickity.scss */
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  /* vertically center */
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 60, sass/modules/_flickity.scss */
+.flickity-prev-next-button:hover {
+  background: white;
+}
+
+/* line 64, sass/modules/_flickity.scss */
+.flickity-prev-next-button:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 5px #09f;
+          box-shadow: 0 0 0 5px #09f;
+}
+
+/* line 69, sass/modules/_flickity.scss */
+.flickity-prev-next-button:active {
+  opacity: 0.6;
+}
+
+/* line 73, sass/modules/_flickity.scss */
+.flickity-prev-next-button.previous {
+  left: 10px;
+}
+
+/* line 76, sass/modules/_flickity.scss */
+.flickity-prev-next-button.next {
+  right: 10px;
+}
+
+/* right to left */
+/* line 80, sass/modules/_flickity.scss */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+
+/* line 84, sass/modules/_flickity.scss */
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+/* line 89, sass/modules/_flickity.scss */
+.flickity-prev-next-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+}
+
+/* line 94, sass/modules/_flickity.scss */
+.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* line 102, sass/modules/_flickity.scss */
+.flickity-prev-next-button .arrow {
+  fill: #333;
+}
+
+/* ---- page dots ---- */
+/* line 108, sass/modules/_flickity.scss */
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+/* line 119, sass/modules/_flickity.scss */
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
+
+/* line 123, sass/modules/_flickity.scss */
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+/* line 134, sass/modules/_flickity.scss */
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 /* line 1, sass/site/secondary/_widgets.scss */
@@ -1161,6 +1326,73 @@ object {
 /* line 13, sass/page-templates/frontpage/_main-content.scss */
 .home #primary h1 {
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+### Video Carousel
+--------------------------------------------------------------*/
+/* line 10, sass/page-templates/frontpage/_video-carousel.scss */
+.home .video-carousel {
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 100%;
+  /* big buttons, no circle */
+  /* arrow color */
+}
+/* line 16, sass/page-templates/frontpage/_video-carousel.scss */
+.home .video-carousel .cell {
+  width: 100%;
+  height: auto;
+  margin-left: 20px;
+}
+/* line 21, sass/page-templates/frontpage/_video-carousel.scss */
+.home .video-carousel .cell span {
+  display: block;
+}
+/* line 25, sass/page-templates/frontpage/_video-carousel.scss */
+.home .video-carousel .cell .title {
+  padding: 1em 0;
+  font-family: "NotoSans-Bold", sans-serif;
+}
+/* line 40, sass/page-templates/frontpage/_video-carousel.scss */
+.home .video-carousel .flickity-prev-next-button {
+  width: 13px;
+  height: 24px;
+  background: transparent;
+  overflow: hidden;
+  display: none;
+}
+@media screen and (min-width: 36em) {
+  /* line 40, sass/page-templates/frontpage/_video-carousel.scss */
+  .home .video-carousel .flickity-prev-next-button {
+    display: block;
+  }
+}
+/* line 51, sass/page-templates/frontpage/_video-carousel.scss */
+.home .video-carousel .flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* line 55, sass/page-templates/frontpage/_video-carousel.scss */
+.home .video-carousel .flickity-prev-next-button .arrow {
+  fill: white;
+}
+/* line 58, sass/page-templates/frontpage/_video-carousel.scss */
+.home .video-carousel .flickity-prev-next-button.no-svg {
+  color: white;
+}
+@media screen and (min-width: 36em) {
+  /* line 10, sass/page-templates/frontpage/_video-carousel.scss */
+  .home .video-carousel {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+@media screen and (min-width: 59.375em) {
+  /* line 10, sass/page-templates/frontpage/_video-carousel.scss */
+  .home .video-carousel {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

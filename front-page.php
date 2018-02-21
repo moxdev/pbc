@@ -30,7 +30,9 @@ get_header(); ?>
 
 		</main><!-- #main -->
 
-	</div><!-- #primary -->
+  </div><!-- #primary -->
+
+  <?php if( function_exists( 'promo_box_club_home_video_carousel_section' ) ) : promo_box_club_home_video_carousel_section(); endif; ?>
 
 <?php
 get_footer();
