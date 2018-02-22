@@ -126,7 +126,7 @@ function promo_box_club_scripts() {
 
 	wp_enqueue_script( 'promo_box_club-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-  wp_enqueue_script('promo_box_club-object-fit-library', get_template_directory_uri() . '/js/min/ofi.min.js', NULL, NULL, TRUE);
+  wp_enqueue_script('promo_box_club-object-fit-library', get_template_directory_uri() . '/js/min/ofi-min.js', NULL, NULL, TRUE);
 
   if ( is_front_page() && function_exists( 'promo_box_club_home_video_carousel_section') ) {
     wp_enqueue_script('promo_box_club-flickity', get_template_directory_uri() . '/js/min/flickity-min.js', NULL, NULL, TRUE);
@@ -259,3 +259,8 @@ require get_template_directory() . '/inc/home-video-carousel.php';
  * Home Page Video Carousel.
  */
 require get_template_directory() . '/inc/how-it-works.php';
+
+/**
+ * Home Page Video Carousel.
+ */
+require get_template_directory() . '/inc/home-why-join.php';

@@ -217,41 +217,51 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
-	"\/img\/icon-grow.svg": {
+	"\/imgs\/icon-grow.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/icon-grow.svg",
+		"oAP": "\/imgs\/icon-grow.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/icon-package.svg": {
+	"\/imgs\/icon-package.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/icon-package.svg",
+		"oAP": "\/imgs\/icon-package.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/icon-shopping.svg": {
+	"\/imgs\/icon-shopping.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/icon-shopping.svg",
+		"oAP": "\/imgs\/icon-shopping.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/icon-truck.svg": {
+	"\/imgs\/icon-truck.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/icon-truck.svg",
+		"oAP": "\/imgs\/icon-truck.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/why-join-background-image.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/why-join-background-image.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -276,6 +286,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/inc\/home-video-carousel.php",
+		"oF": 0
+		},
+	"\/inc\/home-why-join.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/home-why-join.php",
 		"oF": 0
 		},
 	"\/inc\/how-it-works.php": {
@@ -613,6 +630,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_video-carousel.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_why-join.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_why-join.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/3c719737cbe93fc1bb2c29c76d72dbee56fa7894\/_widgets.scssc": {
@@ -1199,6 +1223,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/frontpage\/_video-carousel.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/frontpage\/_why-join.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/frontpage\/_why-join.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

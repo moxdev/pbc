@@ -48,6 +48,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     ### Hero
     ### Main Content
     ### Video Carousel
+    ### Why Join Content
   ## How It Works Section
 --------------------------------------------------------------*/
 @font-face {
@@ -512,7 +513,7 @@ hr {
 
 /* line 1, sass/elements/_lists.scss */
 ul, ol {
-  margin: 0 0 1.5em 3em;
+  margin: 0 0 1.5em 1em;
 }
 
 /* line 5, sass/elements/_lists.scss */
@@ -529,7 +530,7 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em;
+  margin-left: 1em;
 }
 
 /* line 19, sass/elements/_lists.scss */
@@ -1445,6 +1446,42 @@ object {
 }
 
 /*--------------------------------------------------------------
+### Why Join Content
+--------------------------------------------------------------*/
+/* line 3, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join {
+  background-image: url(/wp-content/themes/promo_box_club/imgs/why-join-background-image.svg);
+  background-size: contain;
+  background-position: top center;
+  position: relative;
+  z-index: -1;
+}
+/* line 10, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join:after {
+  content: "";
+  top: 3em;
+  right: 0;
+  bottom: 3em;
+  left: 0;
+  position: absolute;
+  background-color: #fff;
+  opacity: 0.9;
+  padding-top: 3em;
+}
+/* line 22, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join .wrapper {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+  z-index: 5;
+}
+/* line 28, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join ul, .home .home-why-join li {
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
 ## How It Works Section
 --------------------------------------------------------------*/
 /* line 1, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
@@ -1460,13 +1497,18 @@ section.how-it-works .wrapper {
 /* line 9, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
 section.how-it-works .inner-wrapper {
   text-align: left;
+  padding-bottom: 2em;
 }
 /* line 13, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works .inner-wrapper p {
+  display: none;
+}
+/* line 18, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
 section.how-it-works button {
   background-color: #fff;
   color: #fa4515;
 }
-/* line 18, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+/* line 23, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
 section.how-it-works h2 {
   color: #fff;
   text-transform: uppercase;
@@ -1474,16 +1516,17 @@ section.how-it-works h2 {
   font-size: 2rem;
   font-family: "SourceSansPro-Black", sans-serif;
 }
-/* line 26, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+/* line 31, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
 section.how-it-works .title {
+  display: block;
   color: #fff;
   font-size: 1.5rem;
 }
-/* line 31, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+/* line 37, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
 section.how-it-works .col-1, section.how-it-works .col-2, section.how-it-works .col-3, section.how-it-works .col-4 {
   position: relative;
 }
-/* line 34, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+/* line 40, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
 section.how-it-works .col-1:before, section.how-it-works .col-2:before, section.how-it-works .col-3:before, section.how-it-works .col-4:before {
   content: '';
   display: block;
@@ -1494,21 +1537,21 @@ section.how-it-works .col-1:before, section.how-it-works .col-2:before, section.
   height: 125px;
   margin-bottom: 1em;
 }
-/* line 47, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
-section.how-it-works .col-1:before {
-  background-image: url(/wp-content/themes/promo_box_club/img/icon-package.svg);
-}
 /* line 53, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works .col-1:before {
+  background-image: url(/wp-content/themes/promo_box_club/imgs/icon-package.svg);
+}
+/* line 59, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
 section.how-it-works .col-2:before {
-  background-image: url(/wp-content/themes/promo_box_club/img/icon-truck.svg);
+  background-image: url(/wp-content/themes/promo_box_club/imgs/icon-truck.svg);
 }
-/* line 58, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+/* line 64, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
 section.how-it-works .col-3:before {
-  background-image: url(/wp-content/themes/promo_box_club/img/icon-shopping.svg);
+  background-image: url(/wp-content/themes/promo_box_club/imgs/icon-shopping.svg);
 }
-/* line 63, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+/* line 69, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
 section.how-it-works .col-4:before {
-  background-image: url(/wp-content/themes/promo_box_club/img/icon-grow.svg);
+  background-image: url(/wp-content/themes/promo_box_club/imgs/icon-grow.svg);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,7 @@ section.how-it-works {
 
   .inner-wrapper {
     text-align: left;
+    padding-bottom: 2em;
 
     p {
       display: none;
@@ -50,23 +51,23 @@ section.how-it-works {
 
   .col-1 {
     &:before {
-      background-image: url(/wp-content/themes/promo_box_club/img/icon-package.svg);
+      background-image: url(/wp-content/themes/promo_box_club/imgs/icon-package.svg);
 
     }
   }
   .col-2 {
     &:before {
-      background-image: url(/wp-content/themes/promo_box_club/img/icon-truck.svg);
+      background-image: url(/wp-content/themes/promo_box_club/imgs/icon-truck.svg);
     }
   }
   .col-3 {
     &:before {
-      background-image: url(/wp-content/themes/promo_box_club/img/icon-shopping.svg);
+      background-image: url(/wp-content/themes/promo_box_club/imgs/icon-shopping.svg);
     }
   }
   .col-4 {
     &:before {
-      background-image: url(/wp-content/themes/promo_box_club/img/icon-grow.svg);
+      background-image: url(/wp-content/themes/promo_box_club/imgs/icon-grow.svg);
     }
   }
 }

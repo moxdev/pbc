@@ -1,0 +1,35 @@
+.home {
+
+  .home-why-join {
+    background-image: url( /wp-content/themes/promo_box_club/imgs/why-join-background-image.svg );
+    background-size: contain;
+    background-position: top center;
+    position: relative;
+    z-index: -1;
+
+    &:after {
+      content: "";
+      top: 3em;
+      right: 0;
+      bottom: 3em;
+      left: 0;
+      position: absolute;
+      background-color: #fff;
+      opacity: 0.9;
+      padding-top: 3em;
+    }
+
+    .wrapper {
+      @include section-padding;
+      position: relative;
+      z-index: 5;
+    }
+
+    ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+
+  }
+}
