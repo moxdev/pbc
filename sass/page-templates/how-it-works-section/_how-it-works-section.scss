@@ -1,0 +1,67 @@
+section.how-it-works {
+  background-color: $color__brand-2;
+  @include section-padding;
+
+  .wrapper {
+    text-align: center;
+  }
+
+  .inner-wrapper {
+    text-align: left;
+  }
+
+  button {
+    background-color: $color__background-button-alt;
+    color: $color__button-alt;
+  }
+
+  h2 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-family: $font__black;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .col-1, .col-2, .col-3, .col-4 {
+    position: relative;
+
+    &:before {
+      content:'';
+      display: block;
+      background-size: contain;
+      background-position: top left;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 125px;
+      margin-bottom: 1em;
+    }
+  }
+
+  .col-1 {
+    &:before {
+      background-image: url(/wp-content/themes/promo_box_club/img/icon-package.svg);
+
+    }
+  }
+  .col-2 {
+    &:before {
+      background-image: url(/wp-content/themes/promo_box_club/img/icon-truck.svg);
+    }
+  }
+  .col-3 {
+    &:before {
+      background-image: url(/wp-content/themes/promo_box_club/img/icon-shopping.svg);
+    }
+  }
+  .col-4 {
+    &:before {
+      background-image: url(/wp-content/themes/promo_box_club/img/icon-grow.svg);
+    }
+  }
+}

@@ -1,15 +1,26 @@
 .home {
 
-  .home-video-carousel {
-    // position: relative;
+  section.home-video-carousel {
+    @include padding-left-right;
+    @include section-padding;
+
+    h2 {
+      text-transform: uppercase;
+      font-family: $font__black;
+      font-size: 2rem;
+    }
+
+    .button-wrapper {
+      text-align: center;
+    }
   }
 
   .home-video-wrapper {
     // position: relative;
   }
   .video-carousel {
-    padding-left: 2em;
-    padding-right: 2em;
+    // padding-left: 2em;
+    // padding-right: 2em;
     // padding-bottom: 2em;
     height: 100%;
 
@@ -53,10 +64,10 @@
     }
     /* arrow color */
     .flickity-prev-next-button .arrow {
-      fill: white;
+      fill: $color__brand-1;
     }
     .flickity-prev-next-button.no-svg {
-      color: white;
+      color: $color__brand-1;
     }
 
     @include respond-to(x-small) {

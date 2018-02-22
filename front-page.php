@@ -33,6 +33,7 @@ get_header(); ?>
   </div><!-- #primary -->
 
   <?php if( function_exists( 'promo_box_club_home_video_carousel_section' ) ) : promo_box_club_home_video_carousel_section(); endif; ?>
+  <?php if( function_exists( 'promo_box_club_how_it_works_section' ) ) : promo_box_club_how_it_works_section(); endif; ?>
 
 <?php
 get_footer();

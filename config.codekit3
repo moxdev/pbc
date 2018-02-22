@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26261",
 "files": {
+	"\/*notes.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/*notes.html",
+		"oF": 0
+		},
 	"\/*notes.md": {
 		"cB": 0,
 		"cS": 0,
@@ -210,6 +217,46 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/img\/icon-grow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon-grow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon-package.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon-package.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon-shopping.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon-shopping.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icon-truck.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icon-truck.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/inc\/custom-header.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -229,6 +276,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/inc\/home-video-carousel.php",
+		"oF": 0
+		},
+	"\/inc\/how-it-works.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/how-it-works.php",
 		"oF": 0
 		},
 	"\/inc\/jetpack.php": {
@@ -554,6 +608,13 @@
 		"oAP": "\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_main-content.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_video-carousel.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_video-carousel.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/3c719737cbe93fc1bb2c29c76d72dbee56fa7894\/_widgets.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -657,6 +718,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/921774257de891eff9b361da71ea6f5e38bf2981\/_infinite-scroll.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/a4b53e34b3ffb6e922b80affa5f10d3e65392745\/_how-it-works-section.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/a4b53e34b3ffb6e922b80affa5f10d3e65392745\/_how-it-works-section.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/b1316558e4e982139817ec96bb40b87de616623f\/_frontpage.scssc": {
@@ -1131,6 +1199,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/frontpage\/_video-carousel.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/how-it-works-section\/_how-it-works-section.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/how-it-works-section\/_how-it-works-section.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

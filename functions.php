@@ -42,6 +42,7 @@ if ( ! function_exists( 'promo_box_club_setup' ) ) :
 		 */
     add_theme_support( 'post-thumbnails' );
     add_image_size('home-feature', 1800, 1013, true);
+    add_image_size('home-video-feature', 400, 227, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -174,7 +175,7 @@ function promo_box_club_create_custom_post_type() {
 		'label'                 => __( 'Video', 'text_domain' ),
 		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'post-formats' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -205,7 +206,16 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_slug' 	=> 'global-information',
 		'post_id' 	  => 'global-information',
 		'capability'	=> 'edit_posts'
-	));
+  ));
+
+  acf_add_options_page(array(
+    'page_title' 	=> 'How It Works',
+    'menu_title'	=> 'How It Works',
+    'menu_slug' 	=> 'how-it-works',
+    'post_id' 	  => 'how-it-works',
+    'capability'	=> 'edit_posts',
+    'icon_url'    => 'dashicons-info'
+  ));
 }
 
 /**
@@ -244,3 +254,8 @@ include_once( get_template_directory() . '/plugins/mm4-you-contact-form/mm4-you-
  * Home Page Video Carousel.
  */
 require get_template_directory() . '/inc/home-video-carousel.php';
+
+/**
+ * Home Page Video Carousel.
+ */
+require get_template_directory() . '/inc/how-it-works.php';

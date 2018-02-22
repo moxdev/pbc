@@ -7,9 +7,10 @@
 
 function promo_box_club_home_video_carousel_section() {
 	if ( function_exists( 'get_field' ) ) {
-    $home_video            = get_posts( array('post_type' => 'home_videos', 'posts_per_page' => -1) );
-    $home_videos_btn_text  = get_field( 'home_videos_button_text' );
-    $home_videos_page_link = get_field( 'home_videos_page_link' );
+    $home_video                 = get_posts( array('post_type' => 'home_videos', 'posts_per_page' => -1) );
+    $home_videos_section_title  = get_field( 'video_carousel_section_title' );
+    $home_videos_btn_text       = get_field( 'video_carousel_section_button_text' );
+    $home_videos_page_link      = get_field( 'video_carousel_section_button_page_link' );
 
     if ($home_video) {
         // WP_Query arguments
@@ -27,38 +28,46 @@ function promo_box_club_home_video_carousel_section() {
 
           <section class="home-video-carousel">
             <div class="home-video-wrapper">
+
+              <?php if ( $home_videos_section_title ): ?>
+                <h2><?php echo wp_kses_post( $home_videos_section_title ); ?></h2>
+              <?php endif; ?>
+
               <div class="video-carousel">
 
               <?php while ( $home_videos->have_posts() ) {
                   $home_videos->the_post();
-                  $excerpt = get_field( 'testimonial_excerpt', $post->ID );
-
-                  ?>
+                  $youtube_video = get_field( 'video_carousel_youtube_video', $post->ID ); ?>
 
                   <div class="cell">
                     <div class="cell-wrapper">
-                      <div class="excerpt-wrapper">
 
-                        <span class="title"><?php the_title(); ?></span>
+                      <figure class="video-featured-image">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-video-feature'); ?></a>
+                      </figure>
 
-                      </div>
+                      <span class="title"><?php the_title(); ?></span>
 
-                      <div class="testimonial-content-wrapper">
+                      <div class="video-content-wrapper">
                         <?php the_content(); ?>
                       </div>
 
-                    </div>
+                    </div><!-- cell-wrapper -->
                   </div><!-- cell -->
 
                 <?php
 
               } ?>
 
-              </div><!-- testimonial-carousel -->
+              </div><!-- video-carousel -->
 
-              <a class="btn" href="<?php echo esc_attr( $home_videos_page_link ); ?>"><?php echo esc_html( $home_video_btn_text ); ?></a>
+              <div class="button-wrapper">
+                <p class="carousel-status"></p>
 
-            </div><!-- home-testimonial-wrapper -->
+                <a href="<?php echo esc_attr( $home_videos_page_link ); ?>"><button><?php echo esc_html( $home_videos_btn_text ); ?></button></a>
+
+              </div>
+            </div><!-- home-video-wrapper -->
           </section>
 
         <?php

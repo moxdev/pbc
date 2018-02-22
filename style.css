@@ -48,6 +48,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     ### Hero
     ### Main Content
     ### Video Carousel
+  ## How It Works Section
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'NotoSans';
@@ -381,37 +382,39 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3 {
   font-weight: normal;
   font-family: "NotoSans-Bold", sans-serif;
+  margin-top: 0;
+  padding: 0;
 }
 
-/* line 10, sass/typography/_headings.scss */
+/* line 12, sass/typography/_headings.scss */
 h1, h2 {
   line-height: 1.25;
 }
 
-/* line 14, sass/typography/_headings.scss */
+/* line 16, sass/typography/_headings.scss */
 h1, .h1, .entry-title {
   font-size: 1.5em;
   line-height: 1.25;
 }
 @media screen and (min-width: 75em) {
-  /* line 14, sass/typography/_headings.scss */
+  /* line 16, sass/typography/_headings.scss */
   h1, .h1, .entry-title {
     font-size: 1.625em;
   }
 }
 
-/* line 23, sass/typography/_headings.scss */
+/* line 25, sass/typography/_headings.scss */
 h2, .h2 {
   font-size: 1.25em;
 }
 
-/* line 27, sass/typography/_headings.scss */
+/* line 29, sass/typography/_headings.scss */
 h3 {
   font-size: 1.125em;
   line-height: 1.375;
 }
 
-/* line 32, sass/typography/_headings.scss */
+/* line 34, sass/typography/_headings.scss */
 .page-title, .entry-title {
   margin: 0;
   padding: 0;
@@ -564,6 +567,7 @@ table {
 --------------------------------------------------------------*/
 /* line 1, sass/forms/_buttons.scss */
 button,
+.btn,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -577,15 +581,18 @@ input[type="submit"] {
   line-height: 1;
   padding: .6em 1em .6em;
 }
-/* line 16, sass/forms/_buttons.scss */
+/* line 17, sass/forms/_buttons.scss */
 button:hover,
+.btn:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa;
 }
-/* line 20, sass/forms/_buttons.scss */
+/* line 21, sass/forms/_buttons.scss */
 button:active, button:focus,
+.btn:active,
+.btn:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -1109,6 +1116,19 @@ a:hover, a:active {
   }
 }
 
+/* line 17, sass/site/_site.scss */
+.wrapper {
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+}
+@media screen and (min-width: 46.875em) {
+  /* line 17, sass/site/_site.scss */
+  .wrapper {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -1236,6 +1256,13 @@ object {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+/* line 1, sass/colophon/_colophon.scss */
+#colophon {
+  border-top: 2px solid red;
+  margin-top: 3em;
+  background: #333;
+}
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -1331,30 +1358,52 @@ object {
 /*--------------------------------------------------------------
 ### Video Carousel
 --------------------------------------------------------------*/
-/* line 10, sass/page-templates/frontpage/_video-carousel.scss */
+/* line 3, sass/page-templates/frontpage/_video-carousel.scss */
+.home section.home-video-carousel {
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+@media screen and (min-width: 46.875em) {
+  /* line 3, sass/page-templates/frontpage/_video-carousel.scss */
+  .home section.home-video-carousel {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+/* line 7, sass/page-templates/frontpage/_video-carousel.scss */
+.home section.home-video-carousel h2 {
+  text-transform: uppercase;
+  font-family: "SourceSansPro-Black", sans-serif;
+  font-size: 2rem;
+}
+/* line 13, sass/page-templates/frontpage/_video-carousel.scss */
+.home section.home-video-carousel .button-wrapper {
+  text-align: center;
+}
+/* line 21, sass/page-templates/frontpage/_video-carousel.scss */
 .home .video-carousel {
-  padding-left: 2em;
-  padding-right: 2em;
   height: 100%;
   /* big buttons, no circle */
   /* arrow color */
 }
-/* line 16, sass/page-templates/frontpage/_video-carousel.scss */
+/* line 27, sass/page-templates/frontpage/_video-carousel.scss */
 .home .video-carousel .cell {
   width: 100%;
   height: auto;
   margin-left: 20px;
 }
-/* line 21, sass/page-templates/frontpage/_video-carousel.scss */
+/* line 32, sass/page-templates/frontpage/_video-carousel.scss */
 .home .video-carousel .cell span {
   display: block;
 }
-/* line 25, sass/page-templates/frontpage/_video-carousel.scss */
+/* line 36, sass/page-templates/frontpage/_video-carousel.scss */
 .home .video-carousel .cell .title {
   padding: 1em 0;
   font-family: "NotoSans-Bold", sans-serif;
 }
-/* line 40, sass/page-templates/frontpage/_video-carousel.scss */
+/* line 51, sass/page-templates/frontpage/_video-carousel.scss */
 .home .video-carousel .flickity-prev-next-button {
   width: 13px;
   height: 24px;
@@ -1363,36 +1412,103 @@ object {
   display: none;
 }
 @media screen and (min-width: 36em) {
-  /* line 40, sass/page-templates/frontpage/_video-carousel.scss */
+  /* line 51, sass/page-templates/frontpage/_video-carousel.scss */
   .home .video-carousel .flickity-prev-next-button {
     display: block;
   }
 }
-/* line 51, sass/page-templates/frontpage/_video-carousel.scss */
+/* line 62, sass/page-templates/frontpage/_video-carousel.scss */
 .home .video-carousel .flickity-prev-next-button:hover {
   background: transparent;
 }
-/* line 55, sass/page-templates/frontpage/_video-carousel.scss */
+/* line 66, sass/page-templates/frontpage/_video-carousel.scss */
 .home .video-carousel .flickity-prev-next-button .arrow {
-  fill: white;
+  fill: #fa4515;
 }
-/* line 58, sass/page-templates/frontpage/_video-carousel.scss */
+/* line 69, sass/page-templates/frontpage/_video-carousel.scss */
 .home .video-carousel .flickity-prev-next-button.no-svg {
-  color: white;
+  color: #fa4515;
 }
 @media screen and (min-width: 36em) {
-  /* line 10, sass/page-templates/frontpage/_video-carousel.scss */
+  /* line 21, sass/page-templates/frontpage/_video-carousel.scss */
   .home .video-carousel {
     padding-left: 3em;
     padding-right: 3em;
   }
 }
 @media screen and (min-width: 59.375em) {
-  /* line 10, sass/page-templates/frontpage/_video-carousel.scss */
+  /* line 21, sass/page-templates/frontpage/_video-carousel.scss */
   .home .video-carousel {
     padding-left: 4em;
     padding-right: 4em;
   }
+}
+
+/*--------------------------------------------------------------
+## How It Works Section
+--------------------------------------------------------------*/
+/* line 1, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works {
+  background-color: #1cbcaf;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+/* line 5, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works .wrapper {
+  text-align: center;
+}
+/* line 9, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works .inner-wrapper {
+  text-align: left;
+}
+/* line 13, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works button {
+  background-color: #fff;
+  color: #fa4515;
+}
+/* line 18, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "SourceSansPro-Black", sans-serif;
+}
+/* line 26, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works .title {
+  color: #fff;
+  font-size: 1.5rem;
+}
+/* line 31, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works .col-1, section.how-it-works .col-2, section.how-it-works .col-3, section.how-it-works .col-4 {
+  position: relative;
+}
+/* line 34, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works .col-1:before, section.how-it-works .col-2:before, section.how-it-works .col-3:before, section.how-it-works .col-4:before {
+  content: '';
+  display: block;
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 125px;
+  margin-bottom: 1em;
+}
+/* line 47, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works .col-1:before {
+  background-image: url(/wp-content/themes/promo_box_club/img/icon-package.svg);
+}
+/* line 53, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works .col-2:before {
+  background-image: url(/wp-content/themes/promo_box_club/img/icon-truck.svg);
+}
+/* line 58, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works .col-3:before {
+  background-image: url(/wp-content/themes/promo_box_club/img/icon-shopping.svg);
+}
+/* line 63, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
+section.how-it-works .col-4:before {
+  background-image: url(/wp-content/themes/promo_box_club/img/icon-grow.svg);
 }
 
 /*# sourceMappingURL=style.css.map */

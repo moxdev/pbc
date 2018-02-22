@@ -84,6 +84,11 @@
 	}
 }
 
+@mixin section-padding {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 // Outside margin
 @mixin margin-left-right($margin-sm: map-get($outer_spacing, small), $margin-lg: map-get($outer_spacing, medium)) {
 	margin-left: $margin-sm + rem;
