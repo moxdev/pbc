@@ -8,6 +8,10 @@ section.how-it-works {
 
   .inner-wrapper {
     text-align: left;
+
+    p {
+      display: none;
+    }
   }
 
   button {
@@ -24,6 +28,7 @@ section.how-it-works {
   }
 
   .title {
+    display: block;
     color: #fff;
     font-size: 1.5rem;
   }
