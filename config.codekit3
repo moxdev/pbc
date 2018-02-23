@@ -281,6 +281,13 @@
 		"oAP": "\/inc\/customizer.php",
 		"oF": 0
 		},
+	"\/inc\/email-subscription.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/email-subscription.php",
+		"oF": 0
+		},
 	"\/inc\/home-video-carousel.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -639,11 +646,25 @@
 		"oAP": "\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_why-join.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/3683da2b5c23202b6a30543ac159fa9c54d3ede2\/_how-it-works-section.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/3683da2b5c23202b6a30543ac159fa9c54d3ede2\/_how-it-works-section.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/3c719737cbe93fc1bb2c29c76d72dbee56fa7894\/_widgets.scssc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/3c719737cbe93fc1bb2c29c76d72dbee56fa7894\/_widgets.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/469cdea8f98f2ff984388191528033eec2e0806c\/_how-it-works.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/469cdea8f98f2ff984388191528033eec2e0806c\/_how-it-works.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/4706ba0c0f8a0d1c880da0f8b04035f7e6211caa\/_elements.scssc": {
@@ -1175,6 +1196,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/page-templates\/_sections.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/_sections.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/page-templates\/frontpage\/_frontpage.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1240,7 +1274,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/page-templates\/how-it-works-section\/_how-it-works-section.scss": {
+	"\/sass\/page-templates\/sections\/email-subscription\/email-subscription.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1248,7 +1282,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/sass\/page-templates\/how-it-works-section\/_how-it-works-section.css",
+		"oAP": "\/sass\/page-templates\/sections\/email-subscription\/email-subscription.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/sections\/how-it-works\/_how-it-works.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/sections\/how-it-works\/_how-it-works.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

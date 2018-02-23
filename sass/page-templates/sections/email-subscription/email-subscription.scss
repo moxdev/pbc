@@ -1,0 +1,19 @@
+section.email-subscription {
+  @include section-padding;
+  background-color: $color__brand-3;
+
+  h2 {
+    font-size: 1.5,em;
+  }
+
+  input {
+    display: block;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 1em;
+    border: 0;
+    border-radius: 8px;
+  }
+}

@@ -264,3 +264,8 @@ require get_template_directory() . '/inc/how-it-works.php';
  * Home Page Video Carousel.
  */
 require get_template_directory() . '/inc/home-why-join.php';
+
+/**
+ * Email Subscription Section.
+ */
+require get_template_directory() . '/inc/email-subscription.php';
