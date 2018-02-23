@@ -1,5 +1,145 @@
 #colophon {
-  border-top: 2px solid red;
-  margin-top: 3em;
-  background: #333;
+  background: #fff;
+
+  .site-info {
+    @include section-padding;
+    @include padding-left-right;
+  }
+
+  #footer-navigation {
+    a {
+      text-decoration: none;
+      font-family: $font__bold;
+      color: $color__text-main;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      columns: 2 100px;
+    }
+  }
+
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2em;
+
+    .social-title {
+      padding-left: 32px;
+      margin-bottom: 5px;
+      flex: 0 0 100%;
+    }
+    .social-media {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1em;
+      position: relative;
+      border: 2px solid $color__brand-1;
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 10px;
+        top: -.45em;
+        left: 1.5%;
+        right: 1.5%;
+        text-align: center;
+        background-color: #fff;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -.45em;
+        left: 1.5%;
+        right: 1.5%;
+        height: 10px;
+        background-color: #fff;
+      }
+    }
+
+    ul {
+      margin: 0;
+      li {
+
+        a {
+          display: block;
+          width: 30px;
+          height: 30px;
+          background-image: url(/wp-content/themes/promo_box_club/imgs/sprite-social-media-icons.svg);
+          background-size: auto 100%;
+          background-repeat: no-repeat;
+          text-indent: 110%;
+          margin-right: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+
+      }
+    }
+
+    .fb a {
+      background-position: -14px 0
+    }
+    .pin a {
+      background-position: -165px 0
+    }
+    .tw a {
+      background-position: -44px 0
+    }
+    .insta a {
+      background-position: -195px 0
+    }
+    .yt a {
+      background-position: -135px 0
+    }
+    .goo a {
+      background-position: -72px 0
+    }
+    .linked a {
+      background-position: -104px 0
+    }
+
+  }
+
+  .copyright-section {
+    @include padding-left-right;
+    background: #333;
+    color: #fff;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      span {
+        display: block;
+      }
+    }
+  }
+
+  // media(40px) {
+  //   .fb a {
+  //     background-position: 0 0
+  //   }
+  //   .pin a {
+  //     background-position: -190px 0
+  //   }
+  //   .tw a {
+  //     background-position: -37px 0
+  //   }
+  //   .insta a {
+  //     background-position: -227px 0
+  //   }
+  //   .yt a {
+  //     background-position: -151px 0
+  //   }
+  //   .goo a {
+  //     background-position: -75px 0
+  //   }
+  //   .linked a {
+  //     background-position: -114px 0
+  //   }
+  // }
 }

@@ -1263,9 +1263,157 @@ object {
 --------------------------------------------------------------*/
 /* line 1, sass/colophon/_colophon.scss */
 #colophon {
-  border-top: 2px solid red;
-  margin-top: 3em;
+  background: #fff;
+}
+/* line 4, sass/colophon/_colophon.scss */
+#colophon .site-info {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+}
+@media screen and (min-width: 46.875em) {
+  /* line 4, sass/colophon/_colophon.scss */
+  #colophon .site-info {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+/* line 10, sass/colophon/_colophon.scss */
+#colophon #footer-navigation a {
+  text-decoration: none;
+  font-family: "NotoSans-Bold", sans-serif;
+  color: #39291d;
+}
+/* line 15, sass/colophon/_colophon.scss */
+#colophon #footer-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  -webkit-columns: 2 100px;
+          columns: 2 100px;
+}
+/* line 23, sass/colophon/_colophon.scss */
+#colophon .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 2em;
+}
+/* line 28, sass/colophon/_colophon.scss */
+#colophon .social .social-title {
+  padding-left: 32px;
+  margin-bottom: 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+/* line 33, sass/colophon/_colophon.scss */
+#colophon .social .social-media {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1em;
+  position: relative;
+  border: 2px solid #fa4515;
+}
+/* line 42, sass/colophon/_colophon.scss */
+#colophon .social .social-media:before {
+  content: '';
+  position: absolute;
+  height: 10px;
+  top: -.45em;
+  left: 1.5%;
+  right: 1.5%;
+  text-align: center;
+  background-color: #fff;
+}
+/* line 53, sass/colophon/_colophon.scss */
+#colophon .social .social-media:after {
+  content: '';
+  position: absolute;
+  bottom: -.45em;
+  left: 1.5%;
+  right: 1.5%;
+  height: 10px;
+  background-color: #fff;
+}
+/* line 64, sass/colophon/_colophon.scss */
+#colophon .social ul {
+  margin: 0;
+}
+/* line 68, sass/colophon/_colophon.scss */
+#colophon .social ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(/wp-content/themes/promo_box_club/imgs/sprite-social-media-icons.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  text-indent: 110%;
+  margin-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 84, sass/colophon/_colophon.scss */
+#colophon .social .fb a {
+  background-position: -14px 0;
+}
+/* line 87, sass/colophon/_colophon.scss */
+#colophon .social .pin a {
+  background-position: -165px 0;
+}
+/* line 90, sass/colophon/_colophon.scss */
+#colophon .social .tw a {
+  background-position: -44px 0;
+}
+/* line 93, sass/colophon/_colophon.scss */
+#colophon .social .insta a {
+  background-position: -195px 0;
+}
+/* line 96, sass/colophon/_colophon.scss */
+#colophon .social .yt a {
+  background-position: -135px 0;
+}
+/* line 99, sass/colophon/_colophon.scss */
+#colophon .social .goo a {
+  background-position: -72px 0;
+}
+/* line 102, sass/colophon/_colophon.scss */
+#colophon .social .linked a {
+  background-position: -104px 0;
+}
+/* line 108, sass/colophon/_colophon.scss */
+#colophon .copyright-section {
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
   background: #333;
+  color: #fff;
+}
+@media screen and (min-width: 46.875em) {
+  /* line 108, sass/colophon/_colophon.scss */
+  #colophon .copyright-section {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+/* line 113, sass/colophon/_colophon.scss */
+#colophon .copyright-section a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 116, sass/colophon/_colophon.scss */
+#colophon .copyright-section a span {
+  display: block;
 }
 
 /*--------------------------------------------------------------

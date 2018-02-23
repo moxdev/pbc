@@ -46,8 +46,9 @@ if ( ! function_exists( 'promo_box_club_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'main-menu' => esc_html__( 'Main Menu', 'promo_box_club' ),
-			'aux-menu'  => esc_html__( 'Aux Menu', 'promo_box_club' ),
+			'main-menu'    => esc_html__( 'Main Menu', 'promo_box_club' ),
+			'aux-menu'     => esc_html__( 'Aux Menu', 'promo_box_club' ),
+			'footer-menu'  => esc_html__( 'Footer Menu', 'promo_box_club' ),
 		) );
 
 		/*
@@ -205,7 +206,15 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_title'	=> 'Site Global Info',
 		'menu_slug' 	=> 'global-information',
 		'post_id' 	  => 'global-information',
-		'capability'	=> 'edit_posts'
+    'capability'	=> 'edit_posts',
+    'redirect'    => false
+  ));
+
+  acf_add_options_sub_page(array(
+    'page_title' 	=> 'SocialSettings',
+    'menu_title'	=> 'Social',
+    'parent_slug'	=> 'global-information',
+    'post_id' 	  => 'social'
   ));
 
   acf_add_options_page(array(
@@ -215,6 +224,15 @@ if( function_exists('acf_add_options_page') ) {
     'post_id' 	  => 'how-it-works',
     'capability'	=> 'edit_posts',
     'icon_url'    => 'dashicons-info'
+  ));
+
+  acf_add_options_page(array(
+    'page_title' 	=> 'Discount Code',
+    'menu_title'	=> 'Discount Code',
+    'menu_slug' 	=> 'discount-code',
+    'post_id' 	  => 'discount-code',
+    'capability'	=> 'edit_posts',
+    'icon_url'    => 'dashicons-tag'
   ));
 }
 
@@ -256,12 +274,12 @@ include_once( get_template_directory() . '/plugins/mm4-you-contact-form/mm4-you-
 require get_template_directory() . '/inc/home-video-carousel.php';
 
 /**
- * Home Page Video Carousel.
+ * How It Works Section.
  */
 require get_template_directory() . '/inc/how-it-works.php';
 
 /**
- * Home Page Video Carousel.
+ * Home Page Why Join Section.
  */
 require get_template_directory() . '/inc/home-why-join.php';
 
