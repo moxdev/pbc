@@ -1363,8 +1363,8 @@ object {
 .home section.home-video-carousel {
   padding-left: 1.875rem;
   padding-right: 1.875rem;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
 @media screen and (min-width: 46.875em) {
   /* line 3, sass/page-templates/frontpage/_video-carousel.scss */
@@ -1454,16 +1454,15 @@ object {
   background-size: contain;
   background-position: top center;
   position: relative;
-  z-index: -1;
 }
-/* line 12, sass/page-templates/frontpage/_why-join.scss */
+/* line 9, sass/page-templates/frontpage/_why-join.scss */
 .home .home-why-join .wrapper {
   position: relative;
   z-index: 5;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
-/* line 18, sass/page-templates/frontpage/_why-join.scss */
+/* line 14, sass/page-templates/frontpage/_why-join.scss */
 .home .home-why-join .wrapper:after {
   content: "";
   top: 3em;
@@ -1473,19 +1472,15 @@ object {
   position: absolute;
   background-color: #fff;
   opacity: 0.9;
-  z-index: -1;
 }
-/* line 31, sass/page-templates/frontpage/_why-join.scss */
+/* line 26, sass/page-templates/frontpage/_why-join.scss */
 .home .home-why-join .inner-wrapper {
   position: relative;
-  z-index: 10;
+  z-index: 50;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
-/* line 36, sass/page-templates/frontpage/_why-join.scss */
-.home .home-why-join .button-wrapper {
-  position: relative;
-  z-index: 99999;
-}
-/* line 41, sass/page-templates/frontpage/_why-join.scss */
+/* line 32, sass/page-templates/frontpage/_why-join.scss */
 .home .home-why-join ul, .home .home-why-join li {
   margin: 0;
   padding: 0;
@@ -1497,8 +1492,8 @@ object {
 /* line 1, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
 section.how-it-works {
   background-color: #1cbcaf;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
 /* line 5, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
 section.how-it-works .wrapper {

@@ -5,15 +5,11 @@
     background-size: contain;
     background-position: top center;
     position: relative;
-    z-index: -1;
-
-
 
     .wrapper {
       position: relative;
       z-index: 5;
-      padding-top: 3em;
-      padding-bottom: 3em;
+      @include section-padding;
 
       &:after {
         content: "";
@@ -24,18 +20,13 @@
         position: absolute;
         background-color: #fff;
         opacity: 0.9;
-        z-index: -1;
       }
     }
 
     .inner-wrapper {
       position: relative;
-      z-index: 10;
-    }
-
-    .button-wrapper {
-      position: relative;
-      z-index: 99999;
+      z-index: 50;
+      @include section-padding;
     }
 
     ul, li {

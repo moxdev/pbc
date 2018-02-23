@@ -10,7 +10,6 @@ function promo_box_club_home_why_join_section() {
     if( have_rows( 'why_join_section_information' ) ): ?>
 
       <?php while( have_rows('why_join_section_information') ): the_row();
-        $why_join_background_image = get_sub_field( 'why_join_background_image' );
         $why_join_first_column     = get_sub_field( 'why_join_first_column' );
         $why_join_second_column    = get_sub_field( 'why_join_second_column' );
         $why_join_featured_image   = get_sub_field( 'why_join_featured_image' );
@@ -18,12 +17,6 @@ function promo_box_club_home_why_join_section() {
         $why_join_button_page_link = get_sub_field( 'why_join_button_page_link' ); ?>
 
         <section class="home-why-join">
-          <?php if( $why_join_background_image ) : ?>
-            <figure class="why-join-feature-img">
-              <img src="<?php echo esc_url( $why_join_background_image['sizes']['thumbnail'] ); ?>" alt="<?php echo esc_attr( $why_join_background_image['alt'] ); ?>" description="<?php echo esc_attr( $why_join_background_image['description'] ); ?>">
-            </figure>
-          <?php endif; ?>
-
           <div class="wrapper">
             <div class="inner-wrapper">
 
