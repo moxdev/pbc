@@ -1456,8 +1456,15 @@ object {
   position: relative;
   z-index: -1;
 }
-/* line 10, sass/page-templates/frontpage/_why-join.scss */
-.home .home-why-join:after {
+/* line 12, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join .wrapper {
+  position: relative;
+  z-index: 5;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+/* line 18, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join .wrapper:after {
   content: "";
   top: 3em;
   right: 0;
@@ -1466,16 +1473,19 @@ object {
   position: absolute;
   background-color: #fff;
   opacity: 0.9;
-  padding-top: 3em;
+  z-index: -1;
 }
-/* line 22, sass/page-templates/frontpage/_why-join.scss */
-.home .home-why-join .wrapper {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+/* line 31, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join .inner-wrapper {
   position: relative;
-  z-index: 5;
+  z-index: 10;
 }
-/* line 28, sass/page-templates/frontpage/_why-join.scss */
+/* line 36, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join .button-wrapper {
+  position: relative;
+  z-index: 99999;
+}
+/* line 41, sass/page-templates/frontpage/_why-join.scss */
 .home .home-why-join ul, .home .home-why-join li {
   margin: 0;
   padding: 0;

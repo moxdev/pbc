@@ -7,22 +7,35 @@
     position: relative;
     z-index: -1;
 
-    &:after {
-      content: "";
-      top: 3em;
-      right: 0;
-      bottom: 3em;
-      left: 0;
-      position: absolute;
-      background-color: #fff;
-      opacity: 0.9;
-      padding-top: 3em;
-    }
+
 
     .wrapper {
-      @include section-padding;
       position: relative;
       z-index: 5;
+      padding-top: 3em;
+      padding-bottom: 3em;
+
+      &:after {
+        content: "";
+        top: 3em;
+        right: 0;
+        bottom: 3em;
+        left: 0;
+        position: absolute;
+        background-color: #fff;
+        opacity: 0.9;
+        z-index: -1;
+      }
+    }
+
+    .inner-wrapper {
+      position: relative;
+      z-index: 10;
+    }
+
+    .button-wrapper {
+      position: relative;
+      z-index: 99999;
     }
 
     ul, li {
