@@ -31,6 +31,13 @@ h3 {
 	line-height: 1.375;
 }
 
+h2.section-title {
+  margin-bottom: 1.563rem;
+  font-size: 2rem;
+  font-family: $font__black;
+  text-transform: uppercase;
+}
+
 .page-title, .entry-title {
 	margin: 0;
 	padding: 0;

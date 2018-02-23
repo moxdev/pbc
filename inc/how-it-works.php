@@ -15,7 +15,7 @@ function promo_box_club_how_it_works_section() {
 
     <section class="how-it-works">
       <div class="wrapper">
-        <h2><?php echo wp_kses_post( $how_it_works_section_title ); ?></h2>
+        <h2 class="section-title"><?php echo wp_kses_post( $how_it_works_section_title ); ?></h2>
 
         <?php while( have_rows('how_it_works_section', 'how-it-works') ): the_row();
           $icon_title = get_sub_field('how_it_works_title', 'how-it-works');

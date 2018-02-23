@@ -11,6 +11,14 @@
       z-index: 5;
       @include section-padding;
 
+      h2 {
+        @extend h2, .section-title
+      }
+
+      h3 {
+        font-family: $font__bold;
+      }
+
       &:after {
         content: "";
         top: 3em;
@@ -19,7 +27,7 @@
         left: 0;
         position: absolute;
         background-color: #fff;
-        opacity: 0.9;
+        opacity: 0.96;
       }
     }
 
@@ -29,11 +37,23 @@
       @include section-padding;
     }
 
-    ul, li {
-      margin: 0;
+    ul {
+      margin: 0 0 0 1em;
       padding: 0;
+
+      li {
+        margin: 0 0 1em 0;
+        padding: 0;
+      }
     }
 
+    .second-col-wrapper {
+      margin-top: 2em;
+    }
 
+    .img-wrapper, .button-wrapper {
+      text-align: center;
+      margin-top: 1em;
+    }
   }
 }

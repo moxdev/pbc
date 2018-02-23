@@ -30,7 +30,7 @@ function promo_box_club_home_video_carousel_section() {
             <div class="home-video-wrapper">
 
               <?php if ( $home_videos_section_title ): ?>
-                <h2><?php echo wp_kses_post( $home_videos_section_title ); ?></h2>
+                <h2 class="section-title"><?php echo wp_kses_post( $home_videos_section_title ); ?></h2>
               <?php endif; ?>
 
               <div class="video-carousel">

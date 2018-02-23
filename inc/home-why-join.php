@@ -34,13 +34,13 @@ function promo_box_club_home_why_join_section() {
 
               <?php if( $why_join_featured_image ) : ?>
                 <div class="flex-column img-wrapper">
-                  <img src="<?php echo esc_url( $why_join_featured_image['sizes']['thumbnail'] ); ?>" alt="<?php echo esc_attr( $why_join_featured_image['alt'] ); ?>" description="<?php echo esc_attr( $why_join_featured_image['description'] ); ?>">
+                  <img src="<?php echo esc_url( $why_join_featured_image['url'] ); ?>" alt="<?php echo esc_attr( $why_join_featured_image['alt'] ); ?>" description="<?php echo esc_attr( $why_join_featured_image['description'] ); ?>">
                 </div>
               <?php endif; ?>
 
               <?php if( $why_join_button_text ) : ?>
                 <div class="flex-column button-wrapper">
-                  <a class="btn" href="<?php echo wp_kses_post( $why_join_button_page_link ); ?>"><?php echo wp_kses_post( $why_join_button_text ); ?></a>
+                  <a class="btn" href="<?php echo wp_kses_post( $why_join_button_page_link ); ?>"><button><?php echo wp_kses_post( $why_join_button_text ); ?></button></a>
                 </div>
               <?php endif; ?>
 

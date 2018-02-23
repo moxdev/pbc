@@ -1,5 +1,4 @@
 button,
-.btn,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -21,5 +20,5 @@ input[type="submit"] {
 	&:active,
 	&:focus {
 		border-color: $color__border-button-focus;
-	}
+  }
 }

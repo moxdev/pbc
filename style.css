@@ -375,12 +375,12 @@ textarea {
 }
 
 /* line 1, sass/typography/_headings.scss */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, .home .home-why-join .wrapper h2, h3, h4, h5, h6 {
   clear: both;
 }
 
 /* line 5, sass/typography/_headings.scss */
-h1, h2, h3 {
+h1, h2, .home .home-why-join .wrapper h2, h3 {
   font-weight: normal;
   font-family: "NotoSans-Bold", sans-serif;
   margin-top: 0;
@@ -388,7 +388,7 @@ h1, h2, h3 {
 }
 
 /* line 12, sass/typography/_headings.scss */
-h1, h2 {
+h1, h2, .home .home-why-join .wrapper h2 {
   line-height: 1.25;
 }
 
@@ -405,7 +405,7 @@ h1, .h1, .entry-title {
 }
 
 /* line 25, sass/typography/_headings.scss */
-h2, .h2 {
+h2, .home .home-why-join .wrapper h2, .h2 {
   font-size: 1.25em;
 }
 
@@ -416,6 +416,14 @@ h3 {
 }
 
 /* line 34, sass/typography/_headings.scss */
+h2.section-title, .home .home-why-join .wrapper h2 {
+  margin-bottom: 1.563rem;
+  font-size: 2rem;
+  font-family: "SourceSansPro-Black", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 41, sass/typography/_headings.scss */
 .page-title, .entry-title {
   margin: 0;
   padding: 0;
@@ -568,7 +576,6 @@ table {
 --------------------------------------------------------------*/
 /* line 1, sass/forms/_buttons.scss */
 button,
-.btn,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -582,18 +589,15 @@ input[type="submit"] {
   line-height: 1;
   padding: .6em 1em .6em;
 }
-/* line 17, sass/forms/_buttons.scss */
+/* line 16, sass/forms/_buttons.scss */
 button:hover,
-.btn:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa;
 }
-/* line 21, sass/forms/_buttons.scss */
+/* line 20, sass/forms/_buttons.scss */
 button:active, button:focus,
-.btn:active,
-.btn:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -1374,7 +1378,7 @@ object {
   }
 }
 /* line 7, sass/page-templates/frontpage/_video-carousel.scss */
-.home section.home-video-carousel h2 {
+.home section.home-video-carousel h2, .home section.home-video-carousel .home-why-join .wrapper h2, .home .home-why-join .wrapper section.home-video-carousel h2 {
   text-transform: uppercase;
   font-family: "SourceSansPro-Black", sans-serif;
   font-size: 2rem;
@@ -1462,7 +1466,11 @@ object {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
 }
-/* line 14, sass/page-templates/frontpage/_why-join.scss */
+/* line 18, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join .wrapper h3 {
+  font-family: "NotoSans-Bold", sans-serif;
+}
+/* line 22, sass/page-templates/frontpage/_why-join.scss */
 .home .home-why-join .wrapper:after {
   content: "";
   top: 3em;
@@ -1471,19 +1479,33 @@ object {
   left: 0;
   position: absolute;
   background-color: #fff;
-  opacity: 0.9;
+  opacity: 0.96;
 }
-/* line 26, sass/page-templates/frontpage/_why-join.scss */
+/* line 34, sass/page-templates/frontpage/_why-join.scss */
 .home .home-why-join .inner-wrapper {
   position: relative;
   z-index: 50;
   padding-top: 2.5em;
   padding-bottom: 2.5em;
 }
-/* line 32, sass/page-templates/frontpage/_why-join.scss */
-.home .home-why-join ul, .home .home-why-join li {
-  margin: 0;
+/* line 40, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join ul {
+  margin: 0 0 0 1em;
   padding: 0;
+}
+/* line 44, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join ul li {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+/* line 50, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join .second-col-wrapper {
+  margin-top: 2em;
+}
+/* line 54, sass/page-templates/frontpage/_why-join.scss */
+.home .home-why-join .img-wrapper, .home .home-why-join .button-wrapper {
+  text-align: center;
+  margin-top: 1em;
 }
 
 /*--------------------------------------------------------------
@@ -1514,7 +1536,7 @@ section.how-it-works button {
   color: #fa4515;
 }
 /* line 23, sass/page-templates/how-it-works-section/_how-it-works-section.scss */
-section.how-it-works h2 {
+section.how-it-works h2, section.how-it-works .home .home-why-join .wrapper h2, .home .home-why-join .wrapper section.how-it-works h2 {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
