@@ -1394,9 +1394,11 @@ object {
 }
 /* line 108, sass/colophon/_colophon.scss */
 #colophon .copyright-section {
+  padding-top: 1em;
+  padding-bottom: 1em;
   padding-left: 1.875rem;
   padding-right: 1.875rem;
-  background: #333;
+  background: #39291d;
   color: #fff;
 }
 @media screen and (min-width: 46.875em) {
@@ -1406,14 +1408,22 @@ object {
     padding-right: 2.25rem;
   }
 }
-/* line 113, sass/colophon/_colophon.scss */
+/* line 115, sass/colophon/_colophon.scss */
 #colophon .copyright-section a {
   color: #fff;
   text-decoration: none;
 }
-/* line 116, sass/colophon/_colophon.scss */
+/* line 118, sass/colophon/_colophon.scss */
 #colophon .copyright-section a span {
   display: block;
+}
+/* line 123, sass/colophon/_colophon.scss */
+#colophon .copyright-section .mm4-logo svg {
+  width: 100px;
+}
+/* line 127, sass/colophon/_colophon.scss */
+#colophon .copyright-section .wbenc-logo svg {
+  width: 60px;
 }
 
 /*--------------------------------------------------------------
