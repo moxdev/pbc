@@ -1,15 +1,19 @@
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
   width: 100%;
-  height: 60px;
+  @include padding-left-right;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  .flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   button {
     background-color: transparent;
     color: $color__brand-4;
     width: 70px;
-    // height: 100%;
     border-radius: none;
 
     span {
@@ -23,70 +27,113 @@
     }
   }
 
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
+  .pbc-logo svg {
+    display: block;
+  }
 
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 100%;
-			left: -999em;
-			z-index: 99999;
+  .menu-aux-menu-container {
 
-			ul {
-				left: -999em;
-				top: 0;
-			}
+    #aux-menu {
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
 
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
+      li {
+        &:last-child {
+          display: none;
+        }
 
-			a {
-				width: 200px;
-			}
+        a {
+          color: #fff;
 
-			:hover > a,
-			.focus > a {
-			}
+          &:hover, &:visited, &:active {
+            color: #fff;
+          }
+        }
+      }
+    }
 
-			a:hover,
-			a.focus {
-			}
-		}
+    .join-now-link {
+      background-color: $color__brand-1;
+      color: #fff;
+      padding: .25em 1em;
 
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
+      a {
+        font-family: $font__bold;
+        text-decoration: none;
+      }
+    }
+  }
 
-	li {
-		float: left;
-		position: relative;
+  .menu-primary-menu-container {
 
-		&:hover > a,
-		&.focus > a {
-		}
-	}
+    ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
 
-	a {
-		display: block;
-		text-decoration: none;
-	}
+      ul {
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        float: left;
+        position: absolute;
+        top: 100%;
+        left: -999em;
+        z-index: 99999;
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
+        ul {
+          left: -999em;
+          top: 0;
+        }
+
+        li {
+          &:hover > ul,
+          &.focus > ul {
+            left: 100%;
+          }
+        }
+
+        a {
+          width: 200px;
+        }
+
+        :hover > a,
+        .focus > a {
+        }
+
+        a:hover,
+        a.focus {
+        }
+      }
+
+      li:hover > ul,
+      li.focus > ul {
+        left: auto;
+      }
+    }
+
+    li {
+      float: left;
+      position: relative;
+
+      &:hover > a,
+      &.focus > a {
+      }
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .current_page_item > a,
+    .current-menu-item > a,
+    .current_page_ancestor > a,
+    .current-menu-ancestor > a {
+    }
+
+  }
 }
 
 /* Small menu. */

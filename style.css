@@ -691,38 +691,91 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 /* line 1, sass/navigation/_menus.scss */
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
   width: 100%;
-  height: 60px;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
-/* line 8, sass/navigation/_menus.scss */
+@media screen and (min-width: 46.875em) {
+  /* line 1, sass/navigation/_menus.scss */
+  .main-navigation {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+/* line 7, sass/navigation/_menus.scss */
+.main-navigation .flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 13, sass/navigation/_menus.scss */
 .main-navigation button {
   background-color: transparent;
   color: #39291d;
   width: 70px;
   border-radius: none;
 }
-/* line 15, sass/navigation/_menus.scss */
+/* line 19, sass/navigation/_menus.scss */
 .main-navigation button span {
   display: block;
   margin-bottom: 5px;
 }
-/* line 20, sass/navigation/_menus.scss */
+/* line 24, sass/navigation/_menus.scss */
 .main-navigation button .hamburger {
   background-color: #fa4515;
   height: 3px;
 }
-/* line 26, sass/navigation/_menus.scss */
-.main-navigation ul {
+/* line 30, sass/navigation/_menus.scss */
+.main-navigation .pbc-logo svg {
+  display: block;
+}
+/* line 36, sass/navigation/_menus.scss */
+.main-navigation .menu-aux-menu-container #aux-menu {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 43, sass/navigation/_menus.scss */
+.main-navigation .menu-aux-menu-container #aux-menu li:last-child {
+  display: none;
+}
+/* line 47, sass/navigation/_menus.scss */
+.main-navigation .menu-aux-menu-container #aux-menu li a {
+  color: #fff;
+}
+/* line 50, sass/navigation/_menus.scss */
+.main-navigation .menu-aux-menu-container #aux-menu li a:hover, .main-navigation .menu-aux-menu-container #aux-menu li a:visited, .main-navigation .menu-aux-menu-container #aux-menu li a:active {
+  color: #fff;
+}
+/* line 57, sass/navigation/_menus.scss */
+.main-navigation .menu-aux-menu-container .join-now-link {
+  background-color: #fa4515;
+  color: #fff;
+  padding: .25em 1em;
+}
+/* line 62, sass/navigation/_menus.scss */
+.main-navigation .menu-aux-menu-container .join-now-link a {
+  font-family: "NotoSans-Bold", sans-serif;
+  text-decoration: none;
+}
+/* line 71, sass/navigation/_menus.scss */
+.main-navigation .menu-primary-menu-container ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-/* line 32, sass/navigation/_menus.scss */
-.main-navigation ul ul {
+/* line 77, sass/navigation/_menus.scss */
+.main-navigation .menu-primary-menu-container ul ul {
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -731,66 +784,66 @@ a:hover, a:active {
   left: -999em;
   z-index: 99999;
 }
-/* line 40, sass/navigation/_menus.scss */
-.main-navigation ul ul ul {
+/* line 85, sass/navigation/_menus.scss */
+.main-navigation .menu-primary-menu-container ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 46, sass/navigation/_menus.scss */
-.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+/* line 91, sass/navigation/_menus.scss */
+.main-navigation .menu-primary-menu-container ul ul li:hover > ul, .main-navigation .menu-primary-menu-container ul ul li.focus > ul {
   left: 100%;
 }
-/* line 52, sass/navigation/_menus.scss */
-.main-navigation ul ul a {
+/* line 97, sass/navigation/_menus.scss */
+.main-navigation .menu-primary-menu-container ul ul a {
   width: 200px;
 }
-/* line 65, sass/navigation/_menus.scss */
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+/* line 110, sass/navigation/_menus.scss */
+.main-navigation .menu-primary-menu-container ul li:hover > ul,
+.main-navigation .menu-primary-menu-container ul li.focus > ul {
   left: auto;
 }
-/* line 71, sass/navigation/_menus.scss */
-.main-navigation li {
+/* line 116, sass/navigation/_menus.scss */
+.main-navigation .menu-primary-menu-container li {
   float: left;
   position: relative;
 }
-/* line 80, sass/navigation/_menus.scss */
-.main-navigation a {
+/* line 125, sass/navigation/_menus.scss */
+.main-navigation .menu-primary-menu-container a {
   display: block;
   text-decoration: none;
 }
 
 /* Small menu. */
-/* line 93, sass/navigation/_menus.scss */
+/* line 140, sass/navigation/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 100, sass/navigation/_menus.scss */
+  /* line 147, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 103, sass/navigation/_menus.scss */
+  /* line 150, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 112, sass/navigation/_menus.scss */
+/* line 159, sass/navigation/_menus.scss */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 117, sass/navigation/_menus.scss */
+/* line 164, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 122, sass/navigation/_menus.scss */
+/* line 169, sass/navigation/_menus.scss */
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
   float: right;
   text-align: right;
