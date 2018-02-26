@@ -15,7 +15,7 @@ h1, h2 {
 
 h1, .h1, .entry-title {
 	font-size: 1.5em;
-	line-height: 1.25;
+  line-height: 1.25;
 
 	@include respond-to(large) {
 		font-size: 1.625em;
@@ -45,4 +45,25 @@ h2.section-title {
 
 .entry-title {
 	// color: $color__brand-2;
+}
+
+.feature-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  &:after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: $color__brand-3;
+    opacity: 0.75;
+  }
+  img {
+    position: relative;
+    display: block;
+  }
 }

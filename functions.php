@@ -43,6 +43,7 @@ if ( ! function_exists( 'promo_box_club_setup' ) ) :
     add_theme_support( 'post-thumbnails' );
     add_image_size('home-feature', 1800, 1013, true);
     add_image_size('home-video-feature', 400, 227, true);
+    add_image_size('feature-img', 1800, 400, false);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -287,3 +288,8 @@ require get_template_directory() . '/inc/home-why-join.php';
  * Email Subscription Section.
  */
 require get_template_directory() . '/inc/email-subscription.php';
+
+/**
+ * Flexible Content Section.
+ */
+require get_template_directory() . '/inc/flexible-content.php';

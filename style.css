@@ -429,6 +429,29 @@ h2.section-title, .home .home-why-join .wrapper h2 {
   padding: 0;
 }
 
+/* line 50, sass/typography/_headings.scss */
+.feature-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+/* line 55, sass/typography/_headings.scss */
+.feature-img:after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-color: #eba904;
+  opacity: 0.75;
+}
+/* line 65, sass/typography/_headings.scss */
+.feature-img img {
+  position: relative;
+  display: block;
+}
+
 /* line 1, sass/typography/_copy.scss */
 p {
   margin-top: 0;
@@ -1857,6 +1880,23 @@ section.email-subscription input[type="text"] {
 .home .home-why-join .img-wrapper, .home .home-why-join .button-wrapper {
   text-align: center;
   margin-top: 1em;
+}
+
+/*--------------------------------------------------------------
+## Flexible Content Page
+--------------------------------------------------------------*/
+/* line 2, sass/page-templates/flexible-content/_flexible-content.scss */
+.page-template-page-flexible-content h1.entry-title {
+  font-family: "SourceSansPro-Black", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.813em;
+  line-height: 1;
+  margin-top: 1em;
+}
+/* line 11, sass/page-templates/flexible-content/_flexible-content.scss */
+.page-template-page-flexible-content .entry-content h2, .page-template-page-flexible-content .entry-content .home .home-why-join .wrapper h2, .home .home-why-join .wrapper .page-template-page-flexible-content .entry-content h2 {
+  color: #fa4515;
+  font-family: "NotoSans-Bold", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

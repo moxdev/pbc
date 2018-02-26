@@ -1,0 +1,16 @@
+.page-template-page-flexible-content {
+  h1.entry-title {
+    font-family: $font__black;
+    text-transform: uppercase;
+    font-size: 2.813em;
+    line-height: 1;
+    margin-top: 1em;
+  }
+
+  .entry-content {
+    h2 {
+      color: $color__brand-1;
+      font-family: $font__bold;
+    }
+  }
+}

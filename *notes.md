@@ -4,3 +4,5 @@
 
 # ebed youtube
 [embed width="123" height="456"]http://www.youtube.com/watch?v=dQw4w9WgXcQ[/embed]
+
+# wp css class on  jon now link in header
