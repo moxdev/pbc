@@ -695,15 +695,33 @@ a:hover, a:active {
   display: block;
   float: left;
   width: 100%;
+  height: 60px;
 }
-/* line 7, sass/navigation/_menus.scss */
+/* line 8, sass/navigation/_menus.scss */
+.main-navigation button {
+  background-color: transparent;
+  color: #39291d;
+  width: 70px;
+  border-radius: none;
+}
+/* line 15, sass/navigation/_menus.scss */
+.main-navigation button span {
+  display: block;
+  margin-bottom: 5px;
+}
+/* line 20, sass/navigation/_menus.scss */
+.main-navigation button .hamburger {
+  background-color: #fa4515;
+  height: 3px;
+}
+/* line 26, sass/navigation/_menus.scss */
 .main-navigation ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-/* line 13, sass/navigation/_menus.scss */
+/* line 32, sass/navigation/_menus.scss */
 .main-navigation ul ul {
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -713,66 +731,66 @@ a:hover, a:active {
   left: -999em;
   z-index: 99999;
 }
-/* line 21, sass/navigation/_menus.scss */
+/* line 40, sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 27, sass/navigation/_menus.scss */
+/* line 46, sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
-/* line 33, sass/navigation/_menus.scss */
+/* line 52, sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
-/* line 46, sass/navigation/_menus.scss */
+/* line 65, sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
-/* line 52, sass/navigation/_menus.scss */
+/* line 71, sass/navigation/_menus.scss */
 .main-navigation li {
   float: left;
   position: relative;
 }
-/* line 61, sass/navigation/_menus.scss */
+/* line 80, sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
 /* Small menu. */
-/* line 74, sass/navigation/_menus.scss */
+/* line 93, sass/navigation/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 80, sass/navigation/_menus.scss */
+  /* line 100, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 83, sass/navigation/_menus.scss */
+  /* line 103, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 92, sass/navigation/_menus.scss */
+/* line 112, sass/navigation/_menus.scss */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 97, sass/navigation/_menus.scss */
+/* line 117, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 102, sass/navigation/_menus.scss */
+/* line 122, sass/navigation/_menus.scss */
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
   float: right;
   text-align: right;
@@ -1279,13 +1297,17 @@ object {
     padding-right: 2.25rem;
   }
 }
-/* line 10, sass/colophon/_colophon.scss */
+/* line 9, sass/colophon/_colophon.scss */
+#colophon #footer-navigation {
+  max-width: 300px;
+}
+/* line 12, sass/colophon/_colophon.scss */
 #colophon #footer-navigation a {
   text-decoration: none;
   font-family: "NotoSans-Bold", sans-serif;
   color: #39291d;
 }
-/* line 15, sass/colophon/_colophon.scss */
+/* line 17, sass/colophon/_colophon.scss */
 #colophon #footer-navigation ul {
   list-style-type: none;
   margin: 0;
@@ -1293,7 +1315,7 @@ object {
   -webkit-columns: 2 100px;
           columns: 2 100px;
 }
-/* line 23, sass/colophon/_colophon.scss */
+/* line 25, sass/colophon/_colophon.scss */
 #colophon .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1302,7 +1324,7 @@ object {
       flex-wrap: wrap;
   padding-top: 2em;
 }
-/* line 28, sass/colophon/_colophon.scss */
+/* line 30, sass/colophon/_colophon.scss */
 #colophon .social .social-title {
   padding-left: 32px;
   margin-bottom: 5px;
@@ -1310,7 +1332,7 @@ object {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
 }
-/* line 33, sass/colophon/_colophon.scss */
+/* line 35, sass/colophon/_colophon.scss */
 #colophon .social .social-media {
   list-style: none;
   display: -webkit-box;
@@ -1326,7 +1348,7 @@ object {
   position: relative;
   border: 2px solid #fa4515;
 }
-/* line 42, sass/colophon/_colophon.scss */
+/* line 44, sass/colophon/_colophon.scss */
 #colophon .social .social-media:before {
   content: '';
   position: absolute;
@@ -1337,7 +1359,7 @@ object {
   text-align: center;
   background-color: #fff;
 }
-/* line 53, sass/colophon/_colophon.scss */
+/* line 55, sass/colophon/_colophon.scss */
 #colophon .social .social-media:after {
   content: '';
   position: absolute;
@@ -1347,11 +1369,11 @@ object {
   height: 10px;
   background-color: #fff;
 }
-/* line 64, sass/colophon/_colophon.scss */
+/* line 66, sass/colophon/_colophon.scss */
 #colophon .social ul {
   margin: 0;
 }
-/* line 68, sass/colophon/_colophon.scss */
+/* line 70, sass/colophon/_colophon.scss */
 #colophon .social ul li a {
   display: block;
   width: 30px;
@@ -1364,35 +1386,35 @@ object {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 84, sass/colophon/_colophon.scss */
+/* line 86, sass/colophon/_colophon.scss */
 #colophon .social .fb a {
   background-position: -14px 0;
 }
-/* line 87, sass/colophon/_colophon.scss */
+/* line 89, sass/colophon/_colophon.scss */
 #colophon .social .pin a {
   background-position: -165px 0;
 }
-/* line 90, sass/colophon/_colophon.scss */
+/* line 92, sass/colophon/_colophon.scss */
 #colophon .social .tw a {
   background-position: -44px 0;
 }
-/* line 93, sass/colophon/_colophon.scss */
+/* line 95, sass/colophon/_colophon.scss */
 #colophon .social .insta a {
   background-position: -195px 0;
 }
-/* line 96, sass/colophon/_colophon.scss */
+/* line 98, sass/colophon/_colophon.scss */
 #colophon .social .yt a {
   background-position: -135px 0;
 }
-/* line 99, sass/colophon/_colophon.scss */
+/* line 101, sass/colophon/_colophon.scss */
 #colophon .social .goo a {
   background-position: -72px 0;
 }
-/* line 102, sass/colophon/_colophon.scss */
+/* line 104, sass/colophon/_colophon.scss */
 #colophon .social .linked a {
   background-position: -104px 0;
 }
-/* line 108, sass/colophon/_colophon.scss */
+/* line 110, sass/colophon/_colophon.scss */
 #colophon .copyright-section {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -1402,26 +1424,26 @@ object {
   color: #fff;
 }
 @media screen and (min-width: 46.875em) {
-  /* line 108, sass/colophon/_colophon.scss */
+  /* line 110, sass/colophon/_colophon.scss */
   #colophon .copyright-section {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
   }
 }
-/* line 115, sass/colophon/_colophon.scss */
+/* line 117, sass/colophon/_colophon.scss */
 #colophon .copyright-section a {
   color: #fff;
   text-decoration: none;
 }
-/* line 118, sass/colophon/_colophon.scss */
+/* line 120, sass/colophon/_colophon.scss */
 #colophon .copyright-section a span {
   display: block;
 }
-/* line 123, sass/colophon/_colophon.scss */
+/* line 125, sass/colophon/_colophon.scss */
 #colophon .copyright-section .mm4-logo svg {
   width: 100px;
 }
-/* line 127, sass/colophon/_colophon.scss */
+/* line 129, sass/colophon/_colophon.scss */
 #colophon .copyright-section .wbenc-logo svg {
   width: 60px;
 }
