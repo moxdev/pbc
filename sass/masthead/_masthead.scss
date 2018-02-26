@@ -1,0 +1,16 @@
+#masthead {
+  .discount-code {
+    background-color: $color__brand-2;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: $font__bold;
+    @include font-smooth;
+
+    p {
+      margin: 0;
+      padding:0;
+    }
+  }
+}

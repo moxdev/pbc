@@ -1329,6 +1329,23 @@ object {
 /*--------------------------------------------------------------
 # Masthead
 --------------------------------------------------------------*/
+/* line 2, sass/masthead/_masthead.scss */
+#masthead .discount-code {
+  background-color: #1cbcaf;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "NotoSans-Bold", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 11, sass/masthead/_masthead.scss */
+#masthead .discount-code p {
+  margin: 0;
+  padding: 0;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

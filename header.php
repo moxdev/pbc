@@ -25,6 +25,18 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'promo_box_club' ); ?></a>
 
 	<header id="masthead" class="site-header">
+    <?php if( function_exists( 'get_field' ) ) :
+      $dicount_content = get_field( 'discount_code_content', 'discount-code' );
+
+      if ( $dicount_content ): ?>
+
+        <section class="discount-code">
+          <?php echo wp_kses_post( $dicount_content ); ?>
+        </section>
+
+      <?php endif; ?>
+    <?php endif; ?>
+
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
