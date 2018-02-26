@@ -1897,6 +1897,19 @@ section.email-subscription input[type="text"] {
 .page-template-page-flexible-content .entry-content h2, .page-template-page-flexible-content .entry-content .home .home-why-join .wrapper h2, .home .home-why-join .wrapper .page-template-page-flexible-content .entry-content h2 {
   color: #fa4515;
   font-family: "NotoSans-Bold", sans-serif;
+  font-size: 1.250em;
+}
+/* line 1, sass/page-templates/flexible-content/_orange-section.scss */
+.page-template-page-flexible-content .orange-section {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fa4515;
+}
+/* line 6, sass/page-templates/flexible-content/_orange-section.scss */
+.page-template-page-flexible-content .orange-section h2, .page-template-page-flexible-content .orange-section .home .home-why-join .wrapper h2, .home .home-why-join .wrapper .page-template-page-flexible-content .orange-section h2 {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

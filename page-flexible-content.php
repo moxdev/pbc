@@ -27,7 +27,9 @@ get_header(); ?>
 			?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+  </div><!-- #primary -->
+
+  <?php if( function_exists( 'promo_box_club_flexble_content_section' ) ) : promo_box_club_flexble_content_section(); endif; ?>
 
 <?php
 get_footer();

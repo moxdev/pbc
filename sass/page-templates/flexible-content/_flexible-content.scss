@@ -11,6 +11,9 @@
     h2 {
       color: $color__brand-1;
       font-family: $font__bold;
+      font-size: 1.250em;
     }
   }
+
+  @import 'orange-section';
 }

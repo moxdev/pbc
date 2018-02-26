@@ -1,0 +1,9 @@
+.orange-section {
+  @include section-padding;
+  @include font-smooth;
+  background-color: $color__brand-1;
+
+  h2 {
+    color:#fff;
+  }
+}

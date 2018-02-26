@@ -8,17 +8,25 @@
 function promo_box_club_flexble_content_section() {
   if( function_exists('get_field') ) {
 
-    if( have_rows('flexible_content_areas') ):
+    if( have_rows('flexible_content') ):
 
-      while ( have_rows('flexible_content_areas') ) : the_row();
+      while ( have_rows('flexible_content') ) : the_row();
 
-        if( get_row_layout() == 'paragraph' ):
+        if( get_row_layout() == 'orange_section' ):
 
-          $file = get_sub_field('file');
+          $orange_section_content = get_sub_field('orange_section_content'); ?>
+            <section class="orange-section">
+              <div class="wrapper">
+                <?php echo wp_kses_post( $orange_section_content ); ?>
+              </div>
+            </section>
+          <?php
 
-        elseif( get_row_layout() == 'download' ):
+        elseif( get_row_layout() == 'how_it_works_section' ):
 
-          $file = get_sub_field('file');
+          if( function_exists( 'promo_box_club_how_it_works_section' ) ) :
+            promo_box_club_how_it_works_section();
+          endif;
 
         endif;
 
