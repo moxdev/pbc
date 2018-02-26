@@ -1943,4 +1943,12 @@ section.email-subscription input[type="text"] {
   padding: 0;
 }
 
+/*--------------------------------------------------------------
+## How It Works Page
+--------------------------------------------------------------*/
+/* line 2, sass/page-templates/how-it-works/_how-it-works.scss */
+.page-template-page-flexible-content.page-id-17 #primary {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
