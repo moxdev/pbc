@@ -238,6 +238,52 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 /**
+ * ADD STYLES TO WYSIWYG
+ */
+// Insert 'styleselect' into the $buttons array
+function my_mce_buttons_2( $buttons ) {
+    array_unshift( $buttons, 'styleselect' );
+    return $buttons;
+}
+// Use 'mce_buttons' for button row #1, mce_buttons_3' for button row #3
+add_filter('mce_buttons_2', 'my_mce_buttons_2');
+
+function my_mce_before_init_insert_formats( $init_array ) {
+    $style_formats = array(
+      array(
+        'title' => 'Orange Heading', // Title to show in dropdown
+        'block' => 'h2', // Element to add class to
+        'classes' => 'orange-header' // CSS class to add
+      ),
+      array(
+        'title' => 'Teal Heading', // Title to show in dropdown
+        'block' => 'h2', // Element to add class to
+        'classes' => 'teal-header' // CSS class to add
+      ),
+      array(
+        'title' => 'Yellow Heading', // Title to show in dropdown
+        'block' => 'h2', // Element to add class to
+        'classes' => 'yellow-header' // CSS class to add
+      ),
+      array(
+        'title' => 'Dark Letter Span', // Title to show in dropdown
+        'inline' => 'span', // Element to add class to
+        'classes' => 'dark-letter-span' // CSS class to add
+      )
+    );
+    $init_array['style_formats'] = json_encode( $style_formats );
+    return $init_array;
+}
+add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+
+// EDITOR STYLES
+
+function promo_box_club_add_editor_styles() {
+  add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'admin_init', 'promo_box_club_add_editor_styles' );
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -277,7 +323,7 @@ require get_template_directory() . '/inc/home-video-carousel.php';
 /**
  * How It Works Section.
  */
-require get_template_directory() . '/inc/how-it-works.php';
+require get_template_directory() . '/inc/home-how-it-works.php';
 
 /**
  * Home Page Why Join Section.
@@ -293,3 +339,13 @@ require get_template_directory() . '/inc/email-subscription.php';
  * Flexible Content Section.
  */
 require get_template_directory() . '/inc/flexible-content.php';
+
+/**
+ * Flexible Content Section: How It Works.
+ */
+require get_template_directory() . '/inc/flexible-content-how-it-works.php';
+
+/**
+ * Flexible Content Section: Custom Editor.
+ */
+require get_template_directory() . '/inc/flexible-content-custom-editor.php';

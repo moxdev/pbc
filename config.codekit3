@@ -65,6 +65,16 @@
 		"oAP": "\/comments.php",
 		"oF": 0
 		},
+	"\/custom-editor-style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/custom-editor-style-min.css",
+		"oF": 1,
+		"oS": 3
+		},
 	"\/fonts\/NotoSans-Bold.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -298,11 +308,32 @@
 		"oAP": "\/inc\/email-subscription.php",
 		"oF": 0
 		},
+	"\/inc\/flexible-content-custom-editor.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/flexible-content-custom-editor.php",
+		"oF": 0
+		},
+	"\/inc\/flexible-content-how-it-works.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/flexible-content-how-it-works.php",
+		"oF": 0
+		},
 	"\/inc\/flexible-content.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/inc\/flexible-content.php",
+		"oF": 0
+		},
+	"\/inc\/home-how-it-works.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/home-how-it-works.php",
 		"oF": 0
 		},
 	"\/inc\/home-video-carousel.php": {
@@ -317,13 +348,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/inc\/home-why-join.php",
-		"oF": 0
-		},
-	"\/inc\/how-it-works.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/inc\/how-it-works.php",
 		"oF": 0
 		},
 	"\/inc\/jetpack.php": {
@@ -855,6 +879,20 @@
 		"oAP": "\/sass\/.sass-cache\/b2025cc1b1fa4c78b9c567fb534bb8ff36d8c941\/_navigation.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/b3e3aa11ffb7ea0aba51028612183c113c626b7f\/_flexible-content.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/b3e3aa11ffb7ea0aba51028612183c113c626b7f\/_flexible-content.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/b3e3aa11ffb7ea0aba51028612183c113c626b7f\/_orange-section.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/b3e3aa11ffb7ea0aba51028612183c113c626b7f\/_orange-section.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/b9c934eaa6645b663f62f9771164885078b3c426\/_normalize.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1253,6 +1291,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/_sections.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/flexible-content\/_custom-editor-section.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/flexible-content\/_custom-editor-section.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

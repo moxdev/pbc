@@ -1,9 +1,14 @@
 .orange-section {
   @include section-padding;
-  @include font-smooth;
   background-color: $color__brand-1;
+  text-align: center;
 
   h2 {
     color:#fff;
+    @include font-smooth;
+  }
+
+  a {
+    color: #fff;
   }
 }

@@ -1,0 +1,25 @@
+.custom-editor {
+  h2.orange-header {
+    color: $color__brand-1;
+  }
+  h2.teal-header {
+    color: $color__brand-2;
+  }
+  h2.yellow-header {
+    color: $color__brand-3;
+  }
+
+  .dark-letter-span {
+    color: $color__brand-4;
+  }
+
+  ul {
+    margin: 0 0 0 1em;
+    padding: 0;
+
+    li {
+      margin: 0 0 1em 0;
+      padding: 0;
+    }
+  }
+}

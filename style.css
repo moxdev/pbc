@@ -1903,13 +1903,44 @@ section.email-subscription input[type="text"] {
 .page-template-page-flexible-content .orange-section {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-color: #fa4515;
+  text-align: center;
 }
 /* line 6, sass/page-templates/flexible-content/_orange-section.scss */
 .page-template-page-flexible-content .orange-section h2, .page-template-page-flexible-content .orange-section .home .home-why-join .wrapper h2, .home .home-why-join .wrapper .page-template-page-flexible-content .orange-section h2 {
   color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 11, sass/page-templates/flexible-content/_orange-section.scss */
+.page-template-page-flexible-content .orange-section a {
+  color: #fff;
+}
+/* line 2, sass/page-templates/flexible-content/_custom-editor-section.scss */
+.page-template-page-flexible-content .custom-editor h2.orange-header {
+  color: #fa4515;
+}
+/* line 5, sass/page-templates/flexible-content/_custom-editor-section.scss */
+.page-template-page-flexible-content .custom-editor h2.teal-header {
+  color: #1cbcaf;
+}
+/* line 8, sass/page-templates/flexible-content/_custom-editor-section.scss */
+.page-template-page-flexible-content .custom-editor h2.yellow-header {
+  color: #eba904;
+}
+/* line 12, sass/page-templates/flexible-content/_custom-editor-section.scss */
+.page-template-page-flexible-content .custom-editor .dark-letter-span {
+  color: #39291d;
+}
+/* line 16, sass/page-templates/flexible-content/_custom-editor-section.scss */
+.page-template-page-flexible-content .custom-editor ul {
+  margin: 0 0 0 1em;
+  padding: 0;
+}
+/* line 20, sass/page-templates/flexible-content/_custom-editor-section.scss */
+.page-template-page-flexible-content .custom-editor ul li {
+  margin: 0 0 1em 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
