@@ -14,16 +14,6 @@
 
 get_header(); ?>
 
-<?php if( has_post_thumbnail() ) : ?>
-
-  <section class="hero">
-    <figure class="feature-img">
-      <?php the_post_thumbnail('feature-img'); ?>
-    </figure>
-  </section>
-
-<?php endif; ?>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 

@@ -354,3 +354,8 @@ require get_template_directory() . '/inc/flexible-content-how-it-works.php';
  * Flexible Content Section: Custom Editor.
  */
 require get_template_directory() . '/inc/flexible-content-custom-editor.php';
+
+/**
+ * Custom Header Image sectionr.
+ */
+require get_template_directory() . '/inc/custom-header-img.php';

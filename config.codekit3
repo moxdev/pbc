@@ -287,6 +287,13 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/inc\/custom-header-img.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/custom-header-img.php",
+		"oF": 0
+		},
 	"\/inc\/custom-header.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1708,6 +1715,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/style.css.map",
+		"oF": 0
+		},
+	"\/template-parts\/content-copy.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-copy.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-flex-page.php": {
