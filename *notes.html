@@ -15,6 +15,56 @@
 
 <h1 id="wpcssclassonjonnowlinkinheader">wp css class on jon now link in header</h1>
 
+<h1 id="mm4">MM4</h1>
+
+<pre><code class="html">&lt;div id=&quot;mail-signup&quot;&gt;
+  &lt;div class=&quot;mail-signup-wrapper&quot;&gt;
+    &lt;?php $mailHeadline = get_field('email_signup_headline');
+    $mailIntro = get_field('email_signup_text');
+    if($mailHeadline): ?&gt;&lt;h3&gt;&lt;?php echo $mailHeadline; ?&gt;&lt;/h3&gt;&lt;?php endif;
+    if($mailIntro): ?&gt;&lt;span class=&quot;mail-intro&quot;&gt;&lt;?php echo $mailIntro; ?&gt;&lt;/span&gt;&lt;?php endif; ?&gt;
+    <!-- Begin Constant Contact Signup Form -->
+    &lt;div id=&quot;mc_embed_signup&quot;&gt;
+      &lt;form data-id=&quot;embedded_signup:form&quot; id=&quot;mc-embedded-subscribe-form&quot; class=&quot;ctct-custom-form Form&quot; name=&quot;embedded_signup&quot; method=&quot;POST&quot; action=&quot;https://visitor2.constantcontact.com/api/signup&quot;&gt;
+
+        <!-- The following code must be included to ensure your sign-up form works properly. -->
+        &lt;input data-id=&quot;ca:input&quot; type=&quot;hidden&quot; name=&quot;ca&quot; value=&quot;6afaf325-c070-444f-9f8e-62c65f981d36&quot;&gt;
+        &lt;input data-id=&quot;list:input&quot; type=&quot;hidden&quot; name=&quot;list&quot; value=&quot;1266784617&quot;&gt;
+        &lt;input data-id=&quot;source:input&quot; type=&quot;hidden&quot; name=&quot;source&quot; value=&quot;EFD&quot;&gt;
+        &lt;input data-id=&quot;required:input&quot; type=&quot;hidden&quot; name=&quot;required&quot; value=&quot;list,email,first_name,last_name,company&quot;&gt;
+        &lt;input data-id=&quot;url:input&quot; type=&quot;hidden&quot; name=&quot;url&quot; value=&quot;&quot;&gt;
+
+        &lt;div id=&quot;mc_embed_signup_scroll&quot;&gt;
+
+          &lt;div class=&quot;mc-field-group&quot;&gt;
+            &lt;label class=&quot;ctct-form-required&quot; data-id=&quot;First Name:label&quot; data-name=&quot;first_name&quot;&gt;&lt;input data-id=&quot;First Name:input&quot; name=&quot;first_name&quot; value=&quot;&quot; maxlength=&quot;50&quot; type=&quot;text&quot; placeholder=&quot;* First Name&quot;&gt;&lt;/label&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;mc-field-group&quot;&gt;
+            &lt;label class=&quot;ctct-form-required&quot; data-id=&quot;Last Name:label&quot; data-name=&quot;last_name&quot;&gt;&lt;input data-id=&quot;Last Name:input&quot; name=&quot;last_name&quot; value=&quot;&quot; maxlength=&quot;50&quot; type=&quot;text&quot; placeholder=&quot;* Last Name&quot;&gt;&lt;/label&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;mc-field-group&quot;&gt;
+            &lt;label class=&quot;ctct-form-required&quot; data-id=&quot;Company:label&quot; data-name=&quot;company&quot;&gt;&lt;input data-id=&quot;Company:input&quot; name=&quot;company&quot; value=&quot;&quot; maxlength=&quot;50&quot; type=&quot;text&quot; placeholder=&quot;* Company&quot;&gt;&lt;/label&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;mc-field-group&quot;&gt;
+            &lt;label data-id=&quot;Email Address:label&quot; data-name=&quot;email&quot; class=&quot;ctct-form-required&quot;&gt;&lt;input data-id=&quot;Email Address:input&quot; name=&quot;email&quot; value=&quot;&quot; maxlength=&quot;80&quot; type=&quot;email&quot; placeholder=&quot;* Email&quot;&gt;&lt;/label&gt;
+          &lt;/div&gt;
+
+          &lt;button type=&quot;submit&quot; class=&quot;Button ctct-button Button--block Button-secondary&quot; data-enabled=&quot;enabled&quot;&gt;Register Now&lt;/button&gt;
+
+          &lt;span id=&quot;success_message&quot; style=&quot;display:none;&quot;&gt;
+            &lt;div&gt;Thank you for signing up!&lt;/div&gt;
+          &lt;/span&gt;
+
+        &lt;/div&gt;<!-- mc_embed_signup_scroll -->
+      &lt;/form&gt;
+    &lt;/div&gt;<!-- mc_embed_signup -->
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
 </body>
 </html>
 

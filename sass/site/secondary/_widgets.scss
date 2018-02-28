@@ -1,3 +1,8 @@
+#secondary {
+  @include padding-left-right;
+}
+
+
 .widget {
 	margin: 0 0 1.5em;
 

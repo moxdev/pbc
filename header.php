@@ -112,15 +112,23 @@
 
 	<?php endif; ?>
 
-  <?php if( !is_front_page() && has_post_thumbnail() ) : ?>
+  <?php if( !is_front_page() && has_post_thumbnail() ) { ?>
 
     <section class="hero">
-	    <figure class="feature-img">
-	  	  <?php the_post_thumbnail('feature-img'); ?>
-	    </figure>
+      <figure class="feature-img">
+        <?php the_post_thumbnail('feature-img'); ?>
+      </figure>
     </section>
 
-	<?php endif; ?>
+  <?php }else if( is_home() || is_archive() || is_single() ) {
+    $news_img = get_the_post_thumbnail( get_option( 'page_for_posts' ), 'feature-img' ); ?>
+      <section class="hero">
+        <figure class="feature-img">
+          <?php echo $news_img; ?>
+        </figure>
+      </section>
+    <?php
+  } ?>
 
 	<div id="content" class="site-content">
 
