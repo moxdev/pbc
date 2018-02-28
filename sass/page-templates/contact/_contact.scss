@@ -1,0 +1,35 @@
+.page-template-page-contact {
+
+  .entry-content {
+    a {
+      text-decoration: none;
+    }
+    .orange-letter-span {
+      color: $color__brand-1;
+    }
+  }
+
+
+  form {
+    font-family: $font__bold;
+
+    label, input {
+      display: block;
+    }
+
+    label {
+      color: $color__brand-2;
+    }
+
+    input, textarea {
+      border: 1px solid $color__brand-4;
+      border-radius: 8px;
+      margin: .5em 0;
+    }
+
+    input[type="submit"] {
+      border: none;
+      border-radius: 10px;
+    }
+  }
+}

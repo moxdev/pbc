@@ -16,23 +16,23 @@ function mm4_you_cf_add_gcf_interface() {
 // Setup settings groups and fields
 add_action( 'admin_init', 'mm4_you_cf_admin_init' );
 function mm4_you_cf_admin_init() {
-  /* 
+  /*
 	 * http://codex.wordpress.org/Function_Reference/register_setting
 	 * register_setting( $option_group, $option_name, $sanitize_callback );
 	 * The second argument ($option_name) is the option name. It’s the one we use with functions like get_option() and update_option()
 	 * */
   	# With input validation:
-  	# register_setting( 'my-settings-group', 'my-plugin-settings', 'my_settings_validate_and_sanitize' );    
+  	# register_setting( 'my-settings-group', 'my-plugin-settings', 'my_settings_validate_and_sanitize' );
   	register_setting( 'mm4-you-cf-settings-group', 'mm4-you-cf-settings' );
-	
-  	/* 
+
+  	/*
 	 * http://codex.wordpress.org/Function_Reference/add_settings_section
-	 * add_settings_section( $id, $title, $callback, $page ); 
-	 * */	 
+	 * add_settings_section( $id, $title, $callback, $page );
+	 * */
   	add_settings_section( 'basic-form-settings', __( 'Basic Form Settings' ), 'mm4_you_cf_section_1_callback', 'mm4-you-contact-form-options' );
 	add_settings_section( 'recaptcha-settings', __( 'ReCAPTCHA Settings' ), 'mm4_you_cf_section_2_callback', 'mm4-you-contact-form-options' );
-	
-	/* 
+
+	/*
 	 * http://codex.wordpress.org/Function_Reference/add_settings_field
 	 * add_settings_field( $id, $title, $callback, $page, $section, $args );
 	 * */
@@ -40,10 +40,10 @@ function mm4_you_cf_admin_init() {
 	add_settings_field( 'form-subject', __( 'Subject line for form submission:' ), 'subject_line_callback', 'mm4-you-contact-form-options', 'basic-form-settings' );
 	add_settings_field( 'form-email-from', __( 'Email address that the form should come from:' ), 'email_from_callback', 'mm4-you-contact-form-options', 'basic-form-settings' );
 	add_settings_field( 'form-redirect', __( 'Enter the page ID of the contact form "Thank You" page. This is the page users will see after the form is submitted:' ), 'thank_you_page_callback', 'mm4-you-contact-form-options', 'basic-form-settings' );
-	
+
 	add_settings_field( 'recaptcha-public-key', __( 'ReCAPTCHA public key:' ), 'recaptcha_public_key_callback', 'mm4-you-contact-form-options', 'recaptcha-settings' );
 	add_settings_field( 'recaptcha-private-key', __( 'ReCAPTCHA private key:' ), 'recaptcha_private_key_callback', 'mm4-you-contact-form-options', 'recaptcha-settings' );
-	
+
 }
 
 function mm4_you_cf_options() { ?>
@@ -127,21 +127,18 @@ function mm4_you_contact_form() {
 
 	<form name="contact-form" id="contact-form" method="POST" action="<?php echo $form_action; ?>" novalidate>
 		<input type="hidden" value="<?php echo $subject_line; ?>" name="subject" id="subject">
-		<label for="first-name">
-			<input type="text" name="first-name" id="first-name" class="required" data-error-label="First Name" placeholder="NAME">
+		<label for="first-name">Your Name*
+			<input type="text" name="first-name" id="first-name" class="required" data-error-label="First Name">
 		</label>
-		<label for="email-address">
-			<input type="email" name="email-address" id="email-address" class="required" data-error-label="Email" placeholder="EMAIL">
+		<label for="email-address">Your Email Address*
+			<input type="email" name="email-address" id="email-address" class="required" data-error-label="Email">
 		</label>
-		<label for="primary-phone">
-			<input type="tel" name="primary-phone" id="primary-phone" class="required" data-error-label="Primary Phone" placeholder="PHONE">
-		</label>
-		<label for="comments">
-			<textarea name="comments" id="comments" rows="6" placeholder="MESSAGE"></textarea>
+		<label for="comments">Let Us Know What's Up
+			<textarea name="comments" id="comments" rows="6"></textarea>
 		</label>
 		<div class="g-recaptcha" data-sitekey="<?php echo $public_key; ?>"></div>
 		<div class="msg-box"></div>
-		<input type="submit" value="Submit">
+		<input type="submit" value="Email Us">
 	</form>
 <?php }
 

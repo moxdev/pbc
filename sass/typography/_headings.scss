@@ -22,13 +22,15 @@ h1, .h1, .entry-title {
 	}
 }
 
-h2, .h2 {
-	font-size: 1.25em;
+h1.entry-title {
+  font-family: $font__black;
+  text-transform: uppercase;
+  font-size: 2.813em;
+  line-height: 1;
 }
 
-h3 {
-	font-size: 1.125em;
-	line-height: 1.375;
+h2, .h2 {
+  font-size: 1.25em;
 }
 
 h2.section-title {
@@ -38,6 +40,21 @@ h2.section-title {
   text-transform: uppercase;
 }
 
+h2.orange-header {
+  color: $color__brand-1;
+}
+h2.teal-header {
+  color: $color__brand-2;
+}
+h2.yellow-header {
+  color: $color__brand-3;
+}
+
+h3 {
+	font-size: 1.125em;
+	line-height: 1.375;
+}
+
 .page-title, .entry-title {
 	margin: 0;
 	padding: 0;
@@ -45,25 +62,4 @@ h2.section-title {
 
 .entry-title {
 	// color: $color__brand-2;
-}
-
-.feature-img {
-  position: relative;
-  width: 100%;
-  height: auto;
-
-  &:after {
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    background-color: $color__brand-3;
-    opacity: 0.75;
-  }
-  img {
-    position: relative;
-    display: block;
-  }
 }

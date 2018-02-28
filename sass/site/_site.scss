@@ -10,8 +10,38 @@
 --------------------------------------------------------------*/
 @import "primary/comments";
 
+.dark-letter-span {
+  color: $color__brand-4;
+}
+
+.orange-letter-span {
+  color: $color__brand-1;
+}
+
+.feature-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  &:after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: $color__brand-3;
+    opacity: 0.75;
+  }
+  img {
+    position: relative;
+    display: block;
+  }
+}
+
 #primary {
   @include padding-left-right;
+  @include section-padding;
 }
 
 .wrapper {
