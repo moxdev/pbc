@@ -14,11 +14,11 @@ h1, h2 {
 }
 
 h1, .h1, .entry-title {
-	font-size: 1.5em;
+	// font-size: 1.5em;
   line-height: 1.25;
 
 	@include respond-to(large) {
-		font-size: 1.625em;
+		// font-size: 1.625em;
 	}
 }
 
@@ -34,8 +34,8 @@ h2, .h2 {
 }
 
 h2.section-title {
-  margin-bottom: 1.563rem;
-  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-size: 2.3em;
   font-family: $font__black;
   text-transform: uppercase;
 }
@@ -51,7 +51,7 @@ h2.yellow-header {
 }
 
 h3 {
-	font-size: 1.125em;
+	font-size: 1.225em;
 	line-height: 1.375;
 }
 

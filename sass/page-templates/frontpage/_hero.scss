@@ -14,7 +14,7 @@
       bottom: 0;
       left: 0;
       position: absolute;
-      background-color: $color__brand-3;
+      background-color: $color__brand-4;
       opacity: 0.75;
     }
 
@@ -31,12 +31,15 @@
       position: absolute;
       width: 100%;;
       z-index: 10;
-      left: 50%;
       top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       text-transform: uppercase;
-      font-size: 2em;
+      font-size: 2.3em;
+      line-height: 1.1;
+      padding-left: 10px;
+      padding-right: 10px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 
       span {
@@ -45,16 +48,49 @@
       }
 
       .hero-title {
-        color: white;
+        color: #fff;
         margin: 0;
       }
 
       .accent-title {
-        color: yellow;
+        color: $color__brand-3;
       }
 
       button {
         background-color: $color__brand-2;
+      }
+    }
+
+    @media screen and (min-width: 400px) {
+      .title-wrapper {
+        @include padding-left-right;
+        max-width: 400px;
+      }
+    }
+
+    @include respond-to(x-small) {
+      height: 350px;
+
+      .title-wrapper {
+        font-size: 3.275em;
+        max-width: 500px;
+        line-height: 1;
+      }
+    }
+
+    @include respond-to(small) {
+      height: 400px;
+
+      .title-wrapper {
+        max-width: 600px;
+      }
+    }
+
+    @include respond-to(large) {
+      height: 450px;
+
+      .title-wrapper {
+        max-width: 800px;
       }
     }
   }

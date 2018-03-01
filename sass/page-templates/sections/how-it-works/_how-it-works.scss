@@ -22,10 +22,8 @@ section.how-it-works {
 
   h2 {
     color: #fff;
-    text-transform: uppercase;
     text-align: center;
-    font-size: 2rem;
-    font-family: $font__black;
+     @include font-smooth;
   }
 
   .title {

@@ -20,8 +20,22 @@
 }
 
 @font-face {
+  font-family: 'NotoSans-BoldItalic';
+  src: url('fonts/NotoSans-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('fonts/NotoSans-BoldItalic.woff') format('woff'), url('fonts/NotoSans-BoldItalic.ttf')  format('truetype'), url('fonts/NotoSans-BoldItalic.svg#NotoSans-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'SourceSansPro-Black';
   src: url('fonts/SourceSansPro-Black.eot?#iefix') format('embedded-opentype'),  url(fonts/'SourceSansPro-Black.woff') format('woff'), url('fonts/SourceSansPro-Black.ttf')  format('truetype'), url('fonts/SourceSansPro-Black.svg#SourceSansPro-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),  url('fonts/Roboto-Black.woff') format('woff'), url('fonts/Roboto-Black.ttf')  format('truetype'), url('fonts/Roboto-Black.svg#Roboto-Black') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,7 +44,9 @@
 $font__main: 'NotoSans', sans-serif;
 $font__bold: 'NotoSans-Bold', sans-serif;
 $font__italic: 'NotoSans-Italic', sans-serif;
+$font__bold-italic: 'NotoSans-BoldItalic', sans-serif;
 $font__black: 'SourceSansPro-Black', sans-serif;
+$font__roboto-black: 'Roboto-Black', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;

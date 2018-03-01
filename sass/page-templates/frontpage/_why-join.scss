@@ -37,16 +37,6 @@
       @include section-padding;
     }
 
-    ul {
-      margin: 0 0 0 1em;
-      padding: 0;
-
-      li {
-        margin: 0 0 1em 0;
-        padding: 0;
-      }
-    }
-
     .second-col-wrapper {
       margin-top: 2em;
     }
@@ -54,6 +44,51 @@
     .img-wrapper, .button-wrapper {
       text-align: center;
       margin-top: 1em;
+    }
+  }
+
+  .why-join-sidebar {
+    border: 1px solid $color__brand-4;
+    padding: 2em 1em;
+    display: none;
+
+    .quote-wrapper {
+
+      &:before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url( /wp-content/themes/promo_box_club/imgs/icon-quote.svg );
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto .5em;
+      }
+    }
+
+    .quote-accent {
+      border: 2px solid $color__brand-4;
+      font-family: $font__roboto-black;
+      font-size: 5em;
+      color: $color__brand-2;
+    }
+
+    .quote {
+      font-family: $font__bold-italic;
+    }
+
+    .name {
+      color: $color__brand-2;
+      position: relative;
+      padding-left: 15px;
+
+      &:before {
+        content: '\2012';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
   }
 }

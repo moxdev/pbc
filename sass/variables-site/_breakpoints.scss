@@ -1,10 +1,10 @@
 $breakpoints: (
-	'x-small': 36em,
-	'small': 46.875em,
-	'medium': 59.375em,
-	'large': 75em,
-	'x-large': 90em,
-	'xx-large': 125em
+	'x-small': 36em, // 576px
+	'small': 46.875em, // 750px
+	'medium': 59.375em, // 950px
+	'large': 75em, // 1200px
+	'x-large': 90em, // 1440px
+	'xx-large': 125em // 2000px
 );
 
 $breakpoints_vert: (

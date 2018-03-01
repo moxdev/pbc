@@ -14,7 +14,8 @@ function promo_box_club_home_why_join_section() {
         $why_join_second_column    = get_sub_field( 'why_join_second_column' );
         $why_join_featured_image   = get_sub_field( 'why_join_featured_image' );
         $why_join_button_text      = get_sub_field( 'why_join_button_text' );
-        $why_join_button_page_link = get_sub_field( 'why_join_button_page_link' ); ?>
+        $why_join_button_page_link = get_sub_field( 'why_join_button_page_link' );
+        $why_join_sidebar_column   = get_sub_field( 'why_join_sidebar_column' ); ?>
 
         <section class="home-why-join">
           <div class="wrapper">
@@ -42,6 +43,35 @@ function promo_box_club_home_why_join_section() {
                 <div class="flex-column button-wrapper">
                   <a class="btn" href="<?php echo wp_kses_post( $why_join_button_page_link ); ?>"><button><?php echo wp_kses_post( $why_join_button_text ); ?></button></a>
                 </div>
+              <?php endif; ?>
+
+              <?php if( $why_join_sidebar_column ) : ?>
+
+                <?php if( have_rows('why_join_sidebar_column') ): ?>
+
+                <aside class="why-join-sidebar">
+                  <?php while( have_rows('why_join_sidebar_column') ): the_row();
+                    $quote = get_sub_field('quote_text');
+                    $name = get_sub_field('quote_name'); ?>
+
+                  <div class="quote-wrapper">
+
+                    <?php if( $quote ) : ?>
+                      <p class="quote"><?php echo wp_kses_post( $quote ); ?></p>
+                    <?php endif; ?>
+
+                    <?php if( $name ) : ?>
+                      <p class="name"><span><?php echo wp_kses_post( $name ); ?></span></p>
+                    <?php endif; ?>
+
+                  </div>
+
+                  <?php endwhile; ?>
+
+                </aside>
+
+                <?php endif; ?>
+
               <?php endif; ?>
 
             </div>
