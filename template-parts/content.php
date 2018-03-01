@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 
-  <?php promo_box_club_post_thumbnail(); ?>
+    <?php promo_box_club_post_thumbnail(); ?>
 
 	</header><!-- .entry-header -->
 
@@ -29,7 +29,7 @@
     <div class="entry-meta">
       <?php
         promo_box_club_posted_on();
-        promo_box_club_posted_by();
+        promo_box_club_posted_in();
       ?>
     </div><!-- .entry-meta -->
     <?php
@@ -39,7 +39,7 @@
 			the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'promo_box_club' ),
+					__( 'Continue reading &gt;<span class="screen-reader-text"> "%s"</span>', 'promo_box_club' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -54,9 +54,10 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+  </div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php promo_box_club_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+  <footer class="entry-footer">
+    <?php promo_box_club_entry_footer(); ?>
+  </footer><!-- .entry-footer -->
+
 </article><!-- #post-<?php the_ID(); ?> -->

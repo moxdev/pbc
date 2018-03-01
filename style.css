@@ -542,11 +542,6 @@ hr {
   margin-bottom: 1.5em;
 }
 
-/* line 1, sass/elements/_lists.scss */
-ul, ol {
-  margin: 0 0 1.5em 1em;
-}
-
 /* line 5, sass/elements/_lists.scss */
 ul {
   list-style: disc;
@@ -572,6 +567,17 @@ dt {
 /* line 23, sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
+}
+
+/* line 27, sass/elements/_lists.scss */
+ul {
+  margin: 0 0 0 1em;
+  padding: 0;
+}
+/* line 31, sass/elements/_lists.scss */
+ul li {
+  margin: 0 0 1em 0;
+  padding: 0;
 }
 
 /* line 24, sass/elements/_elements.scss */
@@ -690,15 +696,15 @@ textarea {
 --------------------------------------------------------------*/
 /* line 1, sass/navigation/_links.scss */
 a {
-  color: royalblue;
+  color: #fa4515;
 }
 /* line 4, sass/navigation/_links.scss */
 a:visited {
-  color: purple;
+  color: #fa4515;
 }
 /* line 7, sass/navigation/_links.scss */
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #1cbcaf;
 }
 /* line 12, sass/navigation/_links.scss */
 a:focus {
@@ -2013,6 +2019,35 @@ section.email-subscription input[type="text"] {
 .page-template-page-contact form input[type="submit"] {
   border: none;
   border-radius: 10px;
+}
+
+/*--------------------------------------------------------------
+## News (Blog) Page
+--------------------------------------------------------------*/
+/* line 4, sass/page-templates/news/_news-index.scss */
+.blog #content a {
+  text-decoration: none;
+  font-family: "NotoSans-Bold", sans-serif;
+}
+/* line 9, sass/page-templates/news/_news-index.scss */
+.blog #content article {
+  margin: 1em 0;
+}
+/* line 15, sass/page-templates/news/_news-index.scss */
+.blog h2.entry-title a, .blog .home .home-why-join .wrapper h2.entry-title a, .home .home-why-join .wrapper .blog h2.entry-title a {
+  color: #1cbcaf;
+}
+/* line 21, sass/page-templates/news/_news-index.scss */
+.blog .entry-content .more-link {
+  color: #fa4515;
+}
+/* line 27, sass/page-templates/news/_news-index.scss */
+.blog .entry-meta a {
+  color: #fa4515;
+}
+/* line 30, sass/page-templates/news/_news-index.scss */
+.blog .entry-meta span {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

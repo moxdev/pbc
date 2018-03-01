@@ -767,6 +767,13 @@
 		"oAP": "\/sass\/.sass-cache\/4970b243136706d98603253b40351afd9e894ba0\/_contact.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/4e8105627dd1e8b618e69258034b204ba0b38738\/_news-index.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/4e8105627dd1e8b618e69258034b204ba0b38738\/_news-index.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/4ec2e19b308ceb8a0881c898fd10c789852f94e3\/email-subscription.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1456,6 +1463,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/how-it-works\/_how-it-works.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/news\/_news-index.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/news\/_news-index.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

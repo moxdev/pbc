@@ -1,0 +1,34 @@
+.blog {
+
+  #content {
+    a {
+      text-decoration: none;
+      font-family: $font__bold;
+    }
+
+    article {
+      margin: 1em 0;
+    }
+  }
+
+  h2.entry-title {
+    a {
+      color: $color__brand-2;
+    }
+  }
+
+  .entry-content {
+    .more-link {
+      color: $color__brand-1;
+    }
+  }
+
+  .entry-meta {
+    a {
+      color: $color__brand-1;
+    }
+    span {
+      display: block;
+    }
+  }
+}
