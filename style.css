@@ -367,8 +367,8 @@ html {
 @media screen and (min-width: 75em) {
   /* line 1, sass/typography/_typography.scss */
   html {
-    font-size: 19px;
-    font-size: 1.1875rem;
+    font-size: 17.6px;
+    font-size: 1.1rem;
   }
 }
 
@@ -1609,44 +1609,34 @@ section.how-it-works {
   background-color: #1cbcaf;
   padding-top: 2.5em;
   padding-bottom: 2.5em;
+  font-family: "NotoSans-Bold", sans-serif;
 }
-/* line 5, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 6, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works .wrapper {
   text-align: center;
 }
-/* line 9, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-section.how-it-works .inner-wrapper {
-  text-align: left;
-  padding-bottom: 2em;
-}
-/* line 13, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-section.how-it-works .inner-wrapper p {
-  display: none;
-}
-/* line 18, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-section.how-it-works button {
-  background-color: #fff;
-  color: #fa4515;
-}
-/* line 23, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 10, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works h2, section.how-it-works .home .home-why-join .wrapper h2, .home .home-why-join .wrapper section.how-it-works h2 {
   color: #fff;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 29, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-section.how-it-works .title {
-  display: block;
-  color: #fff;
-  font-size: 1.5rem;
+/* line 16, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+section.how-it-works .column-wrapper {
+  max-width: 400px;
 }
-/* line 35, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-section.how-it-works .col-1, section.how-it-works .col-2, section.how-it-works .col-3, section.how-it-works .col-4 {
+/* line 20, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+section.how-it-works .inner-wrapper {
+  text-align: left;
+  padding-bottom: 2em;
+}
+/* line 29, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+section.how-it-works .center-wrapper {
   position: relative;
 }
-/* line 38, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-section.how-it-works .col-1:before, section.how-it-works .col-2:before, section.how-it-works .col-3:before, section.how-it-works .col-4:before {
+/* line 32, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+section.how-it-works .center-wrapper:before {
   content: '';
   display: block;
   background-size: contain;
@@ -1656,21 +1646,101 @@ section.how-it-works .col-1:before, section.how-it-works .col-2:before, section.
   height: 125px;
   margin-bottom: 1em;
 }
-/* line 51, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-section.how-it-works .col-1:before {
+/* line 45, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+section.how-it-works .col-1 .center-wrapper:before {
   background-image: url(/wp-content/themes/promo_box_club/imgs/icon-package.svg);
 }
-/* line 57, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-section.how-it-works .col-2:before {
+/* line 51, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+section.how-it-works .col-2 .center-wrapper:before {
   background-image: url(/wp-content/themes/promo_box_club/imgs/icon-truck.svg);
 }
-/* line 62, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-section.how-it-works .col-3:before {
+/* line 56, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+section.how-it-works .col-3 .center-wrapper:before {
   background-image: url(/wp-content/themes/promo_box_club/imgs/icon-shopping.svg);
 }
-/* line 67, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-section.how-it-works .col-4:before {
+/* line 61, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+section.how-it-works .col-4 .center-wrapper:before {
   background-image: url(/wp-content/themes/promo_box_club/imgs/icon-grow.svg);
+}
+/* line 66, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+section.how-it-works .title {
+  display: block;
+  color: #fff;
+  font-size: 1.7em;
+  margin-bottom: .25em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 74, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+section.how-it-works button {
+  background-color: #fff;
+  color: #fa4515;
+}
+@media screen and (min-width: 36em) {
+  /* line 80, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  section.how-it-works .column-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: none;
+  }
+  /* line 87, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  section.how-it-works .inner-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+  /* line 91, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  section.how-it-works .inner-wrapper p {
+    display: block;
+  }
+  /* line 96, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  section.how-it-works .center-wrapper {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+  }
+  /* line 100, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  section.how-it-works .center-wrapper:before {
+    height: 100px;
+  }
+  /* line 104, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  section.how-it-works .center-wrapper .title {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 46.875em) {
+  /* line 113, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  section.how-it-works .center-wrapper .title {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 120, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  section.how-it-works .wrapper {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 124, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  section.how-it-works .center-wrapper {
+    max-width: 500px;
+    padding-left: 15%;
+  }
+  /* line 128, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  section.how-it-works .center-wrapper:before {
+    height: 125px;
+  }
+  /* line 132, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  section.how-it-works .center-wrapper .title {
+    font-size: 1.4em;
+  }
 }
 
 /*--------------------------------------------------------------

@@ -1,9 +1,20 @@
 section.how-it-works {
   background-color: $color__brand-2;
   @include section-padding;
+  font-family: $font__bold;
 
   .wrapper {
     text-align: center;
+  }
+
+  h2 {
+    color: #fff;
+    text-align: center;
+    @include font-smooth;
+  }
+
+  .column-wrapper {
+    max-width: 400px;
   }
 
   .inner-wrapper {
@@ -11,28 +22,11 @@ section.how-it-works {
     padding-bottom: 2em;
 
     p {
-      display: none;
+      // display: none;
     }
   }
 
-  button {
-    background-color: $color__background-button-alt;
-    color: $color__button-alt;
-  }
-
-  h2 {
-    color: #fff;
-    text-align: center;
-     @include font-smooth;
-  }
-
-  .title {
-    display: block;
-    color: #fff;
-    font-size: 1.5rem;
-  }
-
-  .col-1, .col-2, .col-3, .col-4 {
+  .center-wrapper {
     position: relative;
 
     &:before {
@@ -47,25 +41,108 @@ section.how-it-works {
     }
   }
 
-  .col-1 {
+  .col-1 .center-wrapper {
     &:before {
       background-image: url(/wp-content/themes/promo_box_club/imgs/icon-package.svg);
 
     }
   }
-  .col-2 {
+  .col-2 .center-wrapper {
     &:before {
       background-image: url(/wp-content/themes/promo_box_club/imgs/icon-truck.svg);
     }
   }
-  .col-3 {
+  .col-3 .center-wrapper {
     &:before {
       background-image: url(/wp-content/themes/promo_box_club/imgs/icon-shopping.svg);
     }
   }
-  .col-4 {
+  .col-4 .center-wrapper {
     &:before {
       background-image: url(/wp-content/themes/promo_box_club/imgs/icon-grow.svg);
     }
   }
+
+  .title {
+    display: block;
+    color: #fff;
+    font-size: 1.7em;
+    margin-bottom: .25em;
+    @include font-smooth;
+  }
+
+  button {
+    background-color: $color__background-button-alt;
+    color: $color__button-alt;
+  }
+
+  @include respond-to(x-small) {
+    .column-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: none;
+    }
+
+    .inner-wrapper {
+      flex: 1 1 50%;
+      // border: 1px solid red;
+
+      p {
+        display: block;
+      }
+    }
+
+    .center-wrapper {
+      @include max-width(400px);
+      padding-left: 10%;
+
+      &:before {
+        height: 100px;
+      }
+
+      .title {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  @include respond-to(small) {
+    .center-wrapper {
+
+      .title {
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  @include respond-to(large) {
+    .wrapper {
+      @include max-width(1100px);
+    }
+
+    .center-wrapper {
+      max-width: 500px;
+      padding-left: 15%;
+
+      &:before {
+        height: 125px;
+      }
+
+      .title {
+        font-size: 1.4em;
+      }
+    }
+
+  }
+
+  @media only screen and (min-width: 1000px) {
+
+    .wrapper {
+      // max-width: 1000px;
+      // margin: 0 auto;
+    }
+  }
+
+
 }

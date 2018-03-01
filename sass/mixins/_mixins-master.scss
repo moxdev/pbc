@@ -10,6 +10,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+@mixin max-width($maxWidth) {
+	max-width: $maxWidth;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 // Center block
 @mixin center-block {
 	display: block;

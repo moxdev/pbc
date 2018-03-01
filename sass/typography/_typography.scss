@@ -6,7 +6,7 @@ html {
 	}
 
 	@include respond-to(large) {
-		@include font-size(1.1875);
+		@include font-size(1.1);
 	}
 }
 
