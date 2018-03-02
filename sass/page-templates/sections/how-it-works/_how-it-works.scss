@@ -44,7 +44,6 @@ section.how-it-works {
   .col-1 .center-wrapper {
     &:before {
       background-image: url(/wp-content/themes/promo_box_club/imgs/icon-package.svg);
-
     }
   }
   .col-2 .center-wrapper {
@@ -86,11 +85,6 @@ section.how-it-works {
 
     .inner-wrapper {
       flex: 1 1 50%;
-      // border: 1px solid red;
-
-      p {
-        display: block;
-      }
     }
 
     .center-wrapper {
@@ -118,7 +112,7 @@ section.how-it-works {
 
   @include respond-to(large) {
     .wrapper {
-      @include max-width(1100px);
+      @include max-width(1200px);
     }
 
     .center-wrapper {
@@ -128,21 +122,6 @@ section.how-it-works {
       &:before {
         height: 125px;
       }
-
-      .title {
-        font-size: 1.4em;
-      }
-    }
-
-  }
-
-  @media only screen and (min-width: 1000px) {
-
-    .wrapper {
-      // max-width: 1000px;
-      // margin: 0 auto;
     }
   }
-
-
 }

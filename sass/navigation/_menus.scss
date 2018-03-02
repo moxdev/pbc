@@ -29,30 +29,17 @@
 
   .pbc-logo svg {
     display: block;
+    width: 72px;
+    height: 60px;
   }
 
-  .menu-aux-menu-container {
-
-    #aux-menu {
-      display: block;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        &:last-child {
-          display: none;
-        }
-
-        a {
-          color: #fff;
-
-          &:hover, &:visited, &:active {
-            color: #fff;
-          }
-        }
-      }
-    }
+  #aux-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
     .join-now-link {
       background-color: $color__brand-1;
@@ -60,7 +47,18 @@
       padding: .25em 1em;
 
       a {
+        color: #fff;
         font-family: $font__bold;
+        text-decoration: none;
+      }
+    }
+
+    .contact-us-link {
+      display: none;
+      margin-left: 2em;
+
+      a {
+        color: $color__brand-4;
         text-decoration: none;
       }
     }
@@ -127,12 +125,70 @@
       text-decoration: none;
     }
 
+    .shop-link {
+      position: relative;
+
+      &:before {
+        content:'';
+        display: block;
+        position: absolute;
+        top: -8px;
+        left: -7px;
+        background: url(/wp-content/themes/promo_box_club/imgs/icon-shop-link.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+        width: 50px;
+        height: 33px;
+      }
+    }
+
     .current_page_item > a,
     .current-menu-item > a,
     .current_page_ancestor > a,
     .current-menu-ancestor > a {
     }
 
+  }
+
+  @include respond-to(small) {
+
+    padding-top: 0;
+
+    .pbc-logo {
+      margin-bottom: -1.4em;
+      margin-top: 1em;
+      svg {
+        width: 100px;
+        height: 83px;
+      }
+    }
+
+    #aux-menu {
+      .contact-us-link {
+        display: inline-flex;
+      }
+    }
+
+    .menu-primary-menu-container {
+      float: right;
+      ul {
+        display: flex;
+
+        li {
+          margin: 0 1em 1em;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          a {
+            color: $color__brand-4;
+            font-family: $font__bold;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -142,14 +198,13 @@
 	display: block;
 }
 
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
+@include respond-to(small) {
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    display: block;
+  }
 }
 
 .comment-navigation,
