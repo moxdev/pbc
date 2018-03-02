@@ -759,19 +759,34 @@ a:hover, a:active {
 .main-navigation button span {
   display: block;
   margin-bottom: 5px;
+  width: 40px;
 }
-/* line 24, sass/navigation/_menus.scss */
+/* line 25, sass/navigation/_menus.scss */
 .main-navigation button .hamburger {
   background-color: #fa4515;
   height: 3px;
 }
-/* line 30, sass/navigation/_menus.scss */
+/* line 33, sass/navigation/_menus.scss */
+.main-navigation .pbc-logo .logo-title {
+  display: none;
+  padding-left: 1em;
+  font-size: .8em;
+}
+/* line 39, sass/navigation/_menus.scss */
+.main-navigation .pbc-logo span {
+  display: block;
+}
+/* line 43, sass/navigation/_menus.scss */
+.main-navigation .pbc-logo .row-2 {
+  font-family: "NotoSans-Bold", sans-serif;
+}
+/* line 47, sass/navigation/_menus.scss */
 .main-navigation .pbc-logo svg {
   display: block;
   width: 72px;
   height: 60px;
 }
-/* line 36, sass/navigation/_menus.scss */
+/* line 54, sass/navigation/_menus.scss */
 .main-navigation #aux-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,36 +801,36 @@ a:hover, a:active {
   margin: 0;
   padding: 0;
 }
-/* line 44, sass/navigation/_menus.scss */
+/* line 62, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .join-now-link {
   background-color: #fa4515;
   color: #fff;
   padding: .25em 1em;
 }
-/* line 49, sass/navigation/_menus.scss */
+/* line 67, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .join-now-link a {
   color: #fff;
   font-family: "NotoSans-Bold", sans-serif;
   text-decoration: none;
 }
-/* line 56, sass/navigation/_menus.scss */
+/* line 74, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .contact-us-link {
   display: none;
   margin-left: 2em;
 }
-/* line 60, sass/navigation/_menus.scss */
+/* line 78, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .contact-us-link a {
   color: #39291d;
   text-decoration: none;
 }
-/* line 69, sass/navigation/_menus.scss */
+/* line 87, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-/* line 75, sass/navigation/_menus.scss */
+/* line 93, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul ul {
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -825,39 +840,39 @@ a:hover, a:active {
   left: -999em;
   z-index: 99999;
 }
-/* line 83, sass/navigation/_menus.scss */
+/* line 101, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 89, sass/navigation/_menus.scss */
+/* line 107, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul ul li:hover > ul, .main-navigation .menu-primary-menu-container ul ul li.focus > ul {
   left: 100%;
 }
-/* line 95, sass/navigation/_menus.scss */
+/* line 113, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul ul a {
   width: 200px;
 }
-/* line 108, sass/navigation/_menus.scss */
+/* line 126, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul li:hover > ul,
 .main-navigation .menu-primary-menu-container ul li.focus > ul {
   left: auto;
 }
-/* line 114, sass/navigation/_menus.scss */
+/* line 132, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container li {
   float: left;
   position: relative;
 }
-/* line 123, sass/navigation/_menus.scss */
+/* line 141, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container a {
   display: block;
   text-decoration: none;
 }
-/* line 128, sass/navigation/_menus.scss */
+/* line 146, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .shop-link {
   position: relative;
 }
-/* line 131, sass/navigation/_menus.scss */
+/* line 149, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .shop-link:before {
   content: '';
   display: block;
@@ -876,78 +891,106 @@ a:hover, a:active {
   .main-navigation {
     padding-top: 0;
   }
-  /* line 158, sass/navigation/_menus.scss */
+  /* line 176, sass/navigation/_menus.scss */
   .main-navigation .pbc-logo {
     margin-bottom: -1.4em;
     margin-top: 1em;
   }
-  /* line 161, sass/navigation/_menus.scss */
+  /* line 179, sass/navigation/_menus.scss */
   .main-navigation .pbc-logo svg {
     width: 100px;
     height: 83px;
   }
-  /* line 168, sass/navigation/_menus.scss */
+  /* line 186, sass/navigation/_menus.scss */
   .main-navigation #aux-menu .contact-us-link {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  /* line 173, sass/navigation/_menus.scss */
+  /* line 191, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container {
     float: right;
   }
-  /* line 175, sass/navigation/_menus.scss */
+  /* line 193, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  /* line 178, sass/navigation/_menus.scss */
+  /* line 196, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container ul li {
     margin: 0 1em 1em;
   }
-  /* line 181, sass/navigation/_menus.scss */
+  /* line 199, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container ul li:last-child {
     margin-right: 0;
   }
-  /* line 185, sass/navigation/_menus.scss */
+  /* line 203, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container ul li a {
     color: #39291d;
     font-family: "NotoSans-Bold", sans-serif;
   }
 }
+@media screen and (min-width: 59.375em) {
+  /* line 213, sass/navigation/_menus.scss */
+  .main-navigation .pbc-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 217, sass/navigation/_menus.scss */
+  .main-navigation .pbc-logo .logo-title {
+    display: block;
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 227, sass/navigation/_menus.scss */
+  .main-navigation .menu-primary-menu-container ul li {
+    margin: 0 1.5em 1em;
+  }
+  /* line 233, sass/navigation/_menus.scss */
+  .main-navigation .menu-primary-menu-container .shop-link:before {
+    top: -10px;
+    left: -10px;
+    width: 62px;
+    height: 45px;
+  }
+}
 
 /* Small menu. */
-/* line 196, sass/navigation/_menus.scss */
+/* line 245, sass/navigation/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 46.875em) {
-  /* line 202, sass/navigation/_menus.scss */
+  /* line 251, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 205, sass/navigation/_menus.scss */
+  /* line 254, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 214, sass/navigation/_menus.scss */
+/* line 263, sass/navigation/_menus.scss */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 219, sass/navigation/_menus.scss */
+/* line 268, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 224, sass/navigation/_menus.scss */
+/* line 273, sass/navigation/_menus.scss */
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
   float: right;
   text-align: right;

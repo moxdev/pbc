@@ -19,6 +19,7 @@
     span {
       display: block;
       margin-bottom: 5px;
+      width: 40px;
     }
 
     .hamburger {
@@ -27,10 +28,27 @@
     }
   }
 
-  .pbc-logo svg {
-    display: block;
-    width: 72px;
-    height: 60px;
+  .pbc-logo {
+
+    .logo-title {
+      display: none;
+      padding-left: 1em;
+      font-size: .8em;
+    }
+
+    span {
+      display: block;
+    }
+
+    .row-2 {
+      font-family: $font__bold;
+    }
+
+    svg {
+      display: block;
+      width: 72px;
+      height: 60px;
+    }
   }
 
   #aux-menu {
@@ -186,6 +204,37 @@
             color: $color__brand-4;
             font-family: $font__bold;
           }
+        }
+      }
+    }
+  }
+
+  @include respond-to(medium) {
+    .pbc-logo {
+      display: flex;
+      align-items: center;
+
+      .logo-title {
+        display: block;
+      }
+    }
+  }
+
+  @include respond-to(large) {
+    .menu-primary-menu-container {
+
+      ul {
+        li {
+          margin: 0 1.5em 1em;
+        }
+      }
+
+      .shop-link {
+        &:before {
+          top: -10px;
+          left: -10px;
+          width: 62px;
+          height: 45px;
         }
       }
     }
