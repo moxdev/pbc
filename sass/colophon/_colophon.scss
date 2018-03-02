@@ -6,6 +6,16 @@
     @include padding-left-right;
   }
 
+  .footer-pbc-logo {
+    display:none;
+    margin-right: 2em;
+
+    svg {
+      width: 116px;
+      height: 97px;
+    }
+  }
+
   #footer-navigation {
     max-width: 300px;
 
@@ -19,6 +29,10 @@
       margin: 0;
       padding: 0;
       columns: 2 100px;
+
+      li {
+        margin: 0 0 .5em 0;
+      }
     }
   }
 
@@ -65,7 +79,10 @@
 
     ul {
       margin: 0;
+      padding:0;
       li {
+        margin: 0;
+        padding: 0;
 
         a {
           display: block;
@@ -129,6 +146,59 @@
     .wbenc-logo svg {
       width: 60px;
     }
+  }
+
+  @include respond-to(small) {
+    .site-info {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+    }
+
+    .footer-logo-wrapper {
+      display: flex;
+      .footer-pbc-logo {
+        display:block;
+      }
+    }
+
+    .social {
+      padding-top: 0;
+      align-self: flex-start;
+
+      .social-title {
+        // padding-left: 16px;
+      }
+
+      .social-wrapper {
+        margin-left: auto;
+      }
+
+      ul {
+        margin-left: auto;
+        li {
+          a {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+
+    #footer-navigation {
+      width: 275px;
+    }
+  }
+
+  @include respond-to(medium) {
+
+
+  }
+
+  @include respond-to(large) {
+    font-size: .9em;
+
   }
 
   // media(40px) {

@@ -1,17 +1,87 @@
 section.email-subscription {
-  @include section-padding;
+  padding-top: 2em;
+  padding-bottom: 1em;
   background-color: $color__brand-3;
+
+  .wrapper {
+    @include max-width(1100px);
+  }
 
   h2 {
     font-size: 1.5em;
   }
 
-  input[type="text"] {
+  input[type="email"] {
     display: block;
     width: 100%;
     margin-bottom: 1em;
     border: 0;
     border-radius: 8px;
-    padding: 5px 0 5px 10px;
+    padding: 10px 0 10px 15px;
+  }
+
+  @include respond-to(x-small) {
+    input[type="email"] {
+      width: 70%;
+    }
+  }
+
+  @include respond-to(small) {
+    .wrapper {
+      display: flex;
+      // justify-content: flex-start;
+      align-items: center;
+
+      h2 {
+        flex: 1 1 40%;
+      }
+
+      #embed-signup-form {
+        flex: 1 1 60%;
+      }
+    }
+
+    input[type="email"] {
+      width: 100%;
+    }
+
+    #embed-signup-scroll {
+      display: flex;
+      justify-content: space-between;
+
+      .field-group {
+        flex: 2;
+        padding-right: 2em;
+      }
+
+      button {
+        flex: 1;
+        margin-bottom: 1em;
+        border: 0;
+        border-radius: 8px;
+        padding: 0;
+      }
+    }
+  }
+
+  @include respond-to(medium) {
+    .wrapper {
+
+      h2 {
+        flex: 1 1 30%;
+      }
+
+      #embed-signup-form {
+        flex: 1 1 70%;
+      }
+    }
+
+    #embed-signup-scroll {
+
+      .field-group {
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+    }
   }
 }
