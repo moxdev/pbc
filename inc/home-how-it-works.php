@@ -5,17 +5,17 @@
  * @package Promo_Box_Club
  */
 
-function promo_box_club_how_it_works_section() {
+function promo_box_club_home_how_it_works_section() {
 	if ( function_exists( 'get_field' ) ) {
     if( have_rows('how_it_works_section', 'how-it-works') ):
-      $how_it_works_section_title = get_field('how_it_works_section_title');
-      $how_it_works_section_button_text = get_field('how_it_works_section_button_text');
-      $how_it_works_section_button_page_link = get_field('how_it_works_section_button_page_link');
+      $home_how_it_works_section_title            = get_field('how_it_works_section_title');
+      $home_how_it_works_section_button_text      = get_field('how_it_works_section_button_text');
+      $home_how_it_works_section_button_page_link = get_field('how_it_works_section_button_page_link');
       $count = 1; ?>
 
     <section class="how-it-works">
       <div class="wrapper">
-        <h2 class="section-title"><?php echo wp_kses_post( $how_it_works_section_title ); ?></h2>
+        <h2 class="section-title"><?php echo wp_kses_post( $home_how_it_works_section_title ); ?></h2>
 
         <div class="column-wrapper">
 
@@ -26,6 +26,7 @@ function promo_box_club_how_it_works_section() {
           <div class="inner-wrapper col-<?php echo $count++; ?>">
 
             <div class="center-wrapper">
+
               <?php if( $icon_title ) : ?>
                 <span class="title"><?php echo wp_kses_post( $icon_title ); ?></span>
               <?php endif; ?>
@@ -42,7 +43,7 @@ function promo_box_club_how_it_works_section() {
 
         </div>
 
-        <a href="<?php echo wp_kses_post( $how_it_works_section_button_page_link ); ?>"><button><?php echo wp_kses_post( $how_it_works_section_button_text ); ?></button></a>
+        <a href="<?php echo wp_kses_post( $home_how_it_works_section_button_page_link ); ?>"><button><?php echo wp_kses_post( $home_how_it_works_section_button_text ); ?></button></a>
 
       </div>
     </section>

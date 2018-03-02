@@ -19,22 +19,30 @@ function promo_box_club_flexible_content_how_it_works_section() {
       <div class="wrapper">
         <h2 class="section-title"><?php echo wp_kses_post( $flex_how_it_works_section_title ); ?></h2>
 
-        <?php while( have_rows('how_it_works_section', 'how-it-works') ): the_row();
-          $icon_title = get_sub_field('how_it_works_title', 'how-it-works');
-          $icon_desc  = get_sub_field('how_it_works_description', 'how-it-works'); ?>
+        <div class="column-wrapper">
 
-        <div class="inner-wrapper col-<?php echo $count++; ?>">
+          <?php while( have_rows('how_it_works_section', 'how-it-works') ): the_row();
+            $icon_title = get_sub_field('how_it_works_title', 'how-it-works');
+            $icon_desc  = get_sub_field('how_it_works_description', 'how-it-works'); ?>
 
-          <?php if( $icon_title ) : ?>
-            <span class="title"><?php echo wp_kses_post( $icon_title ); ?></span>
-          <?php endif; ?>
+          <div class="inner-wrapper col-<?php echo $count++; ?>">
 
-          <?php if( $icon_desc ) : ?>
-            <?php echo $icon_desc; ?>
-          <?php endif; ?>
+            <div class="center-wrapper">
 
-        </div>
-        <?php endwhile; ?>
+              <?php if( $icon_title ) : ?>
+                <span class="title"><?php echo wp_kses_post( $icon_title ); ?></span>
+              <?php endif; ?>
+
+              <?php if( $icon_desc ) : ?>
+                <?php echo $icon_desc; ?>
+              <?php endif; ?>
+
+            </div>
+
+          </div>
+          <?php endwhile; ?>
+
+        </div><!-- column-wrapper -->
 
         <a href="<?php echo wp_kses_post( $flex_how_it_works_section_button_page_link ); ?>"><button><?php echo wp_kses_post( $flex_how_it_works_section_button_text ); ?></button></a>
 
