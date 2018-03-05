@@ -8,11 +8,11 @@
 
   .footer-pbc-logo {
     display:none;
-    margin-right: 2em;
+    margin-right: 4em;
 
     svg {
-      width: 116px;
-      height: 97px;
+      width: 100px;
+      height: 83px;
     }
   }
 
@@ -40,11 +40,11 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 2em;
+    text-align: center;
 
     .social-title {
-      padding-left: 32px;
-      margin-bottom: 5px;
       flex: 0 0 100%;
+      margin-bottom: 5px;
     }
     .social-media {
       list-style: none;
@@ -134,36 +134,69 @@
     a {
       color: #fff;
       text-decoration: none;
+    }
+
+    .mm4 {
       span {
         display: block;
       }
     }
 
-    .mm4-logo svg {
-      width: 100px;
+    .mm4-logo {
+      svg {
+        width: 125px;
+        height: 44px;
+      }
     }
 
-    .wbenc-logo svg {
-      width: 60px;
+    .wbenc-logo {
+      margin-left: 2em;
+      svg {
+        width: 60px;
+        height: 44px;
+      }
     }
+  }
+
+  @include respond-to(x-small) {
+    .copyright-section {
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @include max-width(700px);
+      }
+
+      .mm4 {
+        span {
+          display: inline;
+        }
+      }
+
+      .wbenc-logo {
+        margin-left: 0;
+      }
+
+    }
+
   }
 
   @include respond-to(small) {
     .site-info {
       display: flex;
       justify-content: space-between;
-      padding-top: 1.5em;
-      padding-bottom: 1.5em;
     }
 
     .footer-logo-wrapper {
       display: flex;
+      align-items: center;
       .footer-pbc-logo {
         display:block;
       }
     }
 
     .social {
+      font-size: .9em;
       padding-top: 0;
       align-self: flex-start;
 
@@ -172,22 +205,22 @@
       }
 
       .social-wrapper {
-        margin-left: auto;
+        // margin-left: auto;
       }
 
       ul {
-        margin-left: auto;
-        li {
-          a {
-            width: 40px;
-            height: 40px;
-          }
-        }
+        // margin-left: auto;
+        // li {
+        //   a {
+        //     width: 40px;
+        //     height: 40px;
+        //   }
+        // }
       }
     }
 
     #footer-navigation {
-      width: 275px;
+      // max-width: 300px;
     }
   }
 

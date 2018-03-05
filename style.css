@@ -1564,12 +1564,12 @@ object {
 /* line 9, sass/colophon/_colophon.scss */
 #colophon .footer-pbc-logo {
   display: none;
-  margin-right: 2em;
+  margin-right: 4em;
 }
 /* line 13, sass/colophon/_colophon.scss */
 #colophon .footer-pbc-logo svg {
-  width: 116px;
-  height: 97px;
+  width: 100px;
+  height: 83px;
 }
 /* line 19, sass/colophon/_colophon.scss */
 #colophon #footer-navigation {
@@ -1601,14 +1601,14 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 2em;
+  text-align: center;
 }
-/* line 44, sass/colophon/_colophon.scss */
+/* line 45, sass/colophon/_colophon.scss */
 #colophon .social .social-title {
-  padding-left: 32px;
-  margin-bottom: 5px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+  margin-bottom: 5px;
 }
 /* line 49, sass/colophon/_colophon.scss */
 #colophon .social .social-media {
@@ -1719,20 +1719,50 @@ object {
   color: #fff;
   text-decoration: none;
 }
-/* line 137, sass/colophon/_colophon.scss */
-#colophon .copyright-section a span {
+/* line 140, sass/colophon/_colophon.scss */
+#colophon .copyright-section .mm4 span {
   display: block;
 }
-/* line 142, sass/colophon/_colophon.scss */
-#colophon .copyright-section .mm4-logo svg {
-  width: 100px;
-}
 /* line 146, sass/colophon/_colophon.scss */
+#colophon .copyright-section .mm4-logo svg {
+  width: 125px;
+  height: 44px;
+}
+/* line 152, sass/colophon/_colophon.scss */
+#colophon .copyright-section .wbenc-logo {
+  margin-left: 2em;
+}
+/* line 154, sass/colophon/_colophon.scss */
 #colophon .copyright-section .wbenc-logo svg {
   width: 60px;
+  height: 44px;
+}
+@media screen and (min-width: 36em) {
+  /* line 163, sass/colophon/_colophon.scss */
+  #colophon .copyright-section .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 171, sass/colophon/_colophon.scss */
+  #colophon .copyright-section .mm4 span {
+    display: inline;
+  }
+  /* line 176, sass/colophon/_colophon.scss */
+  #colophon .copyright-section .wbenc-logo {
+    margin-left: 0;
+  }
 }
 @media screen and (min-width: 46.875em) {
-  /* line 152, sass/colophon/_colophon.scss */
+  /* line 185, sass/colophon/_colophon.scss */
   #colophon .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1740,41 +1770,26 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
   }
-  /* line 159, sass/colophon/_colophon.scss */
+  /* line 190, sass/colophon/_colophon.scss */
   #colophon .footer-logo-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  /* line 161, sass/colophon/_colophon.scss */
+  /* line 193, sass/colophon/_colophon.scss */
   #colophon .footer-logo-wrapper .footer-pbc-logo {
     display: block;
   }
-  /* line 166, sass/colophon/_colophon.scss */
+  /* line 198, sass/colophon/_colophon.scss */
   #colophon .social {
+    font-size: .9em;
     padding-top: 0;
     -ms-flex-item-align: start;
         align-self: flex-start;
-  }
-  /* line 174, sass/colophon/_colophon.scss */
-  #colophon .social .social-wrapper {
-    margin-left: auto;
-  }
-  /* line 178, sass/colophon/_colophon.scss */
-  #colophon .social ul {
-    margin-left: auto;
-  }
-  /* line 181, sass/colophon/_colophon.scss */
-  #colophon .social ul li a {
-    width: 40px;
-    height: 40px;
-  }
-  /* line 189, sass/colophon/_colophon.scss */
-  #colophon #footer-navigation {
-    width: 275px;
   }
 }
 @media screen and (min-width: 75em) {
