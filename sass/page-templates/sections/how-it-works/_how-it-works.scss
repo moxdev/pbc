@@ -2,6 +2,7 @@ section.how-it-works {
   background-color: $color__brand-2;
   @include section-padding;
   font-family: $font__bold;
+  // @include font-smooth;
 
   .wrapper {
     text-align: center;
@@ -10,7 +11,6 @@ section.how-it-works {
   h2 {
     color: #fff;
     text-align: center;
-    @include font-smooth;
   }
 
   .column-wrapper {
@@ -22,7 +22,7 @@ section.how-it-works {
     padding-bottom: 2em;
 
     p {
-      // display: none;
+      display: none;
     }
   }
 
@@ -67,7 +67,8 @@ section.how-it-works {
     color: #fff;
     font-size: 1.7em;
     margin-bottom: .25em;
-    @include font-smooth;
+    letter-spacing: .9px;
+    // @include font-smooth;
   }
 
   button {
@@ -84,7 +85,7 @@ section.how-it-works {
     }
 
     .inner-wrapper {
-      flex: 1 1 50%;
+      flex: 1 0 50%;
     }
 
     .center-wrapper {
