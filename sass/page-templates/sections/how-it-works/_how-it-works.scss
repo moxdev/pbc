@@ -6,6 +6,7 @@ section.how-it-works {
 
   .wrapper {
     text-align: center;
+    @include max-width(400px);
   }
 
   h2 {
@@ -14,7 +15,7 @@ section.how-it-works {
   }
 
   .column-wrapper {
-    max-width: 400px;
+    // @include max-width(400px);
   }
 
   .inner-wrapper {
@@ -22,11 +23,11 @@ section.how-it-works {
     padding-bottom: 2em;
 
     p {
-      display: none;
+      // display: none;
     }
   }
 
-  .center-wrapper {
+  .title {
     position: relative;
 
     &:before {
@@ -41,22 +42,22 @@ section.how-it-works {
     }
   }
 
-  .col-1 .center-wrapper {
+  .col-1 .title {
     &:before {
       background-image: url(/wp-content/themes/promo_box_club/imgs/icon-package.svg);
     }
   }
-  .col-2 .center-wrapper {
+  .col-2 .title {
     &:before {
       background-image: url(/wp-content/themes/promo_box_club/imgs/icon-truck.svg);
     }
   }
-  .col-3 .center-wrapper {
+  .col-3 .title {
     &:before {
       background-image: url(/wp-content/themes/promo_box_club/imgs/icon-shopping.svg);
     }
   }
-  .col-4 .center-wrapper {
+  .col-4 .title {
     &:before {
       background-image: url(/wp-content/themes/promo_box_club/imgs/icon-grow.svg);
     }
@@ -77,28 +78,30 @@ section.how-it-works {
   }
 
   @include respond-to(x-small) {
+    .wrapper {
+      max-width: 800px;
+    }
     .column-wrapper {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      max-width: none;
     }
 
     .inner-wrapper {
-      flex: 1 0 50%;
+      flex: 0 0 50%;
     }
 
-    .center-wrapper {
-      @include max-width(400px);
-      padding-left: 10%;
+    .title {
+      font-size: 1.5em;
 
       &:before {
         height: 100px;
       }
+    }
 
-      .title {
-        font-size: 1.5em;
-      }
+    .center-wrapper {
+      @include max-width(400px);
+      padding-left: 12%;
     }
   }
 
@@ -113,15 +116,34 @@ section.how-it-works {
 
   @include respond-to(large) {
     .wrapper {
-      @include max-width(1200px);
+      @include max-width(1100px);
     }
 
     .center-wrapper {
       max-width: 500px;
-      padding-left: 15%;
+      padding-left: 20%;
 
-      &:before {
-        height: 125px;
+      .title {
+        font-size: 1.3em;
+
+        &:before {
+          height: 125px;
+        }
+      }
+    }
+  }
+
+  @include respond-to(x-large) {
+    .wrapper {
+      max-width: 1400px;
+    }
+
+    .center-wrapper {
+      max-width: 800px;
+      padding-right: 12%;
+
+      .title {
+        font-size: 1.4em;
       }
     }
   }
