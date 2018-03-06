@@ -13,8 +13,10 @@ h1, h2 {
 	line-height: 1.25;
 }
 
-h1, .entry-title {
-	font-size: 2.813em;
+h1.entry-title {
+  font-size: 2.813em;
+  font-family: $font__black;
+  text-transform: uppercase;
   line-height: 1;
 
 	@include respond-to(large) {
@@ -22,16 +24,12 @@ h1, .entry-title {
 	}
 }
 
-h1.entry-title {
-  font-family: $font__black;
-  text-transform: uppercase;
-}
-
 h2 {
-  font-size: 1.425em;
+  font-size: 1.7em;
   font-family: $font__bold;
   margin-bottom: .5em;
-  letter-spacing: .9px;
+  line-height: 1.15;
+  // letter-spacing: .9px;
 }
 
 h2.section-title {

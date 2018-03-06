@@ -23,7 +23,7 @@ function promo_box_club_flexible_content_custom_editor_section() {
 
           <?php if( $custom_editor_icon ) : ?>
 
-            <div class="flex-wrapper">
+            <div class="flex-wrapper-img">
               <img src="<?php echo esc_url( $custom_editor_icon['url'] ); ?>" alt="<?php echo esc_attr( $custom_editor_icon['alt'] ); ?>" description="<?php echo esc_attr( $custom_editor_icon['description'] ); ?>">
             </div>
 
@@ -31,7 +31,7 @@ function promo_box_club_flexible_content_custom_editor_section() {
 
           <?php if( $custom_editor_content ) : ?>
 
-            <div class="flex-wrapper">
+            <div class="flex-wrapper-content">
 
               <?php echo wp_kses_post( $custom_editor_content ); ?>
 

@@ -24,12 +24,24 @@ get_header(); ?>
 				endif;
 
 			endwhile; // End of the loop.
-			?>
+      ?>
+
+      <?php if( function_exists('get_field') ) {
+        $add_the_millennium_contact_form = get_field('add_the_millennium_contact_form');
+
+        if( $add_the_millennium_contact_form ) {
+          if( function_exists( 'mm4_you_contact_form' ) ) :
+            mm4_you_contact_form();
+          endif;
+        }
+      } ?>
 
 		</main><!-- #main -->
   </div><!-- #primary -->
 
+
   <?php if( function_exists( 'promo_box_club_flexble_content_section' ) ) : promo_box_club_flexble_content_section(); endif; ?>
+  <?php if( function_exists( 'promo_box_club_whats_new_section' ) ) : promo_box_club_whats_new_section(); endif; ?>
 
 <?php
 get_footer();

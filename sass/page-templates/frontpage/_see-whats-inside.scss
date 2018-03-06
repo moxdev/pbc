@@ -1,0 +1,51 @@
+.home {
+
+  section.home-see-whats-inside {
+    @include section-padding;
+    @include max-width(1000px);
+     text-align: center;
+
+    h2 {
+      @extend h2, .section-title;
+    }
+
+    .flex-wrapper {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      text-align: left;
+
+      .flex-img-wrapper {
+        text-align: center;
+      }
+
+      .flex-content-wrapper {
+        margin-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+
+        h3 {
+          color: $color__brand-2;
+        }
+      }
+    }
+
+    @include respond-to(small) {
+      .flex-wrapper {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .flex-img-wrapper {
+        flex: 1;
+      }
+
+      .flex-content-wrapper {
+        flex: 1;
+      }
+
+      .button-wrapper {
+        margin-top: 1.5em;
+      }
+    }
+  }
+}

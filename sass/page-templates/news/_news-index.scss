@@ -1,6 +1,8 @@
 .blog {
 
   #content {
+    @include max-width($max_width);
+
     a {
       text-decoration: none;
       font-family: $font__bold;
@@ -11,9 +13,21 @@
     }
   }
 
+  #secondary {
+    @include section-padding;
+  }
+
   h2.entry-title {
     a {
       color: $color__brand-2;
+    }
+  }
+
+  .entry-header {
+    .post-thumbnail {
+      img {
+        width: 400px;
+      }
     }
   }
 
@@ -30,5 +44,45 @@
     span {
       display: block;
     }
+  }
+
+  #colophon {
+    // border-top: 1px solid #ededed;
+  }
+
+  @include respond-to(medium) {
+    #content {
+      display: flex;
+
+      #primary {
+        flex: 0 0 70%;
+        order: 2;
+        padding-left: 5em;
+      }
+
+      #secondary {
+        flex: 0 0 30%;
+        order: 1;
+      }
+    }
+
+  }
+
+  @include respond-to(large) {
+    #content {
+      display: flex;
+
+      #primary {
+        flex: 0 0 70%;
+        order: 2;
+        padding-left: 7em;
+      }
+
+      #secondary {
+        flex: 0 0 30%;
+        order: 1;
+      }
+    }
+
   }
 }

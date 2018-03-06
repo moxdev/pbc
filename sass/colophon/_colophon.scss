@@ -1,5 +1,6 @@
 #colophon {
   background: #fff;
+  border-top: 1px solid #ededed;
 
   .site-info {
     @include section-padding;
@@ -55,25 +56,22 @@
       position: relative;
       border: 2px solid $color__brand-1;
 
-      &:before {
+      &:before,
+      &:after {
         content: '';
         position: absolute;
         height: 10px;
-        top: -.45em;
-        left: 1.5%;
-        right: 1.5%;
+        left: 2%;
+        right: 2%;
         text-align: center;
         background-color: #fff;
       }
 
+      &:before {
+        top: -.45em;
+      }
       &:after {
-        content: '';
-        position: absolute;
         bottom: -.45em;
-        left: 1.5%;
-        right: 1.5%;
-        height: 10px;
-        background-color: #fff;
       }
     }
 
@@ -121,7 +119,6 @@
     .linked a {
       background-position: -104px 0
     }
-
   }
 
   .copyright-section {
@@ -229,6 +226,11 @@
 
   @include respond-to(large) {
     font-size: .9em;
+
+    .copyright-section {
+      padding-top: .5em;
+      padding-bottom: .5em;
+    }
 
   }
 

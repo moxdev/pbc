@@ -31,5 +31,9 @@ ul {
   li {
     margin: 0 0 1em 0;
     padding: 0;
+
+    @include respond-to(medium) {
+      margin: 0 0 .5em 0;
+    }
   }
 }

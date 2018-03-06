@@ -32,7 +32,7 @@ get_header(); ?>
 
   </div><!-- #primary -->
 
-  <?php if( function_exists( 'promo_box_club_home_video_carousel_section' ) ) : promo_box_club_home_video_carousel_section(); endif; ?>
+  <?php if( function_exists( 'promo_box_club_home_see_whats_inside_section' ) ) : promo_box_club_home_see_whats_inside_section(); endif; ?>
   <?php if( function_exists( 'promo_box_club_home_how_it_works_section' ) ) : promo_box_club_home_how_it_works_section(); endif; ?>
   <?php if( function_exists( 'promo_box_club_home_why_join_section' ) ) : promo_box_club_home_why_join_section(); endif; ?>
   <?php if( function_exists( 'promo_box_club_email_subscription_section' ) ) : promo_box_club_email_subscription_section(); endif; ?>

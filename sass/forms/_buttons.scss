@@ -9,9 +9,10 @@ input[type="submit"] {
 	border: none;
 	border-radius: 10px;
 	color: $color__button;
-	// @include font-size(0.75);
+	// @include font-size(1);
 	line-height: 1;
-  padding: .8em 1.5em;
+  padding: 1em 1.5em;
+  @include font-smooth;
 
 	&:hover {
 		border-color: $color__border-button-hover;
@@ -22,3 +23,28 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
   }
 }
+
+// .btn {
+//   // width: 115px;
+//   // height: 35px;
+//   display: block;
+//   font-family: $font__bold;
+//   background: $color__background-button;
+//   border: none;
+//   border-radius: 10px;
+//   color: #fff;
+//   // @include font-size(0.75);
+//   line-height: 1;
+//   padding: .8em 1.5em;
+//   text-decoration: none;
+
+//   &:hover {
+//     border-color: $color__border-button-hover;
+//   }
+
+//   &:active,
+//   &:focus,
+//   &:visited {
+//     color: #fff;
+//   }
+// }

@@ -42,8 +42,8 @@ if ( ! function_exists( 'promo_box_club_setup' ) ) :
 		 */
     add_theme_support( 'post-thumbnails' );
     add_image_size('home-feature', 1800, 1013, true);
-    add_image_size('home-video-feature', 400, 227, true);
     add_image_size('feature-img', 1800, 400, false);
+    add_image_size('home-see-whats-inside-feature-img', 400, 9999, false);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -114,7 +114,9 @@ function promo_box_club_widgets_init() {
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
-	) );
+  ) );
+
+  add_filter( 'widget_text', 'do_shortcode' );
 }
 add_action( 'widgets_init', 'promo_box_club_widgets_init' );
 
@@ -274,6 +276,11 @@ function my_mce_before_init_insert_formats( $init_array ) {
         'title' => 'Orange Letter Span', // Title to show in dropdown
         'inline' => 'span', // Element to add class to
         'classes' => 'orange-letter-span' // CSS class to add
+      ),
+      array(
+        'title' => 'Button', // Title to show in dropdown
+        'block' => 'button', // Element to add class to
+        'classes' => 'btn' // CSS class to add
       )
     );
     $init_array['style_formats'] = json_encode( $style_formats );
@@ -356,6 +363,16 @@ require get_template_directory() . '/inc/flexible-content-how-it-works.php';
 require get_template_directory() . '/inc/flexible-content-custom-editor.php';
 
 /**
- * Custom Header Image sectionr.
+ * Custom Header Image section.
  */
 require get_template_directory() . '/inc/custom-header-img.php';
+
+/**
+ * Custom function for What's New page.
+ */
+require get_template_directory() . '/inc/whats-new.php';
+
+/**
+ * Custom function for What's New page.
+ */
+require get_template_directory() . '/inc/home-see-whats-inside.php';

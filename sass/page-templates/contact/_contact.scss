@@ -1,8 +1,14 @@
-.page-template-page-contact {
+.page-template-page-flexible-content.page-id-19 {
+
+  #primary {
+    @include max-width($max_width);
+  }
 
   .entry-content {
     a {
       text-decoration: none;
+      font-family: $font__bold;
+      font-size: 1.2em;
     }
     .orange-letter-span {
       color: $color__brand-1;
@@ -10,24 +16,31 @@
   }
 
 
-  form {
+  #contact-form {
     font-family: $font__bold;
+    max-width: 600px;
+    margin-top: 1em;
 
-    label, input {
+    label,
+    input[type="text"],
+    input[type="email"] {
       display: block;
+      width: 100%;
     }
 
     label {
       color: $color__brand-2;
+      font-size: 1.125em;
     }
 
     input, textarea {
       border: 1px solid $color__brand-4;
       border-radius: 8px;
-      margin: .5em 0;
+      margin: .5em 0 1em;
     }
 
     input[type="submit"] {
+      display: block;
       border: none;
       border-radius: 10px;
     }

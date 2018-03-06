@@ -462,6 +462,13 @@
 		"oAP": "\/inc\/home-how-it-works.php",
 		"oF": 0
 		},
+	"\/inc\/home-see-whats-inside.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/home-see-whats-inside.php",
+		"oF": 0
+		},
 	"\/inc\/home-video-carousel.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -483,6 +490,13 @@
 		"oAP": "\/inc\/jetpack.php",
 		"oF": 0
 		},
+	"\/inc\/old-home-see-whats-inside.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/old-home-see-whats-inside.php",
+		"oF": 0
+		},
 	"\/inc\/template-functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -495,6 +509,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/inc\/template-tags.php",
+		"oF": 0
+		},
+	"\/inc\/whats-new.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/whats-new.php",
 		"oF": 0
 		},
 	"\/index.php": {
@@ -802,6 +823,13 @@
 		"oAP": "\/sass\/.sass-cache\/174c4e45432b62951835a84473c2587376ebae8f\/_variables-site.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/1a6483d86beb19734899bb0da8e195b376a82945\/_whats-new.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/1a6483d86beb19734899bb0da8e195b376a82945\/_whats-new.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_frontpage.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -821,6 +849,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_main-content.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_see-whats-inside.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_see-whats-inside.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_video-carousel.scssc": {
@@ -1052,6 +1087,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/b3e3aa11ffb7ea0aba51028612183c113c626b7f\/_orange-section.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/b94063c50473d80f1f4f83ecd97a4c0e7c670a77\/_membership.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/b94063c50473d80f1f4f83ecd97a4c0e7c670a77\/_membership.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/b9c934eaa6645b663f62f9771164885078b3c426\/_normalize.scssc": {
@@ -1547,6 +1589,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/page-templates\/frontpage\/_see-whats-inside.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/frontpage\/_see-whats-inside.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/page-templates\/frontpage\/_video-carousel.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1586,6 +1641,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/page-templates\/membership\/_membership.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/membership\/_membership.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/page-templates\/news\/_news-index.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1621,6 +1689,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/sections\/how-it-works\/_how-it-works.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/whats-new\/_whats-new.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/whats-new\/_whats-new.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
