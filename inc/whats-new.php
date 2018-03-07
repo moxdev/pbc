@@ -8,7 +8,8 @@
 function promo_box_club_whats_new_section() {
 	if ( function_exists( 'get_field' ) ) {
 
-    if( have_rows('whats_new_content') ): ?>
+    if( have_rows('whats_new_content') ):
+      $whats_new_section_content_button = get_field( 'whats_new_section_content_button' ); ?>
 
     <section class="whats-new">
       <div class="wrapper">
@@ -20,12 +21,20 @@ function promo_box_club_whats_new_section() {
 
           <?php if( $whats_new_video ) : ?>
 
-            <?php echo $whats_new_video; ?>
+            <?php echo wp_kses_post( $whats_new_video ); ?>
 
           <?php endif; ?>
 
         </div>
         <?php endwhile; ?>
+
+        <?php if( $whats_new_section_content_button ) : ?>
+
+          <div class="button-wrapper">
+            <?php echo wp_kses_post( $whats_new_section_content_button ); ?>
+          </div>
+
+        <?php endif; ?>
 
       </div>
     </section>

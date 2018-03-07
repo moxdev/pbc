@@ -44,6 +44,7 @@ if ( ! function_exists( 'promo_box_club_setup' ) ) :
     add_image_size('home-feature', 1800, 1013, true);
     add_image_size('feature-img', 1800, 400, false);
     add_image_size('home-see-whats-inside-feature-img', 400, 9999, false);
+    add_image_size('post-feature-img', 400, 9999, false );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -239,9 +240,30 @@ if( function_exists('acf_add_options_page') ) {
   ));
 }
 
+
+/**
+ * ADD CUSTOM ALLOWED HTML TAGS
+ */
+
+if(!function_exists('custom_add_allowed_tags')) {
+  function custom_add_allowed_tags($tags) {
+    $tags['iframe'] = array(
+      'src'             => array(),
+      'height'          => array(),
+      'width'           => array(),
+      'frameborder'     => array(),
+      'allowfullscreen' => array(),
+    );
+
+    return $tags;
+  }
+  add_filter('wp_kses_allowed_html', 'custom_add_allowed_tags');
+}
+
 /**
  * ADD STYLES TO WYSIWYG
  */
+
 // Insert 'styleselect' into the $buttons array
 function my_mce_buttons_2( $buttons ) {
     array_unshift( $buttons, 'styleselect' );
