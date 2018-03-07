@@ -623,7 +623,7 @@ input[type="submit"] {
   border-radius: 10px;
   color: #fff;
   line-height: 1;
-  padding: 1em 1.5em;
+  padding: .9em 1.5em 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -643,6 +643,26 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
+}
+@media screen and (min-width: 36em) {
+  /* line 1, sass/forms/_buttons.scss */
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    font-size: 17.6px;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 1, sass/forms/_buttons.scss */
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    font-size: 16px;
+    font-size: 1rem;
+  }
 }
 
 /* line 1, sass/forms/_fields.scss */
@@ -2284,10 +2304,11 @@ section.email-subscription input[type="email"] {
 }
 /* line 59, sass/page-templates/frontpage/_hero.scss */
 .home .hero .title-wrapper button {
+  margin-top: 1em;
   background-color: #1cbcaf;
 }
 @media screen and (min-width: 400px) {
-  /* line 65, sass/page-templates/frontpage/_hero.scss */
+  /* line 66, sass/page-templates/frontpage/_hero.scss */
   .home .hero .title-wrapper {
     padding-left: 1.875rem;
     padding-right: 1.875rem;
@@ -2295,7 +2316,7 @@ section.email-subscription input[type="email"] {
   }
 }
 @media screen and (min-width: 400px) and (min-width: 46.875em) {
-  /* line 65, sass/page-templates/frontpage/_hero.scss */
+  /* line 66, sass/page-templates/frontpage/_hero.scss */
   .home .hero .title-wrapper {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
@@ -2305,9 +2326,9 @@ section.email-subscription input[type="email"] {
 @media screen and (min-width: 36em) {
   /* line 3, sass/page-templates/frontpage/_hero.scss */
   .home .hero {
-    height: 350px;
+    height: 300px;
   }
-  /* line 74, sass/page-templates/frontpage/_hero.scss */
+  /* line 75, sass/page-templates/frontpage/_hero.scss */
   .home .hero .title-wrapper {
     font-size: 3.275em;
     max-width: 500px;
@@ -2317,11 +2338,17 @@ section.email-subscription input[type="email"] {
 @media screen and (min-width: 46.875em) {
   /* line 3, sass/page-templates/frontpage/_hero.scss */
   .home .hero {
-    height: 400px;
+    height: 350px;
   }
-  /* line 84, sass/page-templates/frontpage/_hero.scss */
+  /* line 85, sass/page-templates/frontpage/_hero.scss */
   .home .hero .title-wrapper {
     max-width: 600px;
+  }
+}
+@media screen and (min-width: 59.375em) {
+  /* line 3, sass/page-templates/frontpage/_hero.scss */
+  .home .hero {
+    height: 400px;
   }
 }
 @media screen and (min-width: 75em) {
@@ -2329,9 +2356,15 @@ section.email-subscription input[type="email"] {
   .home .hero {
     height: 450px;
   }
-  /* line 92, sass/page-templates/frontpage/_hero.scss */
+  /* line 97, sass/page-templates/frontpage/_hero.scss */
   .home .hero .title-wrapper {
     max-width: 800px;
+  }
+}
+@media screen and (min-width: 90em) {
+  /* line 103, sass/page-templates/frontpage/_hero.scss */
+  .home .hero .title-wrapper {
+    font-size: 3.775em;
   }
 }
 

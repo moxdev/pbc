@@ -41,7 +41,7 @@ if ( ! function_exists( 'promo_box_club_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
     add_theme_support( 'post-thumbnails' );
-    add_image_size('home-feature', 1800, 1013, true);
+    add_image_size('home-feature', 1800, 500, false);
     add_image_size('feature-img', 1800, 400, false);
     add_image_size('home-see-whats-inside-feature-img', 400, 9999, false);
     add_image_size('post-feature-img', 400, 9999, false );

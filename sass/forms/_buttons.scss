@@ -2,16 +2,16 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  // width: 115px;
+  // min-width: 150px;
   // height: 35px;
   font-family: $font__bold;
 	background: $color__background-button;
 	border: none;
 	border-radius: 10px;
 	color: $color__button;
-	// @include font-size(1);
+	// @include font-size(1.1);
 	line-height: 1;
-  padding: 1em 1.5em;
+  padding: .9em 1.5em 1em;
   @include font-smooth;
 
 	&:hover {
@@ -21,6 +21,13 @@ input[type="submit"] {
 	&:active,
 	&:focus {
 		border-color: $color__border-button-focus;
+  }
+
+  @include respond-to(x-small) {
+    @include font-size(1.1);
+  }
+  @include respond-to(large) {
+    @include font-size(1);
   }
 }
 

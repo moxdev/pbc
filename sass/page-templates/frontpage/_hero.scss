@@ -57,6 +57,7 @@
       }
 
       button {
+        margin-top: 1em;
         background-color: $color__brand-2;
       }
     }
@@ -69,7 +70,7 @@
     }
 
     @include respond-to(x-small) {
-      height: 350px;
+      height: 300px;
 
       .title-wrapper {
         font-size: 3.275em;
@@ -79,11 +80,15 @@
     }
 
     @include respond-to(small) {
-      height: 400px;
+      height: 350px;
 
       .title-wrapper {
         max-width: 600px;
       }
+    }
+
+    @include respond-to(medium) {
+      height: 400px;
     }
 
     @include respond-to(large) {
@@ -91,6 +96,12 @@
 
       .title-wrapper {
         max-width: 800px;
+      }
+    }
+
+    @include respond-to(x-large) {
+      .title-wrapper {
+        font-size: 3.775em;
       }
     }
   }
