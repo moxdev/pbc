@@ -55,7 +55,7 @@
 
 		<div id="site-navigation" class="main-navigation">
       <div class="flex-wrapper">
-        <button class="menu-toggle flex-child" aria-controls="primary-menu" aria-expanded="false">
+        <button id="menu-toggle" class="flex-child" aria-controls="primary-menu" aria-expanded="false">
           <span class="menu-title">Menu</span>
           <span class="hamburger"></span>
           <span class="hamburger"></span>

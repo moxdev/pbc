@@ -632,12 +632,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/js\/navigation-min.js": {
+	"\/js\/navigation-copy.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/navigation-min-min.js",
+		"oAP": "\/js\/navigation-copy-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -647,8 +647,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/navigation-min.js",
-		"oF": 0,
+		"oAP": "\/js\/min\/navigation-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -1106,6 +1106,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/b2025cc1b1fa4c78b9c567fb534bb8ff36d8c941\/_menus.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/b2025cc1b1fa4c78b9c567fb534bb8ff36d8c941\/_mobile-navigation.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/b2025cc1b1fa4c78b9c567fb534bb8ff36d8c941\/_mobile-navigation.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/b2025cc1b1fa4c78b9c567fb534bb8ff36d8c941\/_navigation.scssc": {
