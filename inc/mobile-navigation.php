@@ -13,7 +13,7 @@
 
 			</nav>
 
-      <div class="bottom-section wrapper">
+      <div class="wrapper">
         <div class="flex-container">
 
           <?php if( function_exists( 'acf_add_options_page' ) ) :
@@ -29,7 +29,6 @@
 
             <div class="social flex-item">
               <div class="social-wrapper">
-                <h3 class="social-title">Want More? Follow Us</h3>
                 <ul class="social-media">
 
                   <? if ( $fb ): ?>

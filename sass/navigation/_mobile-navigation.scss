@@ -23,12 +23,14 @@
       margin: 0;
       background: $color__brand-1;
       padding: .75em 1em;
+      // display: flex;
 
       a {
         text-decoration: none;
         color: #fff;
         padding: 0 1em;
-        font-size: 1.3em;
+        font-size: 1.4em;
+        // border: 1px solid blue;
       }
 
       &:nth-child(2n) {
@@ -47,15 +49,37 @@
           color: $color__brand-4;
         }
       }
+
+      .icon-plus {
+        color: #fff;
+        font-size: 1.4em;
+        float: right;
+        // border: 1px solid blue;
+        // transform: scale(1.5, .7);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
     }
 
+    // sub menu
     ul {
-      display: none;  // DELETE!!! For testing only
+      clear: both;
       list-style: none;
+      overflow: hidden;
+      width: 100%;
+      transition: .25s;
+      max-height: 0px;
+
+      &.active {
+        display: block;
+      }
+
+      li a {
+        font-size: 1.1em;
+      }
     }
   }
 
-  .bottom-section {
+  .wrapper {
     .flex-container {
       display: flex;
       justify-content: space-between;
@@ -63,7 +87,8 @@
     }
 
     .flex-item {
-      // flex: 1;
+      // flex: 1 1 50%;
+      // border: 1px solid red;
     }
     .social {
       display: flex;
@@ -160,20 +185,21 @@
 
       .shop-link {
         position: relative;
+        margin: 0;
 
         &:before {
           content:'';
           display: block;
           position: absolute;
           z-index: -1;
-          top: -8px;
-          left: -7px;
+          top: -9px;
+          left: -9px;
           background: url(/wp-content/themes/promo_box_club/imgs/icon-shop-link.svg);
           background-repeat: no-repeat;
           background-size: contain;
           background-position: top center;
-          width: 50px;
-          height: 33px;
+          width: 60px;
+          height: 39px;
         }
 
         li {
@@ -187,9 +213,16 @@
           z-index: 50;
           text-decoration: none;
           color: $color__brand-4;
+          font-size: 1.3em;
+          font-family: $font__bold;
         }
       }
     }
+
+  }
+
+  @include respond-to(small) {
+    display: none;
 
   }
 }

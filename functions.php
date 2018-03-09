@@ -43,7 +43,7 @@ if ( ! function_exists( 'promo_box_club_setup' ) ) :
     add_theme_support( 'post-thumbnails' );
     add_image_size('home-feature', 1800, 500, false);
     add_image_size('feature-img', 1800, 400, false);
-    add_image_size('home-see-whats-inside-feature-img', 400, 9999, false);
+    add_image_size('home-see-whats-inside-feature-img', 500, 9999, false);
     add_image_size('post-feature-img', 400, 9999, false );
 
 		// This theme uses wp_nav_menu() in one location.
@@ -135,14 +135,14 @@ function promo_box_club_scripts() {
 
   wp_enqueue_script('promo_box_club-object-fit-library', get_template_directory_uri() . '/js/min/ofi-min.js', NULL, NULL, TRUE);
 
-  if ( is_front_page() && function_exists( 'promo_box_club_home_video_carousel_section') ) {
-    wp_enqueue_script('promo_box_club-flickity', get_template_directory_uri() . '/js/min/flickity-min.js', NULL, NULL, TRUE);
-    wp_enqueue_script('promo_box_club-home-video-carousel', get_template_directory_uri() . '/js/min/home-video-carousel-min.js', NULL, NULL, TRUE);
-  }
+  // if ( is_front_page() && function_exists( 'promo_box_club_home_video_carousel_section') ) {
+  //   wp_enqueue_script('promo_box_club-flickity', get_template_directory_uri() . '/js/min/flickity-min.js', NULL, NULL, TRUE);
+  //   wp_enqueue_script('promo_box_club-home-video-carousel', get_template_directory_uri() . '/js/min/home-video-carousel-min.js', NULL, NULL, TRUE);
+  // }
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	// 	wp_enqueue_script( 'comment-reply' );
+	// }
 }
 add_action( 'wp_enqueue_scripts', 'promo_box_club_scripts' );
 
@@ -260,6 +260,17 @@ if(!function_exists('custom_add_allowed_tags')) {
     return $tags;
   }
   add_filter('wp_kses_allowed_html', 'custom_add_allowed_tags');
+}
+
+/**
+ * Add plus icons into registered "mobile-menu" if menu has childrem items
+ */
+add_filter( 'walker_nav_menu_start_el', 'wpse_add_menu_icon', 10, 4);
+function wpse_add_menu_icon( $item_output, $item, $depth, $args ){
+    if( 'mobile-menu' == $args->theme_location && $depth == 0 && in_array('menu-item-has-children', $item->classes ) ) {
+        $item_output .='<span class="icon-plus">&#43;</span>';
+    }
+    return $item_output;
 }
 
 /**

@@ -16,6 +16,10 @@
 
       .flex-img-wrapper {
         text-align: center;
+
+        img {
+          max-width: 400px;
+        }
       }
 
       .flex-content-wrapper {
@@ -25,6 +29,7 @@
 
         h3 {
           color: $color__brand-2;
+          margin-bottom: .5em;
         }
       }
     }
@@ -45,6 +50,27 @@
 
       .button-wrapper {
         margin-top: 1.5em;
+      }
+    }
+
+    @include respond-to(x-large) {
+      @include max-width(1100px);
+
+      .flex-wrapper {
+        .flex-img-wrapper {
+
+          img {
+            max-width: 500px;
+          }
+        }
+
+        .flex-content-wrapper {
+          padding-left: 3em;
+
+          h3 {
+            font-size: 1.5em;
+          }
+        }
       }
     }
   }
