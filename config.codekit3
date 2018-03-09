@@ -530,6 +530,13 @@
 		"oAP": "\/inc\/jetpack.php",
 		"oF": 0
 		},
+	"\/inc\/mobile-navigation.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/mobile-navigation.php",
+		"oF": 0
+		},
 	"\/inc\/old-home-see-whats-inside.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1495,6 +1502,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/navigation\/_menus.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/navigation\/_mobile-navigation.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/navigation\/_mobile-navigation.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

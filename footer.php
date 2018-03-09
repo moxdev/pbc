@@ -119,6 +119,8 @@
 
     </div>
 	</footer><!-- #colophon -->
+
+  <?php promo_box_club_mobile_menu(); ?>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

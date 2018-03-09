@@ -1,0 +1,180 @@
+#mobile-menu {
+  padding-bottom: 2em;
+
+  #mobile-main-menu {
+    list-style: none;
+    margin: 0;
+
+    li {
+      margin: 0;
+      background: $color__brand-1;
+      padding: 1em;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        padding: 1em;
+      }
+
+      &:nth-child(2n) {
+        background: $color__brand-3;
+      }
+      &:nth-child(3n) {
+        background: $color__brand-2;
+      }
+      &:nth-child(4n) {
+        background: $color__brand-4;
+      }
+      &:nth-child(5n) {
+        background: #fff;
+
+        a {
+          color: $color__brand-4;
+        }
+      }
+    }
+
+    ul {
+      display: none;  // DELETE!!! For testing only
+      list-style: none;
+    }
+  }
+
+  .bottom-section {
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .flex-item {
+      // flex: 1;
+    }
+    .social {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 2em;
+      text-align: center;
+
+      .social-title {
+        flex: 0 0 100%;
+        margin-bottom: 5px;
+      }
+      .social-media {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1em;
+        position: relative;
+        border: 2px solid $color__brand-1;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          height: 10px;
+          left: 2%;
+          right: 2%;
+          text-align: center;
+          background-color: #fff;
+        }
+
+        &:before {
+          top: -.45em;
+        }
+        &:after {
+          bottom: -.45em;
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding:0;
+        li {
+          margin: 0;
+          padding: 0;
+
+          a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-image: url(/wp-content/themes/promo_box_club/imgs/sprite-social-media-icons.svg);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            text-indent: 110%;
+            margin-right: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+
+        }
+      }
+
+      .fb a {
+        background-position: -14px 0
+      }
+      .pin a {
+        background-position: -165px 0
+      }
+      .tw a {
+        background-position: -44px 0
+      }
+      .insta a {
+        background-position: -195px 0
+      }
+      .yt a {
+        background-position: -135px 0
+      }
+      .goo a {
+        background-position: -72px 0
+      }
+      .linked a {
+        background-position: -104px 0
+      }
+    }
+
+    nav {
+      // margin-left: auto;
+    }
+
+    #mobile-marcom-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .shop-link {
+        position: relative;
+
+        &:before {
+          content:'';
+          display: block;
+          position: absolute;
+          z-index: -1;
+          top: -8px;
+          left: -7px;
+          background: url(/wp-content/themes/promo_box_club/imgs/icon-shop-link.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: top center;
+          width: 50px;
+          height: 33px;
+        }
+
+        li {
+          margin: 0;
+          padding: 0;
+        }
+
+        a {
+          padding: 0;
+          position: relative;
+          z-index: 50;
+          text-decoration: none;
+          color: $color__brand-4;
+        }
+      }
+    }
+
+  }
+}

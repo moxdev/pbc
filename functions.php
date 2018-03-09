@@ -51,6 +51,8 @@ if ( ! function_exists( 'promo_box_club_setup' ) ) :
 			'main-menu'    => esc_html__( 'Main Menu', 'promo_box_club' ),
 			'aux-menu'     => esc_html__( 'Aux Menu', 'promo_box_club' ),
 			'footer-menu'  => esc_html__( 'Footer Menu', 'promo_box_club' ),
+			'mobile-menu'  => esc_html__( 'Mobile Menu', 'promo_box_club' ),
+			'marcom-menu'  => esc_html__( 'Marcom Menu', 'promo_box_club' ),
 		) );
 
 		/*
@@ -398,3 +400,8 @@ require get_template_directory() . '/inc/whats-new.php';
  * Custom function for What's New page.
  */
 require get_template_directory() . '/inc/home-see-whats-inside.php';
+
+/**
+ * Custom function to display Mobile Menu.
+ */
+require get_template_directory() . '/inc/mobile-navigation.php';

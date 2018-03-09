@@ -1147,6 +1147,208 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+## Mobile Navigation
+--------------------------------------------------------------*/
+/* line 1, sass/navigation/_mobile-navigation.scss */
+#mobile-menu {
+  padding-bottom: 2em;
+}
+/* line 4, sass/navigation/_mobile-navigation.scss */
+#mobile-menu #mobile-main-menu {
+  list-style: none;
+  margin: 0;
+}
+/* line 8, sass/navigation/_mobile-navigation.scss */
+#mobile-menu #mobile-main-menu li {
+  margin: 0;
+  background: #fa4515;
+  padding: 1em;
+}
+/* line 13, sass/navigation/_mobile-navigation.scss */
+#mobile-menu #mobile-main-menu li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1em;
+}
+/* line 19, sass/navigation/_mobile-navigation.scss */
+#mobile-menu #mobile-main-menu li:nth-child(2n) {
+  background: #eba904;
+}
+/* line 22, sass/navigation/_mobile-navigation.scss */
+#mobile-menu #mobile-main-menu li:nth-child(3n) {
+  background: #1cbcaf;
+}
+/* line 25, sass/navigation/_mobile-navigation.scss */
+#mobile-menu #mobile-main-menu li:nth-child(4n) {
+  background: #39291d;
+}
+/* line 28, sass/navigation/_mobile-navigation.scss */
+#mobile-menu #mobile-main-menu li:nth-child(5n) {
+  background: #fff;
+}
+/* line 31, sass/navigation/_mobile-navigation.scss */
+#mobile-menu #mobile-main-menu li:nth-child(5n) a {
+  color: #39291d;
+}
+/* line 37, sass/navigation/_mobile-navigation.scss */
+#mobile-menu #mobile-main-menu ul {
+  display: none;
+  list-style: none;
+}
+/* line 44, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+/* line 53, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 2em;
+  text-align: center;
+}
+/* line 59, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social .social-title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  margin-bottom: 5px;
+}
+/* line 63, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social .social-media {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1em;
+  position: relative;
+  border: 2px solid #fa4515;
+}
+/* line 72, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social .social-media:before, #mobile-menu .bottom-section .social .social-media:after {
+  content: '';
+  position: absolute;
+  height: 10px;
+  left: 2%;
+  right: 2%;
+  text-align: center;
+  background-color: #fff;
+}
+/* line 83, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social .social-media:before {
+  top: -.45em;
+}
+/* line 86, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social .social-media:after {
+  bottom: -.45em;
+}
+/* line 91, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 94, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social ul li {
+  margin: 0;
+  padding: 0;
+}
+/* line 98, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(/wp-content/themes/promo_box_club/imgs/sprite-social-media-icons.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  text-indent: 110%;
+  margin-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 114, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social .fb a {
+  background-position: -14px 0;
+}
+/* line 117, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social .pin a {
+  background-position: -165px 0;
+}
+/* line 120, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social .tw a {
+  background-position: -44px 0;
+}
+/* line 123, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social .insta a {
+  background-position: -195px 0;
+}
+/* line 126, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social .yt a {
+  background-position: -135px 0;
+}
+/* line 129, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social .goo a {
+  background-position: -72px 0;
+}
+/* line 132, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section .social .linked a {
+  background-position: -104px 0;
+}
+/* line 141, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section #mobile-marcom-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 146, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section #mobile-marcom-menu .shop-link {
+  position: relative;
+}
+/* line 149, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section #mobile-marcom-menu .shop-link:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -8px;
+  left: -7px;
+  background: url(/wp-content/themes/promo_box_club/imgs/icon-shop-link.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  width: 50px;
+  height: 33px;
+}
+/* line 164, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section #mobile-marcom-menu .shop-link li {
+  margin: 0;
+  padding: 0;
+}
+/* line 169, sass/navigation/_mobile-navigation.scss */
+#mobile-menu .bottom-section #mobile-marcom-menu .shop-link a {
+  padding: 0;
+  position: relative;
+  z-index: 50;
+  text-decoration: none;
+  color: #39291d;
+}
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
