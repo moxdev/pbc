@@ -134,13 +134,15 @@
   }
 
   .menu-primary-menu-container {
+    display: none;
 
     ul {
-      display: none;
+      display: flex;
+      align-items: center;
       list-style: none;
       margin: 0;
-      padding-left: 0;
-      margin-right: 5px;
+      // padding-left: 0;
+      // margin-right: 5px;
 
       ul {
         background-color: $color__brand-1;
@@ -286,7 +288,7 @@
     }
 
     .pbc-logo {
-      margin-bottom: -1.4em;
+      margin-bottom: -2.4em;
       margin-top: 1em;
       svg {
         width: 100px;
@@ -313,9 +315,10 @@
     }
 
     .menu-primary-menu-container {
+      display: block;
       float: right;
+
       ul {
-        display: flex;
 
         li {
           margin: 0 1em;
@@ -359,6 +362,16 @@
           left: -10px;
           width: 62px;
           height: 45px;
+        }
+      }
+    }
+  }
+  @include respond-to(x-large) {
+    .menu-primary-menu-container {
+      ul {
+
+        li {
+          margin: 0 2em;
         }
       }
     }
