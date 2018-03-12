@@ -15,5 +15,13 @@ a {
 	&:hover,
 	&:active {
 		outline: 0;
-	}
+  }
+
+  a[href^=tel] {
+    text-decoration: none!important;
+
+    &:hover {
+      cursor: text;
+    }
+  }
 }

@@ -56,14 +56,17 @@
       display: none;
       position: relative;
       z-index: 50;
-      margin-top: 3em;
+      padding-top: 3em;
+      padding-bottom: 3em;
 
       .sidebar-wrapper {
         border: 1px solid $color__brand-4;
-        padding: 2em 1em;
+        padding: 2em 1.5em;
       }
 
       .quote-wrapper {
+        padding-bottom: 2em;
+        font-size: .95em;
 
         &:before {
           content: '';
@@ -138,6 +141,9 @@
     @include respond-to(medium) {
       .container-flex-wrapper {
         display: flex;
+        align-items: center;
+        padding-top: 3em;
+        padding-bottom: 3em;
       }
 
       .inner-wrapper {
@@ -157,6 +163,19 @@
 
     @include respond-to(large) {
       background-size: 531px;
+
+      .container-flex-wrapper {
+
+        .why-join-sidebar {
+          padding-left: 1em;
+          padding-right: 1em;
+        }
+      }
+
+      .flex-column {
+        padding-left: 1em;
+        // padding-right: 1em;
+      }
     }
   }
 }

@@ -74,13 +74,21 @@ section.email-subscription {
       #embed-signup-form {
         flex: 1 1 70%;
       }
-    }
 
-    #embed-signup-scroll {
+      #embed-signup-scroll {
+        .field-group {
+          flex: 1 1 80%;
+          padding-left: 2em;
+          padding-right: 1em;
+        }
 
-      .field-group {
-        padding-left: 2em;
-        padding-right: 2em;
+        button {
+          flex: 1 1 20%;
+          margin-bottom: 1em;
+          border: 0;
+          border-radius: 8px;
+          padding: 0;
+        }
       }
     }
   }
