@@ -37,6 +37,11 @@ h2.section-title {
   font-family: $font__black;
   margin-bottom: .25em;
   text-transform: uppercase;
+
+  @include respond-to(x-large) {
+    font-size: 2.8em;
+
+  }
 }
 
 h2.orange-header {

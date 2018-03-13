@@ -8,8 +8,7 @@
 function promo_box_club_flexible_content_how_it_works_section() {
 	if ( function_exists( 'get_field' ) ) {
     $flex_how_it_works_section_title            = get_sub_field('flex_how_it_works_section_title');
-    $flex_how_it_works_section_button_text      = get_sub_field('flex_how_it_works_section_button_text');
-    $flex_how_it_works_section_button_page_link = get_sub_field('flex_how_it_works_section_button_page_link');
+    $flex_how_it_works_section_button      = get_sub_field('flex_how_it_works_section_button');
 
     if( have_rows('how_it_works_section', 'how-it-works') ):
 
@@ -44,7 +43,9 @@ function promo_box_club_flexible_content_how_it_works_section() {
 
         </div><!-- column-wrapper -->
 
-        <a href="<?php echo wp_kses_post( $flex_how_it_works_section_button_page_link ); ?>"><button><?php echo wp_kses_post( $flex_how_it_works_section_button_text ); ?></button></a>
+        <?php if( $flex_how_it_works_section_button ) : ?>
+          <?php echo wp_kses_post( $flex_how_it_works_section_button ); ?>
+        <?php endif; ?>
 
       </div>
     </section>

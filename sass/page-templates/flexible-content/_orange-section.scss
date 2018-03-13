@@ -5,14 +5,28 @@
   font-family: $font__bold;
 
   .wrapper {
-    @include max-width($max_width);
+    @include max-width(1200px);
   }
 
   h2 {
     color:#fff;
+    @include font-smooth;
   }
 
   a {
     color: #fff;
+    @include font-smooth;
+
+    &:hover {
+      color: $color__brand-4;
+      text-decoration: none;
+    }
+  }
+
+  @include respond-to(large) {
+    .wrapper {
+      @include max-width(1300px);
+    }
+
   }
 }

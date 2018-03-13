@@ -80,10 +80,18 @@
       margin-left: auto;
       font-size: .9em;
 
+      &:hover {
+        background-color: lighten($color__brand-1, 5%);
+      }
+
       a {
         color: #fff;
         font-family: $font__bold;
         text-decoration: none;
+
+        &:hover {
+          color: $color__brand-4;
+        }
       }
     }
 
@@ -94,6 +102,10 @@
       a {
         color: $color__brand-4;
         text-decoration: none;
+
+        &:hover {
+          color: $color__brand-1;
+        }
       }
 
       &.current_page_item,
@@ -135,6 +147,7 @@
 
   .menu-primary-menu-container {
     display: none;
+    padding-right: 5px;
 
     ul {
       display: flex;
@@ -176,6 +189,10 @@
 
         a {
           width: 200px;
+
+          &:hover {
+            color: $color__brand-4;
+          }
         }
 
         :hover > a,
@@ -206,6 +223,12 @@
       display: block;
       text-decoration: none;
       padding: 1em;
+      color: $color__brand-4;
+      font-family: $font__bold;
+
+      &:hover {
+        color: $color__link-hover;
+      }
     }
 
     .shop-link {
@@ -244,26 +267,33 @@
     .current-menu-item > a,
     .current_page_ancestor > a,
     .current-menu-ancestor > a {
-      border: 2px solid $color__brand-4;
+      // border: 2px solid $color__brand-4;
       color: $color__brand-1;
       position: relative;
 
       &:before,
       &:after {
-        content: '';
         position: absolute;
-        height: 10px;
-        left: 2%;
-        right: 2%;
-        text-align: center;
-        background-color: #fff;
+        font-family: $font__main;
+        color: $color__brand-4;
+        font-size: 2em;
+        z-index: 9999;
       }
 
       &:before {
-        top: -.45em;
+        content: '[';
+        top: 3px;
+        left: 0;
       }
       &:after {
-        bottom: -.45em;
+        content: ']';
+        bottom: 4px;
+        right: 0;
+
+        @include respond-to(large) {
+          bottom: 7px;
+
+        }
       }
     }
 
@@ -297,6 +327,7 @@
     }
 
     #aux-menu {
+      padding: 1em 0 0;
       .join-now-link {
         background-color: $color__brand-1;
         color: #fff;
@@ -328,8 +359,7 @@
           }
 
           a {
-            color: $color__brand-4;
-            font-family: $font__bold;
+
           }
         }
       }
@@ -349,12 +379,7 @@
 
   @include respond-to(large) {
     .menu-primary-menu-container {
-
-      ul {
-        li {
-          // margin: 0 1.5em 1em;
-        }
-      }
+      padding-right: 8px;
 
       .shop-link {
         &:before {

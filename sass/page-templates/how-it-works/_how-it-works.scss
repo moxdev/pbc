@@ -1,3 +1,4 @@
+// How It Works Page
 .page-template-page-flexible-content.page-id-17 {
   #primary {
     display: none;
@@ -40,6 +41,12 @@
     }
 
     @include respond-to(x-large) {
+      section.how-it-works {
+        .inner-wrapper p {
+          padding-right: 3em;
+        }
+      }
+
       section.orange-section {
 
         img.icon-vip {

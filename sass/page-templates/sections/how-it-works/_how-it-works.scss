@@ -1,3 +1,4 @@
+// How It Works Section Code
 section.how-it-works {
   background-color: $color__brand-2;
   @include section-padding;
@@ -84,7 +85,8 @@ section.how-it-works {
     .column-wrapper {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      // justify-content: space-around;
+
     }
 
     .inner-wrapper {
@@ -114,9 +116,20 @@ section.how-it-works {
     }
   }
 
+  @include respond-to(medium) {
+    .column-wrapper {
+      margin-left: 3em;
+    }
+
+  }
+
   @include respond-to(large) {
     .wrapper {
       @include max-width(1100px);
+    }
+
+    .column-wrapper {
+      margin-left: 0;
     }
 
     .center-wrapper {

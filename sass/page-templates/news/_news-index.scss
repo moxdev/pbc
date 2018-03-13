@@ -45,12 +45,20 @@
   .entry-content {
     .more-link {
       color: $color__brand-1;
+
+      &:hover {
+        color: $color__link-hover;
+      }
     }
   }
 
   .entry-meta {
     a {
       color: $color__brand-1;
+
+      &:hover {
+        color: $color__link-hover;
+      }
     }
     span {
       display: block;

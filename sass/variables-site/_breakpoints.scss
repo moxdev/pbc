@@ -14,7 +14,8 @@ $breakpoints_vert: (
 
 $outer_spacing: (
 	'small': 1.875,
-	'medium': 2.25
+	'medium': 2.25,
+	'xlarge': 3.5
 );
 
-$max_width: 68.75em;
+$max_width: 68.75em; // 1100px
