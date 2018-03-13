@@ -16,13 +16,14 @@
 
 
   #menu-toggle {
+    min-width: 20px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
     outline: 0;
     background-color: transparent;
     color: $color__brand-4;
-    min-width: 20px;
-    border-radius: none;
-    padding: 0;
-    margin: 0;
 
     .menu-title {
       text-transform: uppercase;
@@ -194,14 +195,6 @@
             color: $color__brand-4;
           }
         }
-
-        :hover > a,
-        .focus > a {
-        }
-
-        a:hover,
-        a.focus {
-        }
       }
 
       li:hover > ul,
@@ -228,6 +221,41 @@
 
       &:hover {
         color: $color__link-hover;
+      }
+    }
+
+    .sub-menu {
+
+      .current_page_item > a,
+      .current-menu-item > a,
+      .current_page_ancestor > a,
+      .current-menu-ancestor > a {
+        color: #fff;
+        position: relative;
+
+        &:before,
+        &:after {
+          position: absolute;
+        }
+
+        &:before {
+          content: '';
+          top: 0;
+          left: 0;
+        }
+        &:after {
+          content: '';
+          bottom: 0;
+          right: 0;
+
+          @include respond-to(large) {
+            bottom: 0;
+          }
+        }
+
+        &:hover {
+          color: $color__brand-4;
+        }
       }
     }
 

@@ -1,3 +1,64 @@
+@font-face {
+  font-family: 'NotoSans';
+  src: url('fonts/NotoSans.eot?#iefix') format('embedded-opentype'),
+    url('fonts/NotoSans.woff') format('woff'),
+    url('fonts/NotoSans.ttf') format('truetype'),
+    url('fonts/NotoSans.svg#NotoSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans-Bold';
+  src: url('fonts/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/NotoSans-Bold.woff') format('woff'),
+    url('fonts/NotoSans-Bold.ttf') format('truetype'),
+    url('fonts/NotoSans-Bold.svg#NotoSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans-Italic';
+  src: url('fonts/NotoSans-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/NotoSans-Italic.woff') format('woff'),
+    url('fonts/NotoSans-Italic.ttf') format('truetype'),
+    url('fonts/NotoSans-Italic.svg#NotoSans-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans-BoldItalic';
+  src: url('fonts/NotoSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/NotoSans-BoldItalic.woff') format('woff'),
+    url('fonts/NotoSans-BoldItalic.ttf') format('truetype'),
+    url('fonts/NotoSans-BoldItalic.svg#NotoSans-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Black';
+  src: url('fonts/SourceSansPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SourceSansPro-Black.woff') format('woff'),
+    url('fonts/SourceSansPro-Black.ttf') format('truetype'),
+    url('fonts/SourceSansPro-Black.svg#SourceSansPro-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Roboto-Black.woff') format('woff'),
+    url('fonts/Roboto-Black.ttf') format('truetype'),
+    url('fonts/Roboto-Black.svg#Roboto-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 html {
 	@include font-size(0.8125);
 
@@ -19,7 +80,8 @@ textarea {
 	color: $color__text-main;
 	font-family: $font__main;
 	@include font-size(1);
-	line-height: $font__line-height-body;
+  line-height: $font__line-height-body;
+  // text-rendering:optimizeLegibility;
 }
 
 @import "headings";

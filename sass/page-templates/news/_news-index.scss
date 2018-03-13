@@ -65,10 +65,6 @@
     }
   }
 
-  #colophon {
-    // border-top: 1px solid #ededed;
-  }
-
   @include respond-to(medium) {
     #content {
       display: flex;
