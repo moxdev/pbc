@@ -822,37 +822,46 @@ a a[href^=tel]:hover {
   outline: 0;
   background-color: transparent;
   color: #39291d;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
 }
-/* line 28, sass/navigation/_menus.scss */
+/* line 31, sass/navigation/_menus.scss */
 .main-navigation #menu-toggle .menu-title {
   text-transform: uppercase;
 }
-/* line 32, sass/navigation/_menus.scss */
+/* line 35, sass/navigation/_menus.scss */
 .main-navigation #menu-toggle span {
   display: block;
   margin-bottom: 5px;
   width: 40px;
 }
-/* line 38, sass/navigation/_menus.scss */
+/* line 41, sass/navigation/_menus.scss */
 .main-navigation #menu-toggle .hamburger {
   background-color: #fa4515;
   height: 3px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
 }
-/* line 46, sass/navigation/_menus.scss */
+/* line 51, sass/navigation/_menus.scss */
 .main-navigation .pbc-logo .logo-title {
   display: none;
   padding-left: 1em;
   font-size: .8em;
 }
-/* line 52, sass/navigation/_menus.scss */
+/* line 57, sass/navigation/_menus.scss */
 .main-navigation .pbc-logo span {
   display: block;
 }
-/* line 56, sass/navigation/_menus.scss */
+/* line 61, sass/navigation/_menus.scss */
 .main-navigation .pbc-logo .row-2 {
   font-family: "NotoSans-Bold", sans-serif;
 }
-/* line 60, sass/navigation/_menus.scss */
+/* line 65, sass/navigation/_menus.scss */
 .main-navigation .pbc-logo svg {
   display: block;
   width: 72px;
@@ -860,7 +869,7 @@ a a[href^=tel]:hover {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 69, sass/navigation/_menus.scss */
+/* line 74, sass/navigation/_menus.scss */
 .main-navigation #aux-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -875,7 +884,7 @@ a a[href^=tel]:hover {
   margin: 0;
   padding: 0;
 }
-/* line 77, sass/navigation/_menus.scss */
+/* line 82, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .join-now-link {
   background-color: #fa4515;
   color: #fff;
@@ -883,46 +892,46 @@ a a[href^=tel]:hover {
   margin-left: auto;
   font-size: .9em;
 }
-/* line 84, sass/navigation/_menus.scss */
+/* line 89, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .join-now-link:hover {
   background-color: #fb592e;
 }
-/* line 88, sass/navigation/_menus.scss */
+/* line 93, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .join-now-link a {
   color: #fff;
   font-family: "NotoSans-Bold", sans-serif;
   text-decoration: none;
 }
-/* line 93, sass/navigation/_menus.scss */
+/* line 98, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .join-now-link a:hover {
   color: #39291d;
 }
-/* line 99, sass/navigation/_menus.scss */
+/* line 104, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .contact-us-link {
   display: none;
   margin-left: 2em;
 }
-/* line 103, sass/navigation/_menus.scss */
+/* line 108, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .contact-us-link a {
   color: #39291d;
   text-decoration: none;
 }
-/* line 107, sass/navigation/_menus.scss */
+/* line 112, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .contact-us-link a:hover {
   color: #fa4515;
 }
-/* line 112, sass/navigation/_menus.scss */
+/* line 117, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .contact-us-link.current_page_item, .main-navigation #aux-menu .contact-us-link.current-menu-item, .main-navigation #aux-menu .contact-us-link.current_page_ancestor, .main-navigation #aux-menu .contact-us-link.current-menu-ancestor {
   position: relative;
 }
-/* line 119, sass/navigation/_menus.scss */
+/* line 124, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .contact-us-link.current_page_item > a, .main-navigation #aux-menu .contact-us-link.current-menu-item > a, .main-navigation #aux-menu .contact-us-link.current_page_ancestor > a, .main-navigation #aux-menu .contact-us-link.current-menu-ancestor > a {
   border: 2px solid #39291d;
   color: #fa4515;
   position: relative;
   padding: 0 1em;
 }
-/* line 128, sass/navigation/_menus.scss */
+/* line 133, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .contact-us-link.current_page_item > a:before, .main-navigation #aux-menu .contact-us-link.current_page_item > a:after, .main-navigation #aux-menu .contact-us-link.current-menu-item > a:before, .main-navigation #aux-menu .contact-us-link.current-menu-item > a:after, .main-navigation #aux-menu .contact-us-link.current_page_ancestor > a:before, .main-navigation #aux-menu .contact-us-link.current_page_ancestor > a:after, .main-navigation #aux-menu .contact-us-link.current-menu-ancestor > a:before, .main-navigation #aux-menu .contact-us-link.current-menu-ancestor > a:after {
   content: '';
   position: absolute;
@@ -932,20 +941,20 @@ a a[href^=tel]:hover {
   text-align: center;
   background-color: #fff;
 }
-/* line 139, sass/navigation/_menus.scss */
+/* line 144, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .contact-us-link.current_page_item > a:before, .main-navigation #aux-menu .contact-us-link.current-menu-item > a:before, .main-navigation #aux-menu .contact-us-link.current_page_ancestor > a:before, .main-navigation #aux-menu .contact-us-link.current-menu-ancestor > a:before {
   top: -.45em;
 }
-/* line 142, sass/navigation/_menus.scss */
+/* line 147, sass/navigation/_menus.scss */
 .main-navigation #aux-menu .contact-us-link.current_page_item > a:after, .main-navigation #aux-menu .contact-us-link.current-menu-item > a:after, .main-navigation #aux-menu .contact-us-link.current_page_ancestor > a:after, .main-navigation #aux-menu .contact-us-link.current-menu-ancestor > a:after {
   bottom: -.45em;
 }
-/* line 149, sass/navigation/_menus.scss */
+/* line 154, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container {
   display: none;
   padding-right: 5px;
 }
-/* line 153, sass/navigation/_menus.scss */
+/* line 158, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -956,7 +965,7 @@ a a[href^=tel]:hover {
   list-style: none;
   margin: 0;
 }
-/* line 161, sass/navigation/_menus.scss */
+/* line 166, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul ul {
   background-color: #fa4515;
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
@@ -966,44 +975,44 @@ a a[href^=tel]:hover {
   left: -999em;
   z-index: 99999;
 }
-/* line 170, sass/navigation/_menus.scss */
+/* line 175, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul ul li {
   margin: 0;
 }
-/* line 173, sass/navigation/_menus.scss */
+/* line 178, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul ul li:hover, .main-navigation .menu-primary-menu-container ul ul li.focus {
   left: 0;
   background-color: #f03605;
 }
-/* line 179, sass/navigation/_menus.scss */
+/* line 184, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul ul li a {
   padding-top: 1em;
   color: #fff;
 }
-/* line 185, sass/navigation/_menus.scss */
+/* line 190, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 191, sass/navigation/_menus.scss */
+/* line 196, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul ul a {
   width: 200px;
 }
-/* line 194, sass/navigation/_menus.scss */
+/* line 199, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul ul a:hover {
   color: #39291d;
 }
-/* line 200, sass/navigation/_menus.scss */
+/* line 205, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container ul li:hover > ul,
 .main-navigation .menu-primary-menu-container ul li.focus > ul {
   left: 0;
 }
-/* line 206, sass/navigation/_menus.scss */
+/* line 211, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container li {
   float: left;
   position: relative;
 }
-/* line 215, sass/navigation/_menus.scss */
+/* line 220, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container a {
   display: block;
   text-decoration: none;
@@ -1011,11 +1020,11 @@ a a[href^=tel]:hover {
   color: #39291d;
   font-family: "NotoSans-Bold", sans-serif;
 }
-/* line 222, sass/navigation/_menus.scss */
+/* line 227, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container a:hover {
   color: #1cbcaf;
 }
-/* line 229, sass/navigation/_menus.scss */
+/* line 234, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a,
 .main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a,
 .main-navigation .menu-primary-menu-container .sub-menu .current_page_ancestor > a,
@@ -1023,7 +1032,7 @@ a a[href^=tel]:hover {
   color: #fff;
   position: relative;
 }
-/* line 236, sass/navigation/_menus.scss */
+/* line 241, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a:before, .main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a:after,
 .main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a:before,
 .main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a:after,
@@ -1033,7 +1042,7 @@ a a[href^=tel]:hover {
 .main-navigation .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:after {
   position: absolute;
 }
-/* line 241, sass/navigation/_menus.scss */
+/* line 246, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a:before,
 .main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a:before,
 .main-navigation .menu-primary-menu-container .sub-menu .current_page_ancestor > a:before,
@@ -1042,7 +1051,7 @@ a a[href^=tel]:hover {
   top: 0;
   left: 0;
 }
-/* line 246, sass/navigation/_menus.scss */
+/* line 251, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a:after,
 .main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a:after,
 .main-navigation .menu-primary-menu-container .sub-menu .current_page_ancestor > a:after,
@@ -1052,7 +1061,7 @@ a a[href^=tel]:hover {
   right: 0;
 }
 @media screen and (min-width: 75em) {
-  /* line 246, sass/navigation/_menus.scss */
+  /* line 251, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a:after,
   .main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a:after,
   .main-navigation .menu-primary-menu-container .sub-menu .current_page_ancestor > a:after,
@@ -1060,18 +1069,18 @@ a a[href^=tel]:hover {
     bottom: 0;
   }
 }
-/* line 256, sass/navigation/_menus.scss */
+/* line 261, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a:hover,
 .main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a:hover,
 .main-navigation .menu-primary-menu-container .sub-menu .current_page_ancestor > a:hover,
 .main-navigation .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:hover {
   color: #39291d;
 }
-/* line 262, sass/navigation/_menus.scss */
+/* line 267, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .shop-link {
   position: relative;
 }
-/* line 265, sass/navigation/_menus.scss */
+/* line 270, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .shop-link:before {
   content: '';
   display: block;
@@ -1086,20 +1095,20 @@ a a[href^=tel]:hover {
   width: 50px;
   height: 33px;
 }
-/* line 280, sass/navigation/_menus.scss */
+/* line 285, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .shop-link a {
   padding: 0;
   position: relative;
   z-index: 50;
 }
-/* line 287, sass/navigation/_menus.scss */
+/* line 292, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .current_page_item,
 .main-navigation .menu-primary-menu-container .current-menu-item,
 .main-navigation .menu-primary-menu-container .current_page_ancestor,
 .main-navigation .menu-primary-menu-container .current-menu-ancestor {
   position: relative;
 }
-/* line 294, sass/navigation/_menus.scss */
+/* line 299, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .current_page_item > a,
 .main-navigation .menu-primary-menu-container .current-menu-item > a,
 .main-navigation .menu-primary-menu-container .current_page_ancestor > a,
@@ -1107,7 +1116,7 @@ a a[href^=tel]:hover {
   color: #fa4515;
   position: relative;
 }
-/* line 302, sass/navigation/_menus.scss */
+/* line 307, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .current_page_item > a:before, .main-navigation .menu-primary-menu-container .current_page_item > a:after,
 .main-navigation .menu-primary-menu-container .current-menu-item > a:before,
 .main-navigation .menu-primary-menu-container .current-menu-item > a:after,
@@ -1121,7 +1130,7 @@ a a[href^=tel]:hover {
   font-size: 2em;
   z-index: 9999;
 }
-/* line 311, sass/navigation/_menus.scss */
+/* line 316, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .current_page_item > a:before,
 .main-navigation .menu-primary-menu-container .current-menu-item > a:before,
 .main-navigation .menu-primary-menu-container .current_page_ancestor > a:before,
@@ -1130,7 +1139,7 @@ a a[href^=tel]:hover {
   top: 3px;
   left: 0;
 }
-/* line 316, sass/navigation/_menus.scss */
+/* line 321, sass/navigation/_menus.scss */
 .main-navigation .menu-primary-menu-container .current_page_item > a:after,
 .main-navigation .menu-primary-menu-container .current-menu-item > a:after,
 .main-navigation .menu-primary-menu-container .current_page_ancestor > a:after,
@@ -1140,7 +1149,7 @@ a a[href^=tel]:hover {
   right: 0;
 }
 @media screen and (min-width: 75em) {
-  /* line 316, sass/navigation/_menus.scss */
+  /* line 321, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container .current_page_item > a:after,
   .main-navigation .menu-primary-menu-container .current-menu-item > a:after,
   .main-navigation .menu-primary-menu-container .current_page_ancestor > a:after,
@@ -1149,7 +1158,7 @@ a a[href^=tel]:hover {
   }
 }
 @media only screen and (min-width: 400px) {
-  /* line 331, sass/navigation/_menus.scss */
+  /* line 336, sass/navigation/_menus.scss */
   .main-navigation #aux-menu .join-now-link {
     font-size: 1em;
   }
@@ -1159,64 +1168,64 @@ a a[href^=tel]:hover {
   .main-navigation {
     padding-top: 0;
   }
-  /* line 340, sass/navigation/_menus.scss */
+  /* line 345, sass/navigation/_menus.scss */
   .main-navigation .flex-wrapper #menu-toggle {
     display: none;
   }
-  /* line 343, sass/navigation/_menus.scss */
+  /* line 348, sass/navigation/_menus.scss */
   .main-navigation .flex-wrapper .flex-child {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
   }
-  /* line 348, sass/navigation/_menus.scss */
+  /* line 353, sass/navigation/_menus.scss */
   .main-navigation .pbc-logo {
     margin-bottom: -2.4em;
     margin-top: 1em;
   }
-  /* line 351, sass/navigation/_menus.scss */
+  /* line 356, sass/navigation/_menus.scss */
   .main-navigation .pbc-logo svg {
     width: 100px;
     height: 83px;
   }
-  /* line 357, sass/navigation/_menus.scss */
+  /* line 362, sass/navigation/_menus.scss */
   .main-navigation #aux-menu {
     padding: 1em 0 0;
   }
-  /* line 359, sass/navigation/_menus.scss */
+  /* line 364, sass/navigation/_menus.scss */
   .main-navigation #aux-menu .join-now-link {
     background-color: #fa4515;
     color: #fff;
     padding: .25em 1em .35em;
   }
-  /* line 364, sass/navigation/_menus.scss */
+  /* line 369, sass/navigation/_menus.scss */
   .main-navigation #aux-menu .join-now-link a {
     color: #fff;
     font-family: "NotoSans-Bold", sans-serif;
     text-decoration: none;
   }
-  /* line 371, sass/navigation/_menus.scss */
+  /* line 376, sass/navigation/_menus.scss */
   .main-navigation #aux-menu .contact-us-link {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  /* line 376, sass/navigation/_menus.scss */
+  /* line 381, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container {
     display: block;
     float: right;
   }
-  /* line 382, sass/navigation/_menus.scss */
+  /* line 387, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container ul li {
     margin: 0 1em;
   }
-  /* line 385, sass/navigation/_menus.scss */
+  /* line 390, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container ul li:last-child {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 59.375em) {
-  /* line 398, sass/navigation/_menus.scss */
+  /* line 403, sass/navigation/_menus.scss */
   .main-navigation .pbc-logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1225,17 +1234,17 @@ a a[href^=tel]:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 402, sass/navigation/_menus.scss */
+  /* line 407, sass/navigation/_menus.scss */
   .main-navigation .pbc-logo .logo-title {
     display: block;
   }
 }
 @media screen and (min-width: 75em) {
-  /* line 409, sass/navigation/_menus.scss */
+  /* line 414, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container {
     padding-right: 8px;
   }
-  /* line 413, sass/navigation/_menus.scss */
+  /* line 418, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container .shop-link:before {
     top: -10px;
     left: -10px;
@@ -1244,43 +1253,60 @@ a a[href^=tel]:hover {
   }
 }
 @media screen and (min-width: 90em) {
-  /* line 426, sass/navigation/_menus.scss */
+  /* line 431, sass/navigation/_menus.scss */
   .main-navigation .menu-primary-menu-container ul li {
     margin: 0 2em;
   }
 }
 
 /* Small menu. */
-/* line 435, sass/navigation/_menus.scss */
+/* line 440, sass/navigation/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
+/* line 445, sass/navigation/_menus.scss */
+#menu-toggle.open {
+  border: 1px solid red;
+}
+/* line 448, sass/navigation/_menus.scss */
+#menu-toggle.open span:nth-child(2) {
+  color: black;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+/* line 453, sass/navigation/_menus.scss */
+#menu-toggle.open span:nth-child(3) {
+  color: black;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
 @media screen and (min-width: 46.875em) {
-  /* line 463, sass/navigation/_menus.scss */
+  /* line 487, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 466, sass/navigation/_menus.scss */
+  /* line 490, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 475, sass/navigation/_menus.scss */
+/* line 499, sass/navigation/_menus.scss */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 480, sass/navigation/_menus.scss */
+/* line 504, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 485, sass/navigation/_menus.scss */
+/* line 509, sass/navigation/_menus.scss */
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
   float: right;
   text-align: right;

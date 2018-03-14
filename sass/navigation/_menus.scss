@@ -24,6 +24,9 @@
     outline: 0;
     background-color: transparent;
     color: $color__brand-4;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
 
     .menu-title {
       text-transform: uppercase;
@@ -38,6 +41,8 @@
     .hamburger {
       background-color: $color__brand-1;
       height: 3px;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
     }
   }
 
@@ -435,6 +440,25 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+}
+
+#menu-toggle.open {
+  border: 1px solid red;
+
+  span:nth-child(2) {
+    color: black;
+    transform: rotate(135deg);
+  }
+
+  span:nth-child(3) {
+    color: black;
+    transform: rotate(-135deg);
+  }
+
+  .hamburger {
+    // width: 10px;
+    // margin-left: 1em;
+  }
 }
 
 // MOBILE STYLING =======
