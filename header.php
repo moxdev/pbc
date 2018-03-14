@@ -56,9 +56,13 @@
 		<div id="site-navigation" class="main-navigation">
       <div class="flex-wrapper">
         <button id="menu-toggle" class="flex-child" aria-controls="primary-menu" aria-expanded="false">
-          <span class="menu-title">Menu</span>
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
+          <div class="hamburger-wrapper">
+            <span class="menu-title">Menu</span>
+            <div id="nav-icon">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </button>
 
         <div class="pbc-logo flex-child">

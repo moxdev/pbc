@@ -10,14 +10,15 @@
     align-items: center;
 
     .flex-child {
-      flex: 0 0 33.33%;
+      flex: 1 1 33.33%;
     }
   }
 
 
   #menu-toggle {
+    align-self: flex-start;
     min-width: 20px;
-    margin: 0;
+    margin: 1em 0 0;
     padding: 0;
     background: transparent;
     border-radius: 0;
@@ -27,22 +28,47 @@
     transform: rotate(0deg);
     transition: .5s ease-in-out;
     cursor: pointer;
+    position: relative;
+
+    .hamburger-wrapper {
+      // text-align: center;
+    }
 
     .menu-title {
       text-transform: uppercase;
-    }
-
-    span {
       display: block;
-      margin-bottom: 5px;
-      width: 40px;
+      position: absolute;
+      left: 0;
+      top: 0;
     }
 
-    .hamburger {
-      background-color: $color__brand-1;
+    #nav-icon {
+      width: 40px;
+      height: auto;
+      position: relative;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      cursor: pointer;
+      margin-top: 1em;
+    }
+
+    #nav-icon span {
+      display: block;
+      position: absolute;
       height: 3px;
+      width: 100%;
+      background: #d3531a;
       transform: rotate(0deg);
       transition: .25s ease-in-out;
+      left: 0;
+    }
+
+    #nav-icon span:nth-child(1) {
+      top: 9px;
+    }
+
+    #nav-icon span:nth-child(2) {
+      top: 19px;
     }
   }
 
@@ -338,6 +364,14 @@
     }
   }
 
+  @include respond-to(x-small) {
+    #menu-toggle {
+      #nav-icon {
+        width: 45px;
+      }
+    }
+  }
+
   @include respond-to(small) {
     padding-top: 0;
 
@@ -443,45 +477,23 @@
 }
 
 #menu-toggle.open {
-  border: 1px solid red;
 
-  span:nth-child(2) {
-    color: black;
+  #nav-icon span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
     transform: rotate(135deg);
   }
 
-  span:nth-child(3) {
-    color: black;
+  #nav-icon span:nth-child(2) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
   }
-
-  .hamburger {
-    // width: 10px;
-    // margin-left: 1em;
-  }
 }
-
-// MOBILE STYLING =======
-// .main-navigation {
-//   transform: translateX(0);
-// }
-
-// .main-navigation.toggled {
-//   background: #000;
-//   position: fixed;
-//   top: 39px;
-//   height: 100vh;
-//   width: 100vw;
-//   z-index: 100;
-//   overflow-y: scroll;
-//   // -webkit-overflow-scrolling: touch;
-//   // -webkit-transform: translateX(100%);
-//   // transform: translateX(100%);
-//   // -webkit-transition: -webkit-transform .25s ease-out;
-//   // transition: -webkit-transform .25s ease-out;
-//   // transition: transform .25s ease-out;
-//   // transition: transform .25s ease-out,-webkit-transform .25s ease-out;
-// }
 
 @include respond-to(small) {
   .menu-toggle {
