@@ -48,10 +48,6 @@
   @include respond-to(medium) {
     height: 250px;
   }
-
-  @include respond-to(x-large) {
-    height: 350px;
-  }
 }
 
 #primary {
