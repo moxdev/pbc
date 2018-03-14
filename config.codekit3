@@ -565,6 +565,13 @@
 		"oAP": "\/inc\/whats-new.php",
 		"oF": 0
 		},
+	"\/inc\/yearly-archive-widget.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/yearly-archive-widget.php",
+		"oF": 0
+		},
 	"\/index.php": {
 		"cB": 0,
 		"ft": 8192,

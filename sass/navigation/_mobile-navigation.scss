@@ -1,10 +1,10 @@
 #mobile-menu {
   padding-bottom: 2em;
   background: #fff;
-  position: fixed;
+  position: absolute;
   top: 125px;
-  // height: 100vh;
   width: 100vw;
+  height: auto;
   z-index: 100;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -84,10 +84,6 @@
       display: block;
     }
 
-    .flex-item {
-      // flex: 0 0 50%;
-      // border: 1px solid red;
-    }
     .social {
       display: flex;
       flex-wrap: wrap;
@@ -100,77 +96,73 @@
         margin-bottom: 5px;
       }
       .social-media {
+        flex: 0 0 100%;
         list-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 1em;
         position: relative;
-        border: 2px solid $color__brand-1;
+        margin: 0;
+        padding:0;
 
         &:before,
         &:after {
-          content: '';
-          position: absolute;
-          height: 10px;
-          left: 2%;
-          right: 2%;
-          text-align: center;
-          background-color: #fff;
+          font-size: 2em;
+          color: $color__brand-1;
+          font-family: $font__main;
         }
 
         &:before {
-          top: -.45em;
+          content: '[';
         }
+
         &:after {
-          bottom: -.45em;
+          content: ']';
         }
       }
 
-      ul {
+      li {
         margin: 0;
         padding:0;
-        li {
-          margin: 0;
-          padding: 0;
+      }
 
-          a {
-            display: block;
-            width: 30px;
-            height: 30px;
-            background-image: url(/wp-content/themes/promo_box_club/imgs/sprite-social-media-icons.svg);
-            background-size: auto 100%;
-            background-repeat: no-repeat;
-            text-indent: 110%;
-            // margin-right: 10px;
-            white-space: nowrap;
-            overflow: hidden;
-          }
-
-        }
+      a {
+        display: block;
+        text-indent: 110%;
+        white-space: nowrap;
+        overflow: hidden;
+        background-image: url(/wp-content/themes/promo_box_club/imgs/sprite-social-media-icons.svg);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
       }
 
       .fb a {
-        background-position: -14px 0
+        background-position: 0 0;
       }
       .pin a {
-        background-position: -165px 0
+        background-position: -149px 0
       }
       .tw a {
-        background-position: -44px 0
+        background-position: -29px 0
       }
       .insta a {
-        background-position: -195px 0
+        background-position: -180px 0
       }
       .yt a {
-        background-position: -135px 0
+        background-position: -120px 0
       }
       .goo a {
-        background-position: -72px 0
+        background-position: -59px 0
       }
       .linked a {
-        background-position: -104px 0
+        background-position: -91px 0
       }
+    }
+
+    .marcom-navigation {
+      margin-left: 10px;
     }
 
     #mobile-marcom-menu {
@@ -221,7 +213,7 @@
       .flex-container {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: baseline;
       }
 
       .social {

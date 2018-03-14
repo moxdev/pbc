@@ -1,4 +1,4 @@
-.blog, .single {
+.blog, .single, .archive, .categories, .tag {
 
   #content {
     @include max-width($max_width);
@@ -30,10 +30,11 @@
     }
   }
 
-  .entry-header {
+  figure {
     .post-thumbnail {
       img {
         width: 400px;
+        margin-bottom: 1em;
       }
     }
   }
@@ -63,6 +64,52 @@
     span {
       display: block;
     }
+  }
+
+  .pagination {
+    .page-numbers {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 0 2px 0 0;
+      border: 1px solid #eee;
+      line-height: 1;
+      text-decoration: none;
+      border-radius: 2px;
+      font-family: $font__bold;
+      color: $color__brand-2;
+    }
+    .page-numbers.current,
+    a.page-numbers:hover {
+      background: #f9f9f9;
+      color: $color__brand-1;
+    }
+  }
+
+  .single-navigation {
+    display: block;
+
+    > div {
+      margin-bottom: 1em;
+    }
+  }
+
+  @include respond-to(small) {
+    .single-navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav-previous {
+        text-align: left;
+        padding-right: 1em;
+      }
+
+      .nav-next {
+        text-align: right;
+        padding-left : 1em;
+      }
+    }
+
   }
 
   @include respond-to(medium) {

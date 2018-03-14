@@ -40,20 +40,10 @@ get_header(); ?>
 
       endwhile;
 
-      // $paginate_links = paginate_links(array(
-      //   'base' => get_pagenum_link(1) . '%_%',
-      //   'format' => '/page/%#%',
-      //   'current' => $current_page,
-      //   'total' => $total_pages,
-      //   'prev_text' => '&lt;',
-      //   'next_text' => '&gt;',
-      //   'type' => 'array'
-      // ));
-
       the_posts_pagination( array(
-        'mid_size'  => 5,
-        'prev_text' => __( '&lt;', 'textdomain' ),
-        'next_text' => __( '&gt;', 'textdomain' ),
+        'mid_size' => 9,
+        'prev_text' => __( 'Back', 'textdomain' ),
+        'next_text' => __( 'Next', 'textdomain' ),
       ) );
 
 		else :

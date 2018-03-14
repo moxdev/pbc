@@ -13,17 +13,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
   <?php if( has_post_thumbnail() ) : ?>
-
-	<header class="entry-header">
-
-    <?php promo_box_club_post_thumbnail(); ?>
-
-  </header>
-
+    <figure>
+      <?php promo_box_club_post_thumbnail(); ?>
+    </figure>
   <?php endif; ?>
 
-
-	<div class="entry-content">
+	<header class="entry-header">
     <?php
     if ( is_singular() ) :
       the_title( '<h1 class="entry-title">', '</h1>' );
@@ -40,7 +35,9 @@
     </div><!-- .entry-meta -->
     <?php
     endif; ?>
+  </header>
 
+	<div class="entry-content">
 		<?php
 			the_content( sprintf(
 				wp_kses(

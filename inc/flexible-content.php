@@ -48,6 +48,5 @@ function promo_box_club_flexble_content_section() {
       endwhile;
 
     endif;
-
   }
 }

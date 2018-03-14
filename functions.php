@@ -414,3 +414,4 @@ require get_template_directory() . '/inc/home-see-whats-inside.php';
  * Custom function to display Mobile Menu.
  */
 require get_template_directory() . '/inc/mobile-navigation.php';
+

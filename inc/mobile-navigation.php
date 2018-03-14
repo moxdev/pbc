@@ -27,7 +27,7 @@
 
             if( $fb || $pin || $tw || $insta || $yt || $goo || $link ) : ?>
 
-            <div class="social flex-item">
+            <div class="social">
               <div class="social-wrapper">
                 <ul class="social-media">
 
@@ -82,7 +82,7 @@
 
           <?php endif; ?>
 
-          <nav class="flex-item">
+          <nav class="marcom-navigation">
 
           <?php
             wp_nav_menu( array(
