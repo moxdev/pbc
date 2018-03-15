@@ -18,10 +18,6 @@ h1.entry-title {
   font-family: $font__black;
   text-transform: uppercase;
   line-height: 1;
-
-	@include respond-to(large) {
-		// font-size: 1.625em;
-	}
 }
 
 h2 {
@@ -29,7 +25,6 @@ h2 {
   font-family: $font__bold;
   margin-bottom: .5em;
   line-height: 1.15;
-  // letter-spacing: .9px;
 }
 
 h2.section-title {
@@ -40,7 +35,6 @@ h2.section-title {
 
   @include respond-to(x-large) {
     font-size: 2.8em;
-
   }
 }
 
@@ -62,8 +56,4 @@ h3 {
 .page-title, .entry-title {
 	margin: 0;
 	padding: 0;
-}
-
-.entry-title {
-	// color: $color__brand-2;
 }

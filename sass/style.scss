@@ -29,7 +29,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Forms
 # Navigation
 	## Links
-	## Menus
+  ## Menus
+  ## Mobile Navigation
 # Accessibility
 # Alignments
 # Clearings
@@ -44,13 +45,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 # Masthead
 # Footer
+#Custom Sections
+  ## How It Works Section
+  ## Email Subscription Section
 # Page Temlpates
   ## Front Page
     ### Hero
     ### Main Content
-    ### Video Carousel
-    ### Why Join Content
-  ## How It Works Section
+    ### See What's Inside Section
+    ### Why Join Section
+  ## Flexible Content Page Template
+  ## How It Works Page
+  ## Membership Page
+  ## What's New Page
+  ## Contact Page
+  ## News (Blog) Page
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -131,7 +140,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "colophon/colophon";
 
 /*--------------------------------------------------------------
-# Sections
+# Custom Sections
 --------------------------------------------------------------*/
 @import "page-templates/sections";
 

@@ -217,11 +217,9 @@
         margin-bottom: 0;
       }
     }
-
   }
 
   @include respond-to(small) {
     display: none;
-
   }
 }

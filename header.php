@@ -71,8 +71,8 @@
           </a>
 
           <span class="logo-title">
-            <span class="row-1">Powered by</span>
-            <span class="row-2">Millennium Marketing Solutions</span>
+            <span class="caption">Powered by</span>
+            <span class="mm4">Millennium Marketing Solutions</span>
           </span>
         </div>
 
@@ -84,7 +84,6 @@
             ) );
           ?>
         </nav>
-
       </div>
 
       <nav class="main-nav">

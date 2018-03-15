@@ -29,7 +29,6 @@ section.email-subscription {
   @include respond-to(small) {
     .wrapper {
       display: flex;
-      // justify-content: flex-start;
       align-items: center;
 
       h2 {

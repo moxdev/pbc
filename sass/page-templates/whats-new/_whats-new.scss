@@ -3,10 +3,6 @@
     display: none;
   }
 
-  #colophon {
-    // border-top: 1px solid #ededed;
-  }
-
   section.whats-new {
     @include section-padding;
     @include max-width(700px);

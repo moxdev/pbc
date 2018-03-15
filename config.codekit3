@@ -589,46 +589,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/js\/flickity.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/flickity-min.js",
-		"oF": 2,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/home-video-carousel.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/home-video-carousel-min.js",
-		"oF": 2,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/min\/flickity-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/flickity-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/min\/home-video-carousel-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/home-video-carousel-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/js\/min\/navigation-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1474,19 +1434,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/modules\/_clearings.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/modules\/_flickity.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/modules\/_flickity.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
