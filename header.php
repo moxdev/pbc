@@ -52,9 +52,7 @@
           <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
         <?php
         endif; ?>
-      </div><!-- .site-branding -->
 
-      <div id="site-navigation" class="main-navigation">
         <div class="flex-wrapper">
           <button id="menu-toggle" class="flex-child" aria-controls="primary-menu" aria-expanded="false">
             <div class="hamburger-wrapper">
@@ -86,6 +84,9 @@
             ?>
           </nav>
         </div>
+      </div><!-- .site-branding -->
+
+      <div id="site-navigation" class="main-navigation">
 
         <nav class="main-nav">
           <?php

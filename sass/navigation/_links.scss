@@ -26,3 +26,40 @@ a {
     }
   }
 }
+
+.current_page_item,
+.current-menu-item,
+.current_page_ancestor,
+.current-menu-ancestor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: .5em;
+  // @include test(blue);
+
+  &:before,
+  &:after {
+    // position: absolute;
+    font-family: $font__main;
+    color: $color__brand-4;
+    font-size: 1.5em;
+    z-index: 9999;
+  }
+
+  &:before {
+    content: '[';
+  }
+  &:after {
+    content: ']';
+  }
+}
+
+.current_page_item > a,
+.current-menu-item > a,
+.current_page_ancestor > a,
+.current-menu-ancestor > a {
+  color: $color__brand-1;
+  position: relative;
+  padding: 0 .5em;
+  // @include test(red);
+}
