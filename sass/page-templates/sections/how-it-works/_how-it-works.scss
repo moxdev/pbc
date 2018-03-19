@@ -3,7 +3,6 @@ section.how-it-works {
   background-color: $color__brand-2;
   @include section-padding;
   font-family: $font__bold;
-  // @include font-smooth;
 
   .wrapper {
     text-align: center;
@@ -16,7 +15,7 @@ section.how-it-works {
   }
 
   .column-wrapper {
-    // @include max-width(400px);
+
   }
 
   .inner-wrapper {

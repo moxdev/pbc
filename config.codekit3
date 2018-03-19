@@ -7,7 +7,7 @@
 		"uuidString": "D9C7B47F-4ADE-4E7B-996C-C57E906D1D9C"
 		}
 	],
-"creatorBuild": "26261",
+"creatorBuild": "26330",
 "files": {
 	"\/*notes-1.php\/notes.php": {
 		"cB": 0,
@@ -2027,6 +2027,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,

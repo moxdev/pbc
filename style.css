@@ -33,7 +33,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Accessibility
 # Alignments
 # Clearings
-# Flickity Carousel
 # Widgets
 # Content
 	## Posts and pages
@@ -1669,169 +1668,6 @@ a a[href^=tel]:hover {
 }
 
 /*--------------------------------------------------------------
-# Flickity Carousel
---------------------------------------------------------------*/
-/* line 1, sass/modules/_flickity.scss */
-.flickity-enabled {
-  position: relative;
-}
-
-/* line 5, sass/modules/_flickity.scss */
-.flickity-enabled:focus {
-  outline: none;
-}
-
-/* line 9, sass/modules/_flickity.scss */
-.flickity-viewport {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-}
-
-/* line 15, sass/modules/_flickity.scss */
-.flickity-slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-/* draggable */
-/* line 23, sass/modules/_flickity.scss */
-.flickity-enabled.is-draggable {
-  -webkit-tap-highlight-color: transparent;
-  tap-highlight-color: transparent;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* line 32, sass/modules/_flickity.scss */
-.flickity-enabled.is-draggable .flickity-viewport {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-
-/* line 38, sass/modules/_flickity.scss */
-.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
-}
-
-/* ---- previous/next buttons ---- */
-/* line 45, sass/modules/_flickity.scss */
-.flickity-prev-next-button {
-  position: absolute;
-  top: 50%;
-  width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  background: white;
-  background: rgba(255, 255, 255, 0.75);
-  cursor: pointer;
-  /* vertically center */
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 60, sass/modules/_flickity.scss */
-.flickity-prev-next-button:hover {
-  background: white;
-}
-
-/* line 64, sass/modules/_flickity.scss */
-.flickity-prev-next-button:focus {
-  outline: none;
-  -webkit-box-shadow: 0 0 0 5px #09f;
-          box-shadow: 0 0 0 5px #09f;
-}
-
-/* line 69, sass/modules/_flickity.scss */
-.flickity-prev-next-button:active {
-  opacity: 0.6;
-}
-
-/* line 73, sass/modules/_flickity.scss */
-.flickity-prev-next-button.previous {
-  left: 10px;
-}
-
-/* line 76, sass/modules/_flickity.scss */
-.flickity-prev-next-button.next {
-  right: 10px;
-}
-
-/* right to left */
-/* line 80, sass/modules/_flickity.scss */
-.flickity-rtl .flickity-prev-next-button.previous {
-  left: auto;
-  right: 10px;
-}
-
-/* line 84, sass/modules/_flickity.scss */
-.flickity-rtl .flickity-prev-next-button.next {
-  right: auto;
-  left: 10px;
-}
-
-/* line 89, sass/modules/_flickity.scss */
-.flickity-prev-next-button:disabled {
-  opacity: 0.3;
-  cursor: auto;
-}
-
-/* line 94, sass/modules/_flickity.scss */
-.flickity-prev-next-button svg {
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  width: 60%;
-  height: 60%;
-}
-
-/* line 102, sass/modules/_flickity.scss */
-.flickity-prev-next-button .arrow {
-  fill: #333;
-}
-
-/* ---- page dots ---- */
-/* line 108, sass/modules/_flickity.scss */
-.flickity-page-dots {
-  position: absolute;
-  width: 100%;
-  bottom: -25px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  line-height: 1;
-}
-
-/* line 119, sass/modules/_flickity.scss */
-.flickity-rtl .flickity-page-dots {
-  direction: rtl;
-}
-
-/* line 123, sass/modules/_flickity.scss */
-.flickity-page-dots .dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 8px;
-  background: #333;
-  border-radius: 50%;
-  opacity: 0.25;
-  cursor: pointer;
-}
-
-/* line 134, sass/modules/_flickity.scss */
-.flickity-page-dots .dot.is-selected {
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 /* line 1, sass/site/secondary/_widgets.scss */
@@ -2425,32 +2261,32 @@ section.how-it-works {
   padding-bottom: 2.5em;
   font-family: "NotoSans-Bold", sans-serif;
 }
-/* line 8, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 7, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works .wrapper {
   text-align: center;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 13, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 12, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works h2, section.how-it-works .home section.home-see-whats-inside h2, .home section.home-see-whats-inside section.how-it-works h2, section.how-it-works .home .home-why-join .wrapper h2, .home .home-why-join .wrapper section.how-it-works h2, section.how-it-works .blog h1.entry-title, .blog section.how-it-works h1.entry-title, section.how-it-works .single h1.entry-title, .single section.how-it-works h1.entry-title, section.how-it-works .archive h1.entry-title, .archive section.how-it-works h1.entry-title, section.how-it-works .categories h1.entry-title, .categories section.how-it-works h1.entry-title, section.how-it-works .tag h1.entry-title, .tag section.how-it-works h1.entry-title {
   color: #fff;
   text-align: center;
 }
-/* line 22, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 21, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works .inner-wrapper {
   text-align: left;
   padding-bottom: 2em;
 }
-/* line 26, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 25, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works .inner-wrapper p {
   display: none;
 }
-/* line 31, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 30, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works .title {
   position: relative;
 }
-/* line 34, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 33, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works .title:before {
   content: '';
   display: block;
@@ -2461,23 +2297,23 @@ section.how-it-works .title:before {
   height: 125px;
   margin-bottom: 1em;
 }
-/* line 47, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 46, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works .col-1 .title:before {
   background-image: url(/wp-content/themes/promo_box_club/imgs/icon-package.svg);
 }
-/* line 52, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 51, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works .col-2 .title:before {
   background-image: url(/wp-content/themes/promo_box_club/imgs/icon-truck.svg);
 }
-/* line 57, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 56, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works .col-3 .title:before {
   background-image: url(/wp-content/themes/promo_box_club/imgs/icon-shopping.svg);
 }
-/* line 62, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 61, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works .col-4 .title:before {
   background-image: url(/wp-content/themes/promo_box_club/imgs/icon-chart.svg);
 }
-/* line 67, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 66, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works .title {
   display: block;
   color: #fff;
@@ -2485,17 +2321,17 @@ section.how-it-works .title {
   margin-bottom: .25em;
   letter-spacing: .9px;
 }
-/* line 76, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+/* line 75, sass/page-templates/sections/how-it-works/_how-it-works.scss */
 section.how-it-works button {
   background-color: #fff;
   color: #fa4515;
 }
 @media screen and (min-width: 36em) {
-  /* line 82, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 81, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .wrapper {
     max-width: 900px;
   }
-  /* line 85, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 84, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .column-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2503,21 +2339,21 @@ section.how-it-works button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 92, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 91, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .inner-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
   }
-  /* line 96, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 95, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .title {
     font-size: 1.3em;
   }
-  /* line 99, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 98, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .title:before {
     height: 100px;
   }
-  /* line 104, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 103, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .center-wrapper {
     max-width: 400px;
     margin-left: auto;
@@ -2526,51 +2362,51 @@ section.how-it-works button {
   }
 }
 @media screen and (min-width: 59.375em) {
-  /* line 120, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 119, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .column-wrapper {
     margin-left: 3em;
   }
 }
 @media screen and (min-width: 75em) {
-  /* line 127, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 126, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .wrapper {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 131, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 130, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .column-wrapper {
     margin-left: 0;
   }
-  /* line 135, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 134, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .center-wrapper {
     max-width: 500px;
     padding-left: 20%;
   }
-  /* line 139, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 138, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .center-wrapper .title {
     font-size: 1.3em;
   }
-  /* line 142, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 141, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .center-wrapper .title:before {
     height: 125px;
   }
 }
 @media screen and (min-width: 90em) {
-  /* line 150, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 149, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .wrapper {
     max-width: 1400px;
   }
-  /* line 154, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 153, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .col-1, section.how-it-works .col-3 {
     padding-left: 4em;
   }
-  /* line 158, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 157, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .center-wrapper {
     max-width: 800px;
     padding-right: 0;
   }
-  /* line 162, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 161, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .center-wrapper .title {
     font-size: 1.4em;
   }
