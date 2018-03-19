@@ -771,75 +771,22 @@ a a[href^=tel]:hover {
   cursor: text;
 }
 
-/* line 30, sass/navigation/_links.scss */
-.current_page_item,
-.current-menu-item,
-.current_page_ancestor,
-.current-menu-ancestor {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: .5em;
-}
-/* line 40, sass/navigation/_links.scss */
-.current_page_item:before, .current_page_item:after,
-.current-menu-item:before,
-.current-menu-item:after,
-.current_page_ancestor:before,
-.current_page_ancestor:after,
-.current-menu-ancestor:before,
-.current-menu-ancestor:after {
-  font-family: "NotoSans", sans-serif;
-  color: #39291d;
-  font-size: 1.5em;
-  z-index: 9999;
-}
-/* line 49, sass/navigation/_links.scss */
-.current_page_item:before,
-.current-menu-item:before,
-.current_page_ancestor:before,
-.current-menu-ancestor:before {
-  content: '[';
-}
-/* line 52, sass/navigation/_links.scss */
-.current_page_item:after,
-.current-menu-item:after,
-.current_page_ancestor:after,
-.current-menu-ancestor:after {
-  content: ']';
-}
-
-/* line 57, sass/navigation/_links.scss */
-.current_page_item > a,
-.current-menu-item > a,
-.current_page_ancestor > a,
-.current-menu-ancestor > a {
-  color: #fa4515;
-  position: relative;
-  padding: 0 .5em;
-}
-
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 /* line 1, sass/navigation/_menus.scss */
-.main-navigation {
+.main-nav {
   display: none;
   width: 100%;
-  border: 1px solid green;
 }
 /* line 7, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container {
-  margin-right: auto;
+.main-nav .menu-primary-menu-container {
+  margin-left: auto;
   position: relative;
   z-index: 999999;
 }
 /* line 17, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container ul {
+.main-nav .menu-primary-menu-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,17 +797,17 @@ a a[href^=tel]:hover {
   margin: 0;
 }
 /* line 26, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container ul ul {
+.main-nav .menu-primary-menu-container ul ul {
   background-color: #fa4515;
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
   position: absolute;
-  top: 124%;
+  top: 100%;
   left: -999em;
   z-index: 99999;
 }
 /* line 36, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container ul ul li {
+.main-nav .menu-primary-menu-container ul ul li {
   background-color: #fa4515;
   margin: 0;
   -webkit-box-flex: 0;
@@ -868,166 +815,242 @@ a a[href^=tel]:hover {
           flex: 0 0 auto;
 }
 /* line 41, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container ul ul li:hover, .main-navigation .menu-primary-menu-container ul ul li.focus {
+.main-nav .menu-primary-menu-container ul ul li:hover, .main-nav .menu-primary-menu-container ul ul li.focus {
   left: 0;
   background-color: #f03605;
 }
 /* line 47, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container ul ul li a {
+.main-nav .menu-primary-menu-container ul ul li a {
   padding-top: 1em;
   color: #fff;
 }
 /* line 53, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container ul ul ul {
+.main-nav .menu-primary-menu-container ul ul ul {
   left: -999em;
   top: 0;
 }
 /* line 59, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container ul ul a {
-  width: auto;
+.main-nav .menu-primary-menu-container ul ul a {
+  width: 200px;
 }
 /* line 62, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container ul ul a:hover {
+.main-nav .menu-primary-menu-container ul ul a:hover {
   color: #39291d;
 }
 /* line 68, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container ul li:hover > ul,
-.main-navigation .menu-primary-menu-container ul li.focus > ul {
+.main-nav .menu-primary-menu-container ul li:hover > ul,
+.main-nav .menu-primary-menu-container ul li.focus > ul {
   left: 0;
 }
 /* line 74, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container li {
+.main-nav .menu-primary-menu-container li {
   position: relative;
   padding: 1em;
-  border: 1px solid red;
 }
 /* line 85, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container a {
+.main-nav .menu-primary-menu-container a {
   display: block;
   text-decoration: none;
   color: #39291d;
   font-family: "NotoSans-Bold", sans-serif;
 }
 /* line 92, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container a:hover {
+.main-nav .menu-primary-menu-container a:hover {
   color: #1cbcaf;
 }
-/* line 99, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a,
-.main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a,
-.main-navigation .menu-primary-menu-container .sub-menu .current_page_ancestor > a,
-.main-navigation .menu-primary-menu-container .sub-menu .current-menu-ancestor > a {
+/* line 97, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .current_page_item,
+.main-nav .menu-primary-menu-container .current-menu-item,
+.main-nav .menu-primary-menu-container .current_page_ancestor,
+.main-nav .menu-primary-menu-container .current-menu-ancestor {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 !important;
+}
+/* line 107, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .current_page_item:before, .main-nav .menu-primary-menu-container .current_page_item:after,
+.main-nav .menu-primary-menu-container .current-menu-item:before,
+.main-nav .menu-primary-menu-container .current-menu-item:after,
+.main-nav .menu-primary-menu-container .current_page_ancestor:before,
+.main-nav .menu-primary-menu-container .current_page_ancestor:after,
+.main-nav .menu-primary-menu-container .current-menu-ancestor:before,
+.main-nav .menu-primary-menu-container .current-menu-ancestor:after {
+  font-family: "NotoSans", sans-serif;
+  color: #39291d;
+  font-size: 1.5em;
+  z-index: 9999;
+}
+/* line 116, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .current_page_item:before,
+.main-nav .menu-primary-menu-container .current-menu-item:before,
+.main-nav .menu-primary-menu-container .current_page_ancestor:before,
+.main-nav .menu-primary-menu-container .current-menu-ancestor:before {
+  content: '[';
+}
+/* line 119, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .current_page_item:after,
+.main-nav .menu-primary-menu-container .current-menu-item:after,
+.main-nav .menu-primary-menu-container .current_page_ancestor:after,
+.main-nav .menu-primary-menu-container .current-menu-ancestor:after {
+  content: ']';
+}
+/* line 124, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .current_page_item > a,
+.main-nav .menu-primary-menu-container .current-menu-item > a,
+.main-nav .menu-primary-menu-container .current_page_ancestor > a,
+.main-nav .menu-primary-menu-container .current-menu-ancestor > a {
+  color: #fa4515;
+  position: relative;
+  padding: 0 .5em;
+}
+/* line 136, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .sub-menu .current_page_item > a,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a,
+.main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a {
   color: #fff;
   position: relative;
 }
-/* line 106, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a:before, .main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a:after,
-.main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a:before,
-.main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a:after,
-.main-navigation .menu-primary-menu-container .sub-menu .current_page_ancestor > a:before,
-.main-navigation .menu-primary-menu-container .sub-menu .current_page_ancestor > a:after,
-.main-navigation .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:before,
-.main-navigation .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:after {
+/* line 143, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .sub-menu .current_page_item > a:before, .main-nav .menu-primary-menu-container .sub-menu .current_page_item > a:after,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a:before,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a:after,
+.main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a:before,
+.main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a:after,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:before,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:after {
   position: absolute;
 }
-/* line 111, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a:before,
-.main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a:before,
-.main-navigation .menu-primary-menu-container .sub-menu .current_page_ancestor > a:before,
-.main-navigation .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:before {
+/* line 148, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .sub-menu .current_page_item > a:before,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a:before,
+.main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a:before,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:before {
   content: '';
   top: 0;
   left: 0;
 }
-/* line 116, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a:after,
-.main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a:after,
-.main-navigation .menu-primary-menu-container .sub-menu .current_page_ancestor > a:after,
-.main-navigation .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:after {
+/* line 153, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .sub-menu .current_page_item > a:after,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a:after,
+.main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a:after,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:after {
   content: '';
   bottom: 0;
   right: 0;
 }
 @media screen and (min-width: 75em) {
-  /* line 116, sass/navigation/_menus.scss */
-  .main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a:after,
-  .main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a:after,
-  .main-navigation .menu-primary-menu-container .sub-menu .current_page_ancestor > a:after,
-  .main-navigation .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:after {
+  /* line 153, sass/navigation/_menus.scss */
+  .main-nav .menu-primary-menu-container .sub-menu .current_page_item > a:after,
+  .main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a:after,
+  .main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a:after,
+  .main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:after {
     bottom: 0;
   }
 }
-/* line 126, sass/navigation/_menus.scss */
-.main-navigation .menu-primary-menu-container .sub-menu .current_page_item > a:hover,
-.main-navigation .menu-primary-menu-container .sub-menu .current-menu-item > a:hover,
-.main-navigation .menu-primary-menu-container .sub-menu .current_page_ancestor > a:hover,
-.main-navigation .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:hover {
+/* line 163, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .sub-menu .current_page_item > a:hover,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a:hover,
+.main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a:hover,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:hover {
   color: #39291d;
+}
+/* line 169, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .shop-link {
+  position: relative;
+}
+/* line 172, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .shop-link:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 8px;
+  left: 8px;
+  background: url(/wp-content/themes/promo_box_club/imgs/icon-shop-link.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  width: 50px;
+  height: 33px;
+}
+/* line 187, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .shop-link a {
+  padding: 0;
+  position: relative;
+  z-index: 50;
 }
 @media screen and (min-width: 46.875em) {
   /* line 1, sass/navigation/_menus.scss */
-  .main-navigation {
+  .main-nav {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  /* line 169, sass/navigation/_menus.scss */
-  .main-navigation .menu-primary-menu-container ul li:last-child {
+  /* line 206, sass/navigation/_menus.scss */
+  .main-nav .menu-primary-menu-container ul li:last-child {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 59.375em) {
-  /* line 182, sass/navigation/_menus.scss */
-  .main-navigation .menu-primary-menu-container ul li {
-    margin: 0 2em;
+  /* line 219, sass/navigation/_menus.scss */
+  .main-nav .menu-primary-menu-container ul li {
+    margin: 0 1em;
   }
 }
 @media screen and (min-width: 75em) {
-  /* line 190, sass/navigation/_menus.scss */
-  .main-navigation .menu-primary-menu-container {
+  /* line 227, sass/navigation/_menus.scss */
+  .main-nav .menu-primary-menu-container {
     padding-right: 8px;
   }
-  /* line 194, sass/navigation/_menus.scss */
-  .main-navigation .menu-primary-menu-container .shop-link:before {
-    top: -10px;
-    left: -10px;
+  /* line 231, sass/navigation/_menus.scss */
+  .main-nav .menu-primary-menu-container .shop-link:before {
     width: 62px;
     height: 45px;
   }
 }
 @media screen and (min-width: 90em) {
-  /* line 207, sass/navigation/_menus.scss */
-  .main-navigation .menu-primary-menu-container ul li {
+  /* line 244, sass/navigation/_menus.scss */
+  .main-nav .menu-primary-menu-container ul li {
     margin: 0 2em;
   }
 }
 
-/* line 217, sass/navigation/_menus.scss */
+/* line 252, sass/navigation/_menus.scss */
+#menu-toggle.open {
+  display: none;
+}
+/* line 255, sass/navigation/_menus.scss */
 #menu-toggle.open #nav-icon span:nth-child(1) {
   top: 18px;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
-/* line 222, sass/navigation/_menus.scss */
+/* line 260, sass/navigation/_menus.scss */
 #menu-toggle.open #nav-icon span:nth-child(2) {
   top: 18px;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
 }
 
-/* line 232, sass/navigation/_menus.scss */
+/* line 270, sass/navigation/_menus.scss */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 237, sass/navigation/_menus.scss */
+/* line 275, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 242, sass/navigation/_menus.scss */
+/* line 280, sass/navigation/_menus.scss */
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
   float: right;
   text-align: right;
@@ -1719,6 +1742,12 @@ object {
 }
 /* line 18, sass/masthead/_masthead.scss */
 #masthead .masthead-inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 1.875rem;
   padding-right: 1.875rem;
   padding-top: 1em;
@@ -1739,25 +1768,13 @@ object {
   }
 }
 /* line 25, sass/masthead/_masthead.scss */
-#masthead .site-branding .flex-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#masthead .masthead-inner-wrapper .flex-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
 }
 /* line 30, sass/masthead/_masthead.scss */
-#masthead .site-branding .flex-wrapper .flex-child {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 33.33%;
-          flex: 1 1 33.33%;
-}
-/* line 35, sass/masthead/_masthead.scss */
-#masthead .site-branding #menu-toggle {
+#masthead #menu-toggle {
   -ms-flex-item-align: start;
       align-self: flex-start;
   min-width: 20px;
@@ -1775,16 +1792,16 @@ object {
   cursor: pointer;
   position: relative;
 }
-/* line 54, sass/masthead/_masthead.scss */
-#masthead .site-branding #menu-toggle .menu-title {
+/* line 50, sass/masthead/_masthead.scss */
+#masthead #menu-toggle .menu-title {
   text-transform: uppercase;
   display: block;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 62, sass/masthead/_masthead.scss */
-#masthead .site-branding #menu-toggle #nav-icon {
+/* line 58, sass/masthead/_masthead.scss */
+#masthead #menu-toggle #nav-icon {
   width: 40px;
   height: auto;
   position: relative;
@@ -1795,8 +1812,8 @@ object {
   cursor: pointer;
   margin-top: 1em;
 }
-/* line 72, sass/masthead/_masthead.scss */
-#masthead .site-branding #menu-toggle #nav-icon span {
+/* line 68, sass/masthead/_masthead.scss */
+#masthead #menu-toggle #nav-icon span {
   display: block;
   position: absolute;
   height: 3px;
@@ -1808,29 +1825,29 @@ object {
   transition: .25s ease-in-out;
   left: 0;
 }
-/* line 83, sass/masthead/_masthead.scss */
-#masthead .site-branding #menu-toggle #nav-icon span:nth-child(1) {
+/* line 79, sass/masthead/_masthead.scss */
+#masthead #menu-toggle #nav-icon span:nth-child(1) {
   top: 9px;
 }
-/* line 87, sass/masthead/_masthead.scss */
-#masthead .site-branding #menu-toggle #nav-icon span:nth-child(2) {
+/* line 83, sass/masthead/_masthead.scss */
+#masthead #menu-toggle #nav-icon span:nth-child(2) {
   top: 19px;
 }
-/* line 94, sass/masthead/_masthead.scss */
+/* line 92, sass/masthead/_masthead.scss */
 #masthead .site-branding .pbc-logo .logo-title {
   display: none;
   padding-left: 1em;
   font-size: .8em;
 }
-/* line 100, sass/masthead/_masthead.scss */
+/* line 98, sass/masthead/_masthead.scss */
 #masthead .site-branding .pbc-logo span {
   display: block;
 }
-/* line 104, sass/masthead/_masthead.scss */
+/* line 102, sass/masthead/_masthead.scss */
 #masthead .site-branding .pbc-logo .mm4 {
   font-family: "NotoSans-Bold", sans-serif;
 }
-/* line 108, sass/masthead/_masthead.scss */
+/* line 106, sass/masthead/_masthead.scss */
 #masthead .site-branding .pbc-logo svg {
   display: block;
   width: 72px;
@@ -1838,8 +1855,13 @@ object {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 117, sass/masthead/_masthead.scss */
-#masthead .site-branding #aux-menu {
+/* line 116, sass/masthead/_masthead.scss */
+#masthead #site-navigation {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+/* line 119, sass/masthead/_masthead.scss */
+#masthead #site-navigation #aux-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1853,124 +1875,92 @@ object {
   margin: 0;
   padding: 0;
 }
-/* line 125, sass/masthead/_masthead.scss */
-#masthead .site-branding #aux-menu .join-now-link {
+/* line 127, sass/masthead/_masthead.scss */
+#masthead #site-navigation #aux-menu .join-now-link {
   background-color: #fa4515;
   color: #fff;
   padding: .5em 1em;
   margin-left: auto;
   font-size: .9em;
 }
-/* line 132, sass/masthead/_masthead.scss */
-#masthead .site-branding #aux-menu .join-now-link:hover {
+/* line 134, sass/masthead/_masthead.scss */
+#masthead #site-navigation #aux-menu .join-now-link:hover {
   background-color: #fb592e;
 }
-/* line 136, sass/masthead/_masthead.scss */
-#masthead .site-branding #aux-menu .join-now-link a {
+/* line 138, sass/masthead/_masthead.scss */
+#masthead #site-navigation #aux-menu .join-now-link a {
   color: #fff;
   font-family: "NotoSans-Bold", sans-serif;
   text-decoration: none;
 }
-/* line 141, sass/masthead/_masthead.scss */
-#masthead .site-branding #aux-menu .join-now-link a:hover {
+/* line 143, sass/masthead/_masthead.scss */
+#masthead #site-navigation #aux-menu .join-now-link a:hover {
   color: #39291d;
 }
-/* line 147, sass/masthead/_masthead.scss */
-#masthead .site-branding #aux-menu .contact-us-link {
+/* line 149, sass/masthead/_masthead.scss */
+#masthead #site-navigation #aux-menu .contact-us-link {
   display: none;
-  margin-left: 1em;
+  padding: 0 1em 0;
 }
-/* line 151, sass/masthead/_masthead.scss */
-#masthead .site-branding #aux-menu .contact-us-link a {
+/* line 153, sass/masthead/_masthead.scss */
+#masthead #site-navigation #aux-menu .contact-us-link a {
   color: #39291d;
   text-decoration: none;
   margin-left: 1em;
 }
-/* line 156, sass/masthead/_masthead.scss */
-#masthead .site-branding #aux-menu .contact-us-link a:hover {
+/* line 158, sass/masthead/_masthead.scss */
+#masthead #site-navigation #aux-menu .contact-us-link a:hover {
   color: #fa4515;
 }
-/* line 161, sass/masthead/_masthead.scss */
-#masthead .site-branding #aux-menu .contact-us-link.current_page_item > a, #masthead .site-branding #aux-menu .contact-us-link.current-menu-item > a, #masthead .site-branding #aux-menu .contact-us-link.current_page_ancestor > a, #masthead .site-branding #aux-menu .contact-us-link.current-menu-ancestor > a {
+/* line 163, sass/masthead/_masthead.scss */
+#masthead #site-navigation #aux-menu .contact-us-link.current_page_item > a, #masthead #site-navigation #aux-menu .contact-us-link.current-menu-item > a, #masthead #site-navigation #aux-menu .contact-us-link.current_page_ancestor > a, #masthead #site-navigation #aux-menu .contact-us-link.current-menu-ancestor > a {
   color: #fa4515;
   position: relative;
   padding: 1em;
   margin-left: 0;
 }
 @media only screen and (min-width: 400px) {
-  /* line 174, sass/masthead/_masthead.scss */
-  #masthead .site-branding #aux-menu .join-now-link {
+  /* line 176, sass/masthead/_masthead.scss */
+  #masthead #site-navigation #aux-menu .join-now-link {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 36em) {
-  /* line 181, sass/masthead/_masthead.scss */
-  #masthead .site-branding #menu-toggle #nav-icon {
+  /* line 184, sass/masthead/_masthead.scss */
+  #masthead #menu-toggle #nav-icon {
     width: 45px;
   }
 }
 @media screen and (min-width: 46.875em) {
-  /* line 189, sass/masthead/_masthead.scss */
-  #masthead .site-branding .flex-wrapper #menu-toggle {
-    display: none;
-  }
-  /* line 192, sass/masthead/_masthead.scss */
-  #masthead .site-branding .flex-wrapper .flex-child {
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-  }
-  /* line 197, sass/masthead/_masthead.scss */
-  #masthead .site-branding .pbc-logo {
-    margin-bottom: -2.4em;
-    margin-top: 1em;
-  }
-  /* line 200, sass/masthead/_masthead.scss */
-  #masthead .site-branding .pbc-logo svg {
-    width: 100px;
-    height: 83px;
-  }
-  /* line 206, sass/masthead/_masthead.scss */
-  #masthead .site-branding #aux-menu {
-    padding: 1em 0 0;
-  }
-  /* line 208, sass/masthead/_masthead.scss */
-  #masthead .site-branding #aux-menu .join-now-link {
-    background-color: #fa4515;
-    color: #fff;
-    padding: .25em 1em .35em;
-  }
-  /* line 213, sass/masthead/_masthead.scss */
-  #masthead .site-branding #aux-menu .join-now-link a {
-    color: #fff;
-    font-family: "NotoSans-Bold", sans-serif;
-    text-decoration: none;
-  }
-  /* line 220, sass/masthead/_masthead.scss */
-  #masthead .site-branding #aux-menu .contact-us-link {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-}
-@media screen and (min-width: 59.375em) {
-  /* line 227, sass/masthead/_masthead.scss */
-  #masthead .site-branding .pbc-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  /* line 191, sass/masthead/_masthead.scss */
+  #masthead .masthead-inner-wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
-  /* line 231, sass/masthead/_masthead.scss */
-  #masthead .site-branding .pbc-logo .logo-title {
-    display: block;
+  /* line 197, sass/masthead/_masthead.scss */
+  #masthead .button-wrapper {
+    display: none;
   }
-}
-@media screen and (min-width: 46.875em) {
-  /* line 239, sass/masthead/_masthead.scss */
-  #masthead .masthead-inner-wrapper {
+  /* line 201, sass/masthead/_masthead.scss */
+  #masthead .site-branding {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+  }
+  /* line 206, sass/masthead/_masthead.scss */
+  #masthead .site-branding .pbc-logo svg {
+    width: 100px;
+    height: 83px;
+    margin: 0;
+  }
+  /* line 214, sass/masthead/_masthead.scss */
+  #masthead #site-navigation {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 75%;
+            flex: 1 1 75%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1980,16 +1970,46 @@ object {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  /* line 245, sass/masthead/_masthead.scss */
-  #masthead .site-branding {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+  /* line 220, sass/masthead/_masthead.scss */
+  #masthead #site-navigation #aux-menu {
+    padding: 1em 0 0;
   }
-  /* line 249, sass/masthead/_masthead.scss */
-  #masthead .main-navigation {
-    text-align: right;
-    margin-right: auto;
+  /* line 222, sass/masthead/_masthead.scss */
+  #masthead #site-navigation #aux-menu .join-now-link {
+    background-color: #fa4515;
+    color: #fff;
+    padding: .25em 1em .35em;
+  }
+  /* line 227, sass/masthead/_masthead.scss */
+  #masthead #site-navigation #aux-menu .join-now-link a {
+    color: #fff;
+    font-family: "NotoSans-Bold", sans-serif;
+    text-decoration: none;
+  }
+  /* line 233, sass/masthead/_masthead.scss */
+  #masthead #site-navigation #aux-menu .contact-us-link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  /* line 239, sass/masthead/_masthead.scss */
+  #masthead #site-navigation .main-nav ul li {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 59.375em) {
+  /* line 248, sass/masthead/_masthead.scss */
+  #masthead .site-branding .pbc-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 252, sass/masthead/_masthead.scss */
+  #masthead .site-branding .pbc-logo .logo-title {
+    display: block;
   }
 }
 

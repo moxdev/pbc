@@ -1,13 +1,13 @@
-.main-navigation {
+.main-nav {
   display: none;
   width: 100%;
-  @include test(green);
+  // @include test(green);
 
 
   .menu-primary-menu-container {
 
     // margin-bottom: -0px;
-    margin-right: auto;
+    margin-left: auto;
 
     position: relative;
     z-index: 999999;
@@ -29,7 +29,7 @@
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
         // float: left;
         position: absolute;
-        top: 124%;
+        top: 100%;
         left: -999em;
         z-index: 99999;
 
@@ -57,7 +57,7 @@
         }
 
         a {
-          width: auto;
+          width: 200px;
 
           &:hover {
             color: $color__brand-4;
@@ -75,7 +75,7 @@
       position: relative;
       // margin: 0 1em;
       padding: 1em;
-      @include test(red);
+      // @include test(red);
 
       &:hover > a,
       &.focus > a {
@@ -92,6 +92,43 @@
       &:hover {
         color: $color__link-hover;
       }
+    }
+
+    .current_page_item,
+    .current-menu-item,
+    .current_page_ancestor,
+    .current-menu-ancestor {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0 !important;
+      // @include test(blue);
+
+      &:before,
+      &:after {
+        // position: absolute;
+        font-family: $font__main;
+        color: $color__brand-4;
+        font-size: 1.5em;
+        z-index: 9999;
+      }
+
+      &:before {
+        content: '[';
+      }
+      &:after {
+        content: ']';
+      }
+    }
+
+    .current_page_item > a,
+    .current-menu-item > a,
+    .current_page_ancestor > a,
+    .current-menu-ancestor > a {
+      color: $color__brand-1;
+      position: relative;
+      padding: 0 .5em;
+      // @include test(red);
     }
 
     .sub-menu {
@@ -129,30 +166,30 @@
       }
     }
 
-    // .shop-link {
-    //   position: relative;
+    .shop-link {
+      position: relative;
 
-    //   &:before {
-    //     content:'';
-    //     display: block;
-    //     position: absolute;
-    //     z-index: -1;
-    //     top: -8px;
-    //     left: -7px;
-    //     background: url(/wp-content/themes/promo_box_club/imgs/icon-shop-link.svg);
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    //     background-position: top center;
-    //     width: 50px;
-    //     height: 33px;
-    //   }
+      &:before {
+        content:'';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 8px;
+        left: 8px;
+        background: url(/wp-content/themes/promo_box_club/imgs/icon-shop-link.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+        width: 50px;
+        height: 33px;
+      }
 
-    //   a {
-    //     padding: 0;
-    //     position: relative;
-    //     z-index: 50;
-    //   }
-    // }
+      a {
+        padding: 0;
+        position: relative;
+        z-index: 50;
+      }
+    }
   }
 
   @include respond-to(small) {
@@ -180,7 +217,7 @@
 
       ul {
         li {
-          margin: 0 2em;
+          margin: 0 1em;
         }
       }
     }
@@ -192,8 +229,8 @@
 
       .shop-link {
         &:before {
-          top: -10px;
-          left: -10px;
+          // top: -10px;
+          // left: -10px;
           width: 62px;
           height: 45px;
         }
@@ -213,6 +250,7 @@
 }
 
 #menu-toggle.open {
+  display: none; // REMOVE!!!!!
 
   #nav-icon span:nth-child(1) {
     top: 18px;
