@@ -155,6 +155,7 @@
   .menu-primary-menu-container {
     display: none;
     padding-right: 5px;
+    padding: 1em 0;
 
     ul {
       display: flex;
@@ -210,8 +211,9 @@
     }
 
     li {
-      float: left;
+      // float: left;
       position: relative;
+      margin: 0 1em;
 
       &:hover > a,
       &.focus > a {
@@ -221,7 +223,7 @@
     a {
       display: block;
       text-decoration: none;
-      padding: 1em;
+      // padding: 0 1em;
       color: $color__brand-4;
       font-family: $font__bold;
 
@@ -296,6 +298,34 @@
   .current_page_ancestor,
   .current-menu-ancestor {
     position: relative;
+    display: flex;
+    align-items: center;
+    // @include test(blue);
+
+    &:before,
+    &:after {
+      // position: absolute;
+      font-family: $font__main;
+      color: $color__brand-4;
+      font-size: 1.5em;
+      z-index: 9999;
+    }
+
+    &:before {
+      content: '[';
+      // padding-bottom: 10px;
+      // padding-right: 5px;
+    }
+    &:after {
+      content: ']';
+      // padding-left: 5px;
+      // padding-bottom: 10px;
+      // right: 0;
+
+      // @include respond-to(large) {
+      //   bottom: 7px;
+      // }
+    }
   }
 
   .current_page_item > a,
@@ -304,30 +334,9 @@
   .current-menu-ancestor > a {
     color: $color__brand-1;
     position: relative;
+    padding: 0 .5em;
+    // @include test(red);
 
-    &:before,
-    &:after {
-      position: absolute;
-      font-family: $font__main;
-      color: $color__brand-4;
-      font-size: 2em;
-      z-index: 9999;
-    }
-
-    &:before {
-      content: '[';
-      top: 3px;
-      left: 0;
-    }
-    &:after {
-      content: ']';
-      bottom: 4px;
-      right: 0;
-
-      @include respond-to(large) {
-        bottom: 7px;
-      }
-    }
   }
 
   @media only screen and (min-width: 400px) {
@@ -391,14 +400,9 @@
       ul {
 
         li {
-          margin: 0 1em;
 
           &:last-child {
             margin-right: 0;
-          }
-
-          a {
-
           }
         }
       }
@@ -412,6 +416,15 @@
 
       .logo-title {
         display: block;
+      }
+
+    }
+    .menu-primary-menu-container {
+
+      ul {
+        li {
+          margin: 0 2em;
+        }
       }
     }
   }
