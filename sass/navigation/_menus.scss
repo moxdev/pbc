@@ -154,28 +154,35 @@
 
   .menu-primary-menu-container {
     display: none;
-    padding-right: 5px;
-    padding: 1em 0;
+    // margin-bottom: -0px;
+    position: relative;
+    z-index: 999999;
+    // padding-right: 5px;
+    // padding: 1em 0;
 
     ul {
       display: flex;
       align-items: center;
+      // justify-content: stretch;
       list-style: none;
       margin: 0;
       // padding-left: 0;
       // margin-right: 5px;
 
       ul {
+        // flex: 0 0 100%;
         background-color: $color__brand-1;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
         // float: left;
         position: absolute;
-        top: 100%;
+        top: 124%;
         left: -999em;
         z-index: 99999;
 
         li {
+          background-color: $color__brand-1;
           margin: 0;
+          flex: 0 0 auto;
 
           &:hover,
           &.focus {
@@ -196,7 +203,7 @@
         }
 
         a {
-          width: 200px;
+          width: auto;
 
           &:hover {
             color: $color__brand-4;
@@ -211,9 +218,10 @@
     }
 
     li {
-      // float: left;
       position: relative;
-      margin: 0 1em;
+      // margin: 0 1em;
+      padding: 1em;
+      @include test(red);
 
       &:hover > a,
       &.focus > a {
@@ -300,6 +308,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    padding-bottom: .5em;
     // @include test(blue);
 
     &:before,
