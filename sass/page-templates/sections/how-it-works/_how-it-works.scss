@@ -14,10 +14,6 @@ section.how-it-works {
     text-align: center;
   }
 
-  .column-wrapper {
-
-  }
-
   .inner-wrapper {
     text-align: left;
     padding-bottom: 2em;
@@ -69,7 +65,6 @@ section.how-it-works {
     font-size: 1.4em;
     margin-bottom: .25em;
     letter-spacing: .9px;
-    // @include font-smooth;
   }
 
   button {
@@ -81,15 +76,16 @@ section.how-it-works {
     .wrapper {
       max-width: 900px;
     }
+
     .column-wrapper {
       display: flex;
       flex-wrap: wrap;
-      // justify-content: space-around;
-
     }
 
     .inner-wrapper {
-      flex: 0 0 50%;
+      flex: 1 0 36%;
+      padding-left: 1em;
+      padding-right: 1em;
     }
 
     .title {
@@ -102,38 +98,28 @@ section.how-it-works {
 
     .center-wrapper {
       @include max-width(400px);
-      padding-left: 12%;
-    }
-  }
-
-  @include respond-to(small) {
-    .center-wrapper {
-
-      .title {
-        // font-size: 1.4em;
-      }
     }
   }
 
   @include respond-to(medium) {
-    .column-wrapper {
-      margin-left: 3em;
+    .inner-wrapper {
+      padding-left: 3em;
+      padding-right: 3em;
     }
-
   }
 
   @include respond-to(large) {
     .wrapper {
-      @include max-width(1100px);
+      @include max-width(1200px);
     }
 
-    .column-wrapper {
-      margin-left: 0;
+    .inner-wrapper {
+      padding-left: 4em;
+      padding-right: 4em;
     }
 
     .center-wrapper {
       max-width: 500px;
-      padding-left: 20%;
 
       .title {
         font-size: 1.3em;
@@ -147,17 +133,15 @@ section.how-it-works {
 
   @include respond-to(x-large) {
     .wrapper {
-      max-width: 1400px;
+      @include max-width(1400px);
     }
 
-    .col-1, .col-3 {
-      padding-left: 4em;
+    .inner-wrapper {
+      padding-left: 6em;
+      padding-right: 3em;
     }
 
     .center-wrapper {
-      max-width: 800px;
-      padding-right: 0;
-
       .title {
         font-size: 1.4em;
       }

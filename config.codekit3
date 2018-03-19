@@ -868,6 +868,13 @@
 		"oAP": "\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_hero.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_how-it-works.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_how-it-works.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_main-content.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1707,6 +1714,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/sections\/email-subscription\/email-subscription.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/sections\/how-it-works\/_how-it-works-home-about.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/sections\/how-it-works\/_how-it-works-home-about.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
