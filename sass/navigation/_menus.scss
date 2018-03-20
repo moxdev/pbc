@@ -33,10 +33,18 @@
         left: -999em;
         z-index: 99999;
 
+        @include respond-to(medium) {
+          top: 101%;
+        }
+        @include respond-to(large) {
+          top: 102%;
+        }
+
         li {
           background-color: $color__brand-1;
           margin: 0;
           flex: 0 0 auto;
+          @include test(red);
 
           &:hover,
           &.focus {
@@ -101,7 +109,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      padding: 0 !important;
+      // padding: 0 !important;
       // @include test(blue);
 
       &:before,
@@ -110,7 +118,7 @@
         font-family: $font__main;
         color: $color__brand-4;
         font-size: 1.5em;
-        z-index: 9999;
+        // z-index: 9999;
       }
 
       &:before {
@@ -118,6 +126,24 @@
       }
       &:after {
         content: ']';
+      }
+
+      .sub-menu {
+         top: 92%;
+
+         @include respond-to(medium) {
+           top: 93%;
+         }
+         @include respond-to(large) {
+          //  top: 102%;
+         }
+
+         .current_page_item,
+         .current-menu-item,
+         .current_page_ancestor,
+         .current-menu-ancestor {
+           padding: 1em;
+         }
       }
     }
 
@@ -128,41 +154,58 @@
       color: $color__brand-1;
       position: relative;
       padding: 0 .5em;
-      // @include test(red);
     }
 
     .sub-menu {
+
+      li {
+        padding: 0 1em 1em;
+      }
+
+      a {
+        padding-left: 1em;
+      }
+
+      .current_page_item,
+      .current-menu-item,
+      .current_page_ancestor,
+      .current-menu-ancestor {
+
+        &:before,
+        &:after {
+          content: '';
+        }
+      }
 
       .current_page_item > a,
       .current-menu-item > a,
       .current_page_ancestor > a,
       .current-menu-ancestor > a {
         color: #fff;
-        position: relative;
 
         &:before,
         &:after {
-          position: absolute;
+          // position: absolute;
+          font-family: $font__main;
+          color: $color__brand-4;
+          font-size: 1em;
+          // z-index: 9999;
         }
 
         &:before {
-          content: '';
-          top: 0;
-          left: 0;
+          content: '[';
+          padding-right: 10px;
         }
         &:after {
-          content: '';
-          bottom: 0;
-          right: 0;
-
-          @include respond-to(large) {
-            bottom: 0;
-          }
+          content: ']';
+          padding-left: 10px;
         }
 
         &:hover {
           color: $color__brand-4;
         }
+
+
       }
     }
 
@@ -229,8 +272,6 @@
 
       .shop-link {
         &:before {
-          // top: -10px;
-          // left: -10px;
           width: 62px;
           height: 45px;
         }
@@ -246,20 +287,6 @@
         }
       }
     }
-  }
-}
-
-#menu-toggle.open {
-  display: none; // REMOVE!!!!!
-
-  #nav-icon span:nth-child(1) {
-    top: 18px;
-    transform: rotate(135deg);
-  }
-
-  #nav-icon span:nth-child(2) {
-    top: 18px;
-    transform: rotate(-135deg);
   }
 }
 
@@ -282,4 +309,13 @@
 		text-align: right;
 		width: 50%;
 	}
+}
+
+// Styls for the sub menu dropdown on the home page
+.home .main-nav .menu-primary-menu-container ul ul {
+  top: 90%;
+
+  @include respond-to(medium) {
+    top: 91%;
+  }
 }

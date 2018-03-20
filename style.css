@@ -806,59 +806,72 @@ a a[href^=tel]:hover {
   left: -999em;
   z-index: 99999;
 }
-/* line 36, sass/navigation/_menus.scss */
+@media screen and (min-width: 59.375em) {
+  /* line 26, sass/navigation/_menus.scss */
+  .main-nav .menu-primary-menu-container ul ul {
+    top: 101%;
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 26, sass/navigation/_menus.scss */
+  .main-nav .menu-primary-menu-container ul ul {
+    top: 102%;
+  }
+}
+/* line 43, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container ul ul li {
   background-color: #fa4515;
   margin: 0;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  border: 1px solid red;
 }
-/* line 41, sass/navigation/_menus.scss */
+/* line 49, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container ul ul li:hover, .main-nav .menu-primary-menu-container ul ul li.focus {
   left: 0;
   background-color: #f03605;
 }
-/* line 47, sass/navigation/_menus.scss */
+/* line 55, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container ul ul li a {
   padding-top: 1em;
   color: #fff;
 }
-/* line 53, sass/navigation/_menus.scss */
+/* line 61, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 59, sass/navigation/_menus.scss */
+/* line 67, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container ul ul a {
   width: 200px;
 }
-/* line 62, sass/navigation/_menus.scss */
+/* line 70, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container ul ul a:hover {
   color: #39291d;
 }
-/* line 68, sass/navigation/_menus.scss */
+/* line 76, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container ul li:hover > ul,
 .main-nav .menu-primary-menu-container ul li.focus > ul {
   left: 0;
 }
-/* line 74, sass/navigation/_menus.scss */
+/* line 82, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container li {
   position: relative;
   padding: 1em;
 }
-/* line 85, sass/navigation/_menus.scss */
+/* line 93, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container a {
   display: block;
   text-decoration: none;
   color: #39291d;
   font-family: "NotoSans-Bold", sans-serif;
 }
-/* line 92, sass/navigation/_menus.scss */
+/* line 100, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container a:hover {
   color: #1cbcaf;
 }
-/* line 97, sass/navigation/_menus.scss */
+/* line 105, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .current_page_item,
 .main-nav .menu-primary-menu-container .current-menu-item,
 .main-nav .menu-primary-menu-container .current_page_ancestor,
@@ -870,9 +883,8 @@ a a[href^=tel]:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 !important;
 }
-/* line 107, sass/navigation/_menus.scss */
+/* line 115, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .current_page_item:before, .main-nav .menu-primary-menu-container .current_page_item:after,
 .main-nav .menu-primary-menu-container .current-menu-item:before,
 .main-nav .menu-primary-menu-container .current-menu-item:after,
@@ -883,23 +895,57 @@ a a[href^=tel]:hover {
   font-family: "NotoSans", sans-serif;
   color: #39291d;
   font-size: 1.5em;
-  z-index: 9999;
 }
-/* line 116, sass/navigation/_menus.scss */
+/* line 124, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .current_page_item:before,
 .main-nav .menu-primary-menu-container .current-menu-item:before,
 .main-nav .menu-primary-menu-container .current_page_ancestor:before,
 .main-nav .menu-primary-menu-container .current-menu-ancestor:before {
   content: '[';
 }
-/* line 119, sass/navigation/_menus.scss */
+/* line 127, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .current_page_item:after,
 .main-nav .menu-primary-menu-container .current-menu-item:after,
 .main-nav .menu-primary-menu-container .current_page_ancestor:after,
 .main-nav .menu-primary-menu-container .current-menu-ancestor:after {
   content: ']';
 }
-/* line 124, sass/navigation/_menus.scss */
+/* line 131, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .current_page_item .sub-menu,
+.main-nav .menu-primary-menu-container .current-menu-item .sub-menu,
+.main-nav .menu-primary-menu-container .current_page_ancestor .sub-menu,
+.main-nav .menu-primary-menu-container .current-menu-ancestor .sub-menu {
+  top: 92%;
+}
+@media screen and (min-width: 59.375em) {
+  /* line 131, sass/navigation/_menus.scss */
+  .main-nav .menu-primary-menu-container .current_page_item .sub-menu,
+  .main-nav .menu-primary-menu-container .current-menu-item .sub-menu,
+  .main-nav .menu-primary-menu-container .current_page_ancestor .sub-menu,
+  .main-nav .menu-primary-menu-container .current-menu-ancestor .sub-menu {
+    top: 93%;
+  }
+}
+/* line 141, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .current_page_item .sub-menu .current_page_item,
+.main-nav .menu-primary-menu-container .current_page_item .sub-menu .current-menu-item,
+.main-nav .menu-primary-menu-container .current_page_item .sub-menu .current_page_ancestor,
+.main-nav .menu-primary-menu-container .current_page_item .sub-menu .current-menu-ancestor,
+.main-nav .menu-primary-menu-container .current-menu-item .sub-menu .current_page_item,
+.main-nav .menu-primary-menu-container .current-menu-item .sub-menu .current-menu-item,
+.main-nav .menu-primary-menu-container .current-menu-item .sub-menu .current_page_ancestor,
+.main-nav .menu-primary-menu-container .current-menu-item .sub-menu .current-menu-ancestor,
+.main-nav .menu-primary-menu-container .current_page_ancestor .sub-menu .current_page_item,
+.main-nav .menu-primary-menu-container .current_page_ancestor .sub-menu .current-menu-item,
+.main-nav .menu-primary-menu-container .current_page_ancestor .sub-menu .current_page_ancestor,
+.main-nav .menu-primary-menu-container .current_page_ancestor .sub-menu .current-menu-ancestor,
+.main-nav .menu-primary-menu-container .current-menu-ancestor .sub-menu .current_page_item,
+.main-nav .menu-primary-menu-container .current-menu-ancestor .sub-menu .current-menu-item,
+.main-nav .menu-primary-menu-container .current-menu-ancestor .sub-menu .current_page_ancestor,
+.main-nav .menu-primary-menu-container .current-menu-ancestor .sub-menu .current-menu-ancestor {
+  padding: 1em;
+}
+/* line 150, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .current_page_item > a,
 .main-nav .menu-primary-menu-container .current-menu-item > a,
 .main-nav .menu-primary-menu-container .current_page_ancestor > a,
@@ -908,15 +954,32 @@ a a[href^=tel]:hover {
   position: relative;
   padding: 0 .5em;
 }
-/* line 136, sass/navigation/_menus.scss */
+/* line 161, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .sub-menu li {
+  padding: 0 1em 1em;
+}
+/* line 165, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .sub-menu a {
+  padding-left: 1em;
+}
+/* line 174, sass/navigation/_menus.scss */
+.main-nav .menu-primary-menu-container .sub-menu .current_page_item:before, .main-nav .menu-primary-menu-container .sub-menu .current_page_item:after,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-item:before,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-item:after,
+.main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor:before,
+.main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor:after,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor:before,
+.main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor:after {
+  content: '';
+}
+/* line 180, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .sub-menu .current_page_item > a,
 .main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a,
 .main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a,
 .main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a {
   color: #fff;
-  position: relative;
 }
-/* line 143, sass/navigation/_menus.scss */
+/* line 186, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .sub-menu .current_page_item > a:before, .main-nav .menu-primary-menu-container .sub-menu .current_page_item > a:after,
 .main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a:before,
 .main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a:after,
@@ -924,47 +987,38 @@ a a[href^=tel]:hover {
 .main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a:after,
 .main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:before,
 .main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:after {
-  position: absolute;
+  font-family: "NotoSans", sans-serif;
+  color: #39291d;
+  font-size: 1em;
 }
-/* line 148, sass/navigation/_menus.scss */
+/* line 195, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .sub-menu .current_page_item > a:before,
 .main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a:before,
 .main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a:before,
 .main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:before {
-  content: '';
-  top: 0;
-  left: 0;
+  content: '[';
+  padding-right: 10px;
 }
-/* line 153, sass/navigation/_menus.scss */
+/* line 199, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .sub-menu .current_page_item > a:after,
 .main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a:after,
 .main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a:after,
 .main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:after {
-  content: '';
-  bottom: 0;
-  right: 0;
+  content: ']';
+  padding-left: 10px;
 }
-@media screen and (min-width: 75em) {
-  /* line 153, sass/navigation/_menus.scss */
-  .main-nav .menu-primary-menu-container .sub-menu .current_page_item > a:after,
-  .main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a:after,
-  .main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a:after,
-  .main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:after {
-    bottom: 0;
-  }
-}
-/* line 163, sass/navigation/_menus.scss */
+/* line 204, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .sub-menu .current_page_item > a:hover,
 .main-nav .menu-primary-menu-container .sub-menu .current-menu-item > a:hover,
 .main-nav .menu-primary-menu-container .sub-menu .current_page_ancestor > a:hover,
 .main-nav .menu-primary-menu-container .sub-menu .current-menu-ancestor > a:hover {
   color: #39291d;
 }
-/* line 169, sass/navigation/_menus.scss */
+/* line 212, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .shop-link {
   position: relative;
 }
-/* line 172, sass/navigation/_menus.scss */
+/* line 215, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .shop-link:before {
   content: '';
   display: block;
@@ -979,7 +1033,7 @@ a a[href^=tel]:hover {
   width: 50px;
   height: 33px;
 }
-/* line 187, sass/navigation/_menus.scss */
+/* line 230, sass/navigation/_menus.scss */
 .main-nav .menu-primary-menu-container .shop-link a {
   padding: 0;
   position: relative;
@@ -992,69 +1046,63 @@ a a[href^=tel]:hover {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  /* line 206, sass/navigation/_menus.scss */
+  /* line 249, sass/navigation/_menus.scss */
   .main-nav .menu-primary-menu-container ul li:last-child {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 59.375em) {
-  /* line 219, sass/navigation/_menus.scss */
+  /* line 262, sass/navigation/_menus.scss */
   .main-nav .menu-primary-menu-container ul li {
     margin: 0 1em;
   }
 }
 @media screen and (min-width: 75em) {
-  /* line 227, sass/navigation/_menus.scss */
+  /* line 270, sass/navigation/_menus.scss */
   .main-nav .menu-primary-menu-container {
     padding-right: 8px;
   }
-  /* line 231, sass/navigation/_menus.scss */
+  /* line 274, sass/navigation/_menus.scss */
   .main-nav .menu-primary-menu-container .shop-link:before {
     width: 62px;
     height: 45px;
   }
 }
 @media screen and (min-width: 90em) {
-  /* line 244, sass/navigation/_menus.scss */
+  /* line 285, sass/navigation/_menus.scss */
   .main-nav .menu-primary-menu-container ul li {
     margin: 0 2em;
   }
 }
 
-/* line 252, sass/navigation/_menus.scss */
-#menu-toggle.open {
-  display: none;
-}
-/* line 255, sass/navigation/_menus.scss */
-#menu-toggle.open #nav-icon span:nth-child(1) {
-  top: 18px;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-/* line 260, sass/navigation/_menus.scss */
-#menu-toggle.open #nav-icon span:nth-child(2) {
-  top: 18px;
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-}
-
-/* line 270, sass/navigation/_menus.scss */
+/* line 297, sass/navigation/_menus.scss */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 275, sass/navigation/_menus.scss */
+/* line 302, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 280, sass/navigation/_menus.scss */
+/* line 307, sass/navigation/_menus.scss */
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%;
+}
+
+/* line 315, sass/navigation/_menus.scss */
+.home .main-nav .menu-primary-menu-container ul ul {
+  top: 90%;
+}
+@media screen and (min-width: 59.375em) {
+  /* line 315, sass/navigation/_menus.scss */
+  .home .main-nav .menu-primary-menu-container ul ul {
+    top: 91%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1065,7 +1113,7 @@ a a[href^=tel]:hover {
   padding-bottom: 2em;
   background: #fff;
   position: absolute;
-  top: 125px;
+  top: 144px;
   width: 100vw;
   height: auto;
   z-index: 100;
@@ -1078,57 +1126,63 @@ a a[href^=tel]:hover {
   transition: transform 0.25s ease-out;
   transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
-/* line 14, sass/navigation/_mobile-navigation.scss */
+@media only screen and (min-width: 339px) {
+  /* line 1, sass/navigation/_mobile-navigation.scss */
+  #mobile-menu {
+    top: 125px;
+  }
+}
+/* line 18, sass/navigation/_mobile-navigation.scss */
 #mobile-menu.open {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
-/* line 18, sass/navigation/_mobile-navigation.scss */
+/* line 22, sass/navigation/_mobile-navigation.scss */
 #mobile-menu #mobile-main-menu {
   list-style: none;
   margin: 0;
 }
-/* line 22, sass/navigation/_mobile-navigation.scss */
+/* line 26, sass/navigation/_mobile-navigation.scss */
 #mobile-menu #mobile-main-menu li {
   margin: 0;
   background: #fa4515;
   padding: .75em 1em;
 }
-/* line 27, sass/navigation/_mobile-navigation.scss */
+/* line 31, sass/navigation/_mobile-navigation.scss */
 #mobile-menu #mobile-main-menu li a {
   text-decoration: none;
   color: #fff;
   padding: 0 1em;
   font-size: 1.4em;
 }
-/* line 34, sass/navigation/_mobile-navigation.scss */
+/* line 38, sass/navigation/_mobile-navigation.scss */
 #mobile-menu #mobile-main-menu li:nth-child(2n) {
   background-color: #eba904;
 }
-/* line 37, sass/navigation/_mobile-navigation.scss */
+/* line 41, sass/navigation/_mobile-navigation.scss */
 #mobile-menu #mobile-main-menu li:nth-child(3n) {
   background-color: #1cbcaf;
 }
-/* line 40, sass/navigation/_mobile-navigation.scss */
+/* line 44, sass/navigation/_mobile-navigation.scss */
 #mobile-menu #mobile-main-menu li:nth-child(4n) {
   background-color: #39291d;
 }
-/* line 43, sass/navigation/_mobile-navigation.scss */
+/* line 47, sass/navigation/_mobile-navigation.scss */
 #mobile-menu #mobile-main-menu li:nth-child(5n) {
   background-color: #fff;
 }
-/* line 46, sass/navigation/_mobile-navigation.scss */
+/* line 50, sass/navigation/_mobile-navigation.scss */
 #mobile-menu #mobile-main-menu li:nth-child(5n) a {
   color: #39291d;
 }
-/* line 51, sass/navigation/_mobile-navigation.scss */
+/* line 55, sass/navigation/_mobile-navigation.scss */
 #mobile-menu #mobile-main-menu li .icon-plus {
   color: #fff;
   font-size: 1.4em;
   float: right;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-/* line 60, sass/navigation/_mobile-navigation.scss */
+/* line 64, sass/navigation/_mobile-navigation.scss */
 #mobile-menu #mobile-main-menu ul {
   clear: both;
   list-style: none;
@@ -1138,19 +1192,19 @@ a a[href^=tel]:hover {
   transition: .25s;
   max-height: 0px;
 }
-/* line 68, sass/navigation/_mobile-navigation.scss */
+/* line 72, sass/navigation/_mobile-navigation.scss */
 #mobile-menu #mobile-main-menu ul.active {
   display: block;
 }
-/* line 72, sass/navigation/_mobile-navigation.scss */
+/* line 76, sass/navigation/_mobile-navigation.scss */
 #mobile-menu #mobile-main-menu ul li a {
   font-size: 1.1em;
 }
-/* line 80, sass/navigation/_mobile-navigation.scss */
+/* line 84, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .flex-container {
   display: block;
 }
-/* line 84, sass/navigation/_mobile-navigation.scss */
+/* line 88, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1161,14 +1215,14 @@ a a[href^=tel]:hover {
   margin-bottom: 3em;
   text-align: center;
 }
-/* line 91, sass/navigation/_mobile-navigation.scss */
+/* line 95, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social .social-title {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   margin-bottom: 5px;
 }
-/* line 95, sass/navigation/_mobile-navigation.scss */
+/* line 99, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social .social-media {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -1187,26 +1241,26 @@ a a[href^=tel]:hover {
   margin: 0;
   padding: 0;
 }
-/* line 105, sass/navigation/_mobile-navigation.scss */
+/* line 109, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social .social-media:before, #mobile-menu .wrapper .social .social-media:after {
   font-size: 2em;
   color: #fa4515;
   font-family: "NotoSans", sans-serif;
 }
-/* line 112, sass/navigation/_mobile-navigation.scss */
+/* line 116, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social .social-media:before {
   content: '[';
 }
-/* line 116, sass/navigation/_mobile-navigation.scss */
+/* line 120, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social .social-media:after {
   content: ']';
 }
-/* line 121, sass/navigation/_mobile-navigation.scss */
+/* line 125, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social li {
   margin: 0;
   padding: 0;
 }
-/* line 126, sass/navigation/_mobile-navigation.scss */
+/* line 130, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social a {
   display: block;
   text-indent: 110%;
@@ -1218,50 +1272,50 @@ a a[href^=tel]:hover {
   width: 30px;
   height: 30px;
 }
-/* line 138, sass/navigation/_mobile-navigation.scss */
+/* line 142, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social .fb a {
   background-position: 0 0;
 }
-/* line 141, sass/navigation/_mobile-navigation.scss */
+/* line 145, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social .pin a {
   background-position: -149px 0;
 }
-/* line 144, sass/navigation/_mobile-navigation.scss */
+/* line 148, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social .tw a {
   background-position: -29px 0;
 }
-/* line 147, sass/navigation/_mobile-navigation.scss */
+/* line 151, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social .insta a {
   background-position: -180px 0;
 }
-/* line 150, sass/navigation/_mobile-navigation.scss */
+/* line 154, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social .yt a {
   background-position: -120px 0;
 }
-/* line 153, sass/navigation/_mobile-navigation.scss */
+/* line 157, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social .goo a {
   background-position: -59px 0;
 }
-/* line 156, sass/navigation/_mobile-navigation.scss */
+/* line 160, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .social .linked a {
   background-position: -91px 0;
 }
-/* line 161, sass/navigation/_mobile-navigation.scss */
+/* line 165, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper .marcom-navigation {
   margin-left: 10px;
 }
-/* line 165, sass/navigation/_mobile-navigation.scss */
+/* line 169, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper #mobile-marcom-menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 170, sass/navigation/_mobile-navigation.scss */
+/* line 174, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper #mobile-marcom-menu .shop-link {
   position: relative;
   margin: 0;
 }
-/* line 174, sass/navigation/_mobile-navigation.scss */
+/* line 178, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper #mobile-marcom-menu .shop-link:before {
   content: '';
   display: block;
@@ -1276,12 +1330,12 @@ a a[href^=tel]:hover {
   width: 60px;
   height: 39px;
 }
-/* line 189, sass/navigation/_mobile-navigation.scss */
+/* line 193, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper #mobile-marcom-menu .shop-link li {
   margin: 0;
   padding: 0;
 }
-/* line 194, sass/navigation/_mobile-navigation.scss */
+/* line 198, sass/navigation/_mobile-navigation.scss */
 #mobile-menu .wrapper #mobile-marcom-menu .shop-link a {
   padding: 0;
   position: relative;
@@ -1292,7 +1346,7 @@ a a[href^=tel]:hover {
   font-family: "NotoSans-Bold", sans-serif;
 }
 @media only screen and (min-width: 400px) {
-  /* line 210, sass/navigation/_mobile-navigation.scss */
+  /* line 214, sass/navigation/_mobile-navigation.scss */
   #mobile-menu .wrapper .flex-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1304,7 +1358,7 @@ a a[href^=tel]:hover {
         -ms-flex-align: baseline;
             align-items: baseline;
   }
-  /* line 216, sass/navigation/_mobile-navigation.scss */
+  /* line 220, sass/navigation/_mobile-navigation.scss */
   #mobile-menu .wrapper .social {
     margin-bottom: 0;
   }
@@ -1925,14 +1979,30 @@ object {
     font-size: 1em;
   }
 }
+/* line 185, sass/masthead/_masthead.scss */
+#masthead #menu-toggle.open #nav-icon span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+/* line 190, sass/masthead/_masthead.scss */
+#masthead #menu-toggle.open #nav-icon span:nth-child(2) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
 @media screen and (min-width: 36em) {
-  /* line 184, sass/masthead/_masthead.scss */
+  /* line 198, sass/masthead/_masthead.scss */
   #masthead #menu-toggle #nav-icon {
     width: 45px;
   }
 }
 @media screen and (min-width: 46.875em) {
-  /* line 191, sass/masthead/_masthead.scss */
+  /* line 1, sass/masthead/_masthead.scss */
+  #masthead {
+    margin-bottom: -5px;
+  }
+  /* line 207, sass/masthead/_masthead.scss */
   #masthead .masthead-inner-wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1940,27 +2010,27 @@ object {
     padding-top: 0;
     padding-bottom: 0;
   }
-  /* line 197, sass/masthead/_masthead.scss */
+  /* line 213, sass/masthead/_masthead.scss */
   #masthead .button-wrapper {
     display: none;
   }
-  /* line 201, sass/masthead/_masthead.scss */
+  /* line 217, sass/masthead/_masthead.scss */
   #masthead .site-branding {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 20%;
-            flex: 0 0 20%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 10%;
+            flex: 1 1 10%;
   }
-  /* line 206, sass/masthead/_masthead.scss */
+  /* line 222, sass/masthead/_masthead.scss */
   #masthead .site-branding .pbc-logo svg {
     width: 100px;
     height: 83px;
     margin: 0;
   }
-  /* line 214, sass/masthead/_masthead.scss */
+  /* line 230, sass/masthead/_masthead.scss */
   #masthead #site-navigation {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 75%;
-            flex: 1 1 75%;
+        -ms-flex: 1 1 90%;
+            flex: 1 1 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1970,35 +2040,35 @@ object {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  /* line 220, sass/masthead/_masthead.scss */
+  /* line 236, sass/masthead/_masthead.scss */
   #masthead #site-navigation #aux-menu {
     padding: 1em 0 0;
   }
-  /* line 222, sass/masthead/_masthead.scss */
+  /* line 238, sass/masthead/_masthead.scss */
   #masthead #site-navigation #aux-menu .join-now-link {
     background-color: #fa4515;
     color: #fff;
     padding: .25em 1em .35em;
   }
-  /* line 227, sass/masthead/_masthead.scss */
+  /* line 243, sass/masthead/_masthead.scss */
   #masthead #site-navigation #aux-menu .join-now-link a {
     color: #fff;
     font-family: "NotoSans-Bold", sans-serif;
     text-decoration: none;
   }
-  /* line 233, sass/masthead/_masthead.scss */
+  /* line 249, sass/masthead/_masthead.scss */
   #masthead #site-navigation #aux-menu .contact-us-link {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  /* line 239, sass/masthead/_masthead.scss */
+  /* line 255, sass/masthead/_masthead.scss */
   #masthead #site-navigation .main-nav ul li {
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 59.375em) {
-  /* line 248, sass/masthead/_masthead.scss */
+  /* line 264, sass/masthead/_masthead.scss */
   #masthead .site-branding .pbc-logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2007,7 +2077,7 @@ object {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 252, sass/masthead/_masthead.scss */
+  /* line 268, sass/masthead/_masthead.scss */
   #masthead .site-branding .pbc-logo .logo-title {
     display: block;
   }
