@@ -2436,112 +2436,47 @@ section.how-it-works button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 85, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 86, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .inner-wrapper {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 36%;
-            flex: 1 0 36%;
-    padding-left: 1em;
-    padding-right: 1em;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
   }
-  /* line 91, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 92, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .title {
     font-size: 1.3em;
   }
-  /* line 94, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 96, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .title:before {
     height: 100px;
   }
-  /* line 99, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 106, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .center-wrapper {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 59.375em) {
-  /* line 105, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-  section.how-it-works .inner-wrapper {
-    padding-left: 3em;
-    padding-right: 3em;
-  }
-}
 @media screen and (min-width: 75em) {
-  /* line 112, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 119, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .wrapper {
-    max-width: 1200px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 116, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-  section.how-it-works .inner-wrapper {
-    padding-left: 4em;
-    padding-right: 4em;
-  }
-  /* line 121, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-  section.how-it-works .center-wrapper {
-    max-width: 500px;
-  }
-  /* line 124, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 132, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .center-wrapper .title {
     font-size: 1.3em;
   }
-  /* line 127, sass/page-templates/sections/how-it-works/_how-it-works.scss */
+  /* line 135, sass/page-templates/sections/how-it-works/_how-it-works.scss */
   section.how-it-works .center-wrapper .title:before {
     height: 125px;
-  }
-}
-@media screen and (min-width: 90em) {
-  /* line 135, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-  section.how-it-works .wrapper {
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 139, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-  section.how-it-works .inner-wrapper {
-    padding-left: 6em;
-    padding-right: 3em;
-  }
-  /* line 145, sass/page-templates/sections/how-it-works/_how-it-works.scss */
-  section.how-it-works .center-wrapper .title {
-    font-size: 1.4em;
   }
 }
 
 /*--------------------------------------------------------------
 ### How It Works Section for Home and About Pages
 --------------------------------------------------------------*/
-/* line 6, sass/page-templates/sections/how-it-works/_how-it-works-home-about.scss */
-.home section.how-it-works .inner-wrapper, .page-id-7 section.how-it-works .inner-wrapper {
-  padding-left: 2em;
-  padding-right: 0;
-}
-@media screen and (min-width: 46.875em) {
-  /* line 12, sass/page-templates/sections/how-it-works/_how-it-works-home-about.scss */
-  .home section.how-it-works .inner-wrapper, .page-id-7 section.how-it-works .inner-wrapper {
-    padding-left: 3em;
-  }
-}
-@media screen and (min-width: 59.375em) {
-  /* line 18, sass/page-templates/sections/how-it-works/_how-it-works-home-about.scss */
-  .home section.how-it-works .inner-wrapper, .page-id-7 section.how-it-works .inner-wrapper {
-    padding-left: 4em;
-  }
-}
-@media screen and (min-width: 75em) {
-  /* line 24, sass/page-templates/sections/how-it-works/_how-it-works-home-about.scss */
-  .home section.how-it-works .inner-wrapper, .page-id-7 section.how-it-works .inner-wrapper {
-    padding-left: 5em;
-  }
-}
-@media screen and (min-width: 90em) {
-  /* line 30, sass/page-templates/sections/how-it-works/_how-it-works-home-about.scss */
-  .home section.how-it-works .inner-wrapper, .page-id-7 section.how-it-works .inner-wrapper {
-    padding-left: 6em;
-  }
-}
-
 /*--------------------------------------------------------------
 ## Email Subscription Section
 --------------------------------------------------------------*/

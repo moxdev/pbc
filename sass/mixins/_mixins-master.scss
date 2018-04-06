@@ -10,6 +10,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+@mixin test($color) {
+  border: 1px solid $color;
+}
+
 @mixin max-width($maxWidth) {
 	max-width: $maxWidth;
 	margin-left: auto;
