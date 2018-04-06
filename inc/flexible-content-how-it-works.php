@@ -33,7 +33,9 @@ function promo_box_club_flexible_content_how_it_works_section() {
               <?php endif; ?>
 
               <?php if( $icon_desc ) : ?>
-                <?php echo $icon_desc; ?>
+                <div class="description">
+                  <?php echo $icon_desc; ?>
+                </div>
               <?php endif; ?>
 
             </div>

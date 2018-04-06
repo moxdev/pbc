@@ -509,13 +509,6 @@
 		"oAP": "\/inc\/home-see-whats-inside.php",
 		"oF": 0
 		},
-	"\/inc\/home-video-carousel.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/inc\/home-video-carousel.php",
-		"oF": 0
-		},
 	"\/inc\/home-why-join.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -563,13 +556,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/inc\/whats-new.php",
-		"oF": 0
-		},
-	"\/inc\/yearly-archive-widget.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/inc\/yearly-archive-widget.php",
 		"oF": 0
 		},
 	"\/index.php": {
@@ -903,6 +889,13 @@
 		"oAP": "\/sass\/.sass-cache\/2da5dcc01d3b44d86217591ef1655fb815c00788\/_why-join.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/3683da2b5c23202b6a30543ac159fa9c54d3ede2\/_how-it-works-home-about.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/3683da2b5c23202b6a30543ac159fa9c54d3ede2\/_how-it-works-home-about.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/3683da2b5c23202b6a30543ac159fa9c54d3ede2\/_how-it-works-section.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -971,6 +964,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/sass\/.sass-cache\/4ec2e19b308ceb8a0881c898fd10c789852f94e3\/email-subscription.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/620877909d7edabe3f481f2050bfaa158cb82ef8\/_how-it-works-page.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/620877909d7edabe3f481f2050bfaa158cb82ef8\/_how-it-works-page.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/6bcd19a3b1c1bc7010f4a97af0914b0c3ff12352\/_captions.scssc": {
@@ -1686,7 +1686,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/page-templates\/how-it-works\/_how-it-works.scss": {
+	"\/sass\/page-templates\/how-it-works-page\/_how-it-works-page.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1694,7 +1694,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/sass\/page-templates\/how-it-works\/_how-it-works.css",
+		"oAP": "\/sass\/page-templates\/how-it-works-page\/_how-it-works-page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1738,7 +1738,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/page-templates\/sections\/how-it-works\/_how-it-works-home-about.scss": {
+	"\/sass\/page-templates\/sections\/how-it-works-section\/_how-it-works-home-about.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1746,12 +1746,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/sass\/page-templates\/sections\/how-it-works\/_how-it-works-home-about.css",
+		"oAP": "\/sass\/page-templates\/sections\/how-it-works-section\/_how-it-works-home-about.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/page-templates\/sections\/how-it-works\/_how-it-works.scss": {
+	"\/sass\/page-templates\/sections\/how-it-works-section\/_how-it-works-section.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1759,7 +1759,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/sass\/page-templates\/sections\/how-it-works\/_how-it-works.css",
+		"oAP": "\/sass\/page-templates\/sections\/how-it-works-section\/_how-it-works-section.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

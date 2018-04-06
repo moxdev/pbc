@@ -1,4 +1,4 @@
-// How It Works Section Code
+// How It Works Section Styles
 section.how-it-works {
   background-color: $color__brand-2;
   @include section-padding;
@@ -83,9 +83,10 @@ section.how-it-works {
     }
 
     .inner-wrapper {
-      flex: 1 0 36%;
+      flex: 1 0 50%;
       padding-left: 1em;
       padding-right: 1em;
+      max-width: 50%; // ie11 flex-item padding fix
     }
 
     .title {
@@ -132,9 +133,6 @@ section.how-it-works {
   }
 
   @include respond-to(x-large) {
-    .wrapper {
-      @include max-width(1400px);
-    }
 
     .inner-wrapper {
       padding-left: 6em;

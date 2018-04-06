@@ -35,9 +35,10 @@ function promo_box_club_flexble_content_section() {
           endif;
 
         elseif( get_row_layout() == 'email_subscription_section' ):
-          $add_the_email_subscription_section = get_sub_field('add_the_email_subscription_section');
+          $add_the_email_subscription_section = get_sub_field( 'add_the_email_subscription_section' );
 
           if( $add_the_email_subscription_section ) {
+
             if( function_exists( 'promo_box_club_email_subscription_section' ) ) :
               promo_box_club_email_subscription_section();
             endif;
