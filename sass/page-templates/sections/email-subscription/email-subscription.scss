@@ -4,12 +4,12 @@ section.email-subscription {
   background-color: $color__brand-3;
 
   .wrapper {
-    @include max-width(1100px);
-    text-align: left;
+    @include max-width(900px);
   }
 
   h2 {
     font-size: 1.5em;
+    text-align: left;
   }
 
   input[type="email"] {
@@ -21,26 +21,7 @@ section.email-subscription {
     padding: 10px 0 10px 15px;
   }
 
-  @include respond-to(x-small) {
-    input[type="email"] {
-      width: 70%;
-    }
-  }
-
   @include respond-to(small) {
-    // .wrapper {
-    //   // display: flex;
-    //   align-items: center;
-
-    //   h2 {
-    //     flex: 1 1 40%;
-    //   }
-
-    //   #embed-signup-form {
-    //     flex: 1 1 60%;
-    //   }
-    // }
-
     input[type="email"] {
       width: 100%;
     }
@@ -60,35 +41,7 @@ section.email-subscription {
         border: 0;
         border-radius: 8px;
         padding: 0;
-      }
-    }
-  }
-
-  @include respond-to(medium) {
-    .wrapper {
-
-      h2 {
-        flex: 1 1 30%;
-      }
-
-      #embed-signup-form {
-        flex: 1 1 70%;
-      }
-
-      #embed-signup-scroll {
-        .field-group {
-          flex: 1 1 80%;
-          padding-left: 2em;
-          padding-right: 1em;
-        }
-
-        button {
-          flex: 1 1 20%;
-          margin-bottom: 1em;
-          border: 0;
-          border-radius: 8px;
-          padding: 0;
-        }
+        max-width: 150px;
       }
     }
   }

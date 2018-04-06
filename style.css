@@ -2548,14 +2548,14 @@ section.email-subscription {
 }
 /* line 6, sass/page-templates/sections/email-subscription/email-subscription.scss */
 section.email-subscription .wrapper {
-  max-width: 1100px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
 }
-/* line 11, sass/page-templates/sections/email-subscription/email-subscription.scss */
+/* line 10, sass/page-templates/sections/email-subscription/email-subscription.scss */
 section.email-subscription h2, section.email-subscription .home section.home-see-whats-inside h2, .home section.home-see-whats-inside section.email-subscription h2, section.email-subscription .home .home-why-join .wrapper h2, .home .home-why-join .wrapper section.email-subscription h2, section.email-subscription .blog h1.entry-title, .blog section.email-subscription h1.entry-title, section.email-subscription .single h1.entry-title, .single section.email-subscription h1.entry-title, section.email-subscription .archive h1.entry-title, .archive section.email-subscription h1.entry-title, section.email-subscription .categories h1.entry-title, .categories section.email-subscription h1.entry-title, section.email-subscription .tag h1.entry-title, .tag section.email-subscription h1.entry-title {
   font-size: 1.5em;
+  text-align: left;
 }
 /* line 15, sass/page-templates/sections/email-subscription/email-subscription.scss */
 section.email-subscription input[type="email"] {
@@ -2566,18 +2566,12 @@ section.email-subscription input[type="email"] {
   border-radius: 8px;
   padding: 10px 0 10px 15px;
 }
-@media screen and (min-width: 36em) {
-  /* line 25, sass/page-templates/sections/email-subscription/email-subscription.scss */
-  section.email-subscription input[type="email"] {
-    width: 70%;
-  }
-}
 @media screen and (min-width: 46.875em) {
-  /* line 44, sass/page-templates/sections/email-subscription/email-subscription.scss */
+  /* line 25, sass/page-templates/sections/email-subscription/email-subscription.scss */
   section.email-subscription input[type="email"] {
     width: 100%;
   }
-  /* line 48, sass/page-templates/sections/email-subscription/email-subscription.scss */
+  /* line 29, sass/page-templates/sections/email-subscription/email-subscription.scss */
   section.email-subscription #embed-signup-scroll {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2586,14 +2580,14 @@ section.email-subscription input[type="email"] {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  /* line 52, sass/page-templates/sections/email-subscription/email-subscription.scss */
+  /* line 33, sass/page-templates/sections/email-subscription/email-subscription.scss */
   section.email-subscription #embed-signup-scroll .field-group {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
     padding-right: 2em;
   }
-  /* line 57, sass/page-templates/sections/email-subscription/email-subscription.scss */
+  /* line 38, sass/page-templates/sections/email-subscription/email-subscription.scss */
   section.email-subscription #embed-signup-scroll button {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -2602,38 +2596,7 @@ section.email-subscription input[type="email"] {
     border: 0;
     border-radius: 8px;
     padding: 0;
-  }
-}
-@media screen and (min-width: 59.375em) {
-  /* line 70, sass/page-templates/sections/email-subscription/email-subscription.scss */
-  section.email-subscription .wrapper h2, section.email-subscription .home .home-why-join .wrapper h2, .home .home-why-join section.email-subscription .wrapper h2, section.email-subscription .wrapper .blog h1.entry-title, .blog section.email-subscription .wrapper h1.entry-title, section.email-subscription .wrapper .single h1.entry-title, .single section.email-subscription .wrapper h1.entry-title, section.email-subscription .wrapper .archive h1.entry-title, .archive section.email-subscription .wrapper h1.entry-title, section.email-subscription .wrapper .categories h1.entry-title, .categories section.email-subscription .wrapper h1.entry-title, section.email-subscription .wrapper .tag h1.entry-title, .tag section.email-subscription .wrapper h1.entry-title {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 30%;
-            flex: 1 1 30%;
-  }
-  /* line 74, sass/page-templates/sections/email-subscription/email-subscription.scss */
-  section.email-subscription .wrapper #embed-signup-form {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 70%;
-            flex: 1 1 70%;
-  }
-  /* line 79, sass/page-templates/sections/email-subscription/email-subscription.scss */
-  section.email-subscription .wrapper #embed-signup-scroll .field-group {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 80%;
-            flex: 1 1 80%;
-    padding-left: 2em;
-    padding-right: 1em;
-  }
-  /* line 85, sass/page-templates/sections/email-subscription/email-subscription.scss */
-  section.email-subscription .wrapper #embed-signup-scroll button {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 20%;
-            flex: 1 1 20%;
-    margin-bottom: 1em;
-    border: 0;
-    border-radius: 8px;
-    padding: 0;
+    max-width: 150px;
   }
 }
 
