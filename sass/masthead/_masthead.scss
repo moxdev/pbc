@@ -115,6 +115,7 @@
 
   #site-navigation {
     align-self: center;
+    @include test(red);
 
     #aux-menu {
       display: flex;
