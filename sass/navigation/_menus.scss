@@ -5,46 +5,42 @@
   @include respond-to(small) {
     display: inline-flex;
     margin-left: auto;
+
+    ul {
+      list-style: none;
+      margin: 0;
+    }
   }
 
-
+  // .header-wrapper - Fuse
   .menu-primary-menu-container {
     margin-left: auto;
 
-    ul {
+    #main-menu {
       @include test(red);
       margin-left: auto;
       display: flex;
-      // align-items: center;
-      // justify-content: stretch;
-      list-style: none;
-      margin: 0;
-      // padding-left: 0;
-      // margin-right: 5px;
 
       ul {
-        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        display: block;
         float: left;
         position: absolute;
-        top: 100%;
+        top: 97%;
         left: -999em;
         z-index: 99999;
         opacity: 0;
         transition: opacity 0.25s;
         background: transparent;
 
-        @include respond-to(medium) {
-          top: 101%;
-        }
-        @include respond-to(large) {
-          top: 102%;
+        ul {
+          left: -999em;
+          top: 0;
         }
 
         li {
+          position: relative;
+          z-index: 99999;
           background-color: $color__brand-1;
-          margin: 0;
-          flex: 0 0 auto;
-          @include test(red);
 
           &:hover,
           &.focus {
@@ -52,16 +48,14 @@
             background-color: darken($color__brand-1, 5%);
           }
 
+          &:hover > ul,
+          &.focus > ul {
+            left: 100%;
+          }
+
           a {
-            padding-top: 1em;
             color: #fff;
           }
-        }
-
-        ul {
-          left: -999em;
-          top: 0;
-
         }
 
         a {
@@ -76,14 +70,14 @@
       li:hover > ul,
       li.focus > ul {
         left: 0;
+        opacity: 1;
       }
     }
 
     li {
+      float: left;
       position: relative;
-      // margin: 0 1em;
       padding: 1em;
-      @include test(blue);
 
       &:hover > a,
       &.focus > a {
@@ -93,119 +87,11 @@
     a {
       display: block;
       text-decoration: none;
-      // padding: 0 1em;
       color: $color__brand-4;
       font-family: $font__bold;
 
       &:hover {
         color: $color__link-hover;
-      }
-    }
-
-    .current_page_item,
-    .current-menu-item,
-    .current_page_ancestor,
-    .current-menu-ancestor {
-      position: relative;
-      display: flex;
-      align-items: center;
-      // padding: 0 !important;
-      // @include test(blue);
-
-      &:before,
-      &:after {
-        // position: absolute;
-        font-family: $font__main;
-        color: $color__brand-4;
-        font-size: 1.5em;
-        // z-index: 9999;
-      }
-
-      &:before {
-        content: '[';
-      }
-      &:after {
-        content: ']';
-      }
-
-      .sub-menu {
-         top: 92%;
-
-         @include respond-to(medium) {
-           top: 93%;
-         }
-         @include respond-to(large) {
-          //  top: 102%;
-         }
-
-         .current_page_item,
-         .current-menu-item,
-         .current_page_ancestor,
-         .current-menu-ancestor {
-           padding: 1em;
-         }
-      }
-    }
-
-    .current_page_item > a,
-    .current-menu-item > a,
-    .current_page_ancestor > a,
-    .current-menu-ancestor > a {
-      color: $color__brand-1;
-      position: relative;
-      padding: 0 .5em;
-    }
-
-    .sub-menu {
-
-      li {
-        padding: 0 1em 1em;
-      }
-
-      a {
-        padding-left: 1em;
-      }
-
-      .current_page_item,
-      .current-menu-item,
-      .current_page_ancestor,
-      .current-menu-ancestor {
-
-        &:before,
-        &:after {
-          content: '';
-        }
-      }
-
-      .current_page_item > a,
-      .current-menu-item > a,
-      .current_page_ancestor > a,
-      .current-menu-ancestor > a {
-        color: #fff;
-
-        &:before,
-        &:after {
-          // position: absolute;
-          font-family: $font__main;
-          color: $color__brand-4;
-          font-size: 1em;
-          // z-index: 9999;
-        }
-
-        &:before {
-          content: '[';
-          padding-right: 10px;
-        }
-        &:after {
-          content: ']';
-          padding-left: 10px;
-        }
-
-        &:hover {
-          color: $color__brand-4;
-        }
-
-
       }
     }
 
@@ -233,61 +119,12 @@
         z-index: 50;
       }
     }
+
+    /*--------------------------------------------------------------
+    ### Current Page Item Styles
+    --------------------------------------------------------------*/
+    // @import 'current-page-item'
   }
-
-  // @include respond-to(small) {
-  //   display: inline-flex;
-
-  //   .menu-primary-menu-container {
-  //     // display: block;
-  //     // float: right;
-
-  //     ul {
-
-  //       li {
-
-  //         &:last-child {
-  //           margin-right: 0;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
-  // @include respond-to(medium) {
-
-  //   .menu-primary-menu-container {
-
-  //     ul {
-  //       li {
-  //         margin: 0 1em;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // @include respond-to(large) {
-  //   .menu-primary-menu-container {
-  //     padding-right: 8px;
-
-  //     .shop-link {
-  //       &:before {
-  //         width: 62px;
-  //         height: 45px;
-  //       }
-  //     }
-  //   }
-  // }
-  // @include respond-to(x-large) {
-  //   .menu-primary-menu-container {
-  //     ul {
-
-  //       li {
-  //         margin: 0 2em;
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 .comment-navigation,

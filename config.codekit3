@@ -7,7 +7,7 @@
 		"uuidString": "D9C7B47F-4ADE-4E7B-996C-C57E906D1D9C"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26667",
 "files": {
 	"\/*notes-1.php\/notes.php": {
 		"cB": 0,
@@ -1465,6 +1465,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/navigation\/_current-page-item.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/navigation\/_current-page-item.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/navigation\/_links.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2059,7 +2072,8 @@
 	"creationDate": 540842053,
 	"displayValue": "promo_box_club",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-confession"
+	"iconImageName": "meme-confession",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3862,6 +3876,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
