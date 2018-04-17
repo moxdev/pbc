@@ -115,7 +115,6 @@
 
   #site-navigation {
     align-self: center;
-    @include test(red);
 
     #aux-menu {
       display: flex;
@@ -161,14 +160,42 @@
           }
         }
 
+        &.current_page_item,
+        &.current-menu-item,
+        &.current_page_ancestor,
+        &.current-menu-ancestor {
+          padding-right: 0;
+        }
+
         &.current_page_item > a,
         &.current-menu-item > a,
         &.current_page_ancestor > a,
         &.current-menu-ancestor > a {
+          position: relative;
+          display: flex;
+          // align-items: center;
           color: $color__brand-1;
           position: relative;
-          padding: 1em;
-          margin-left: 0;
+          // padding: 0 .5em;
+
+          &:before,
+          &:after {
+            // position: absolute;
+            font-family: $font__main;
+            color: $color__brand-4;
+            font-size: 1.5em;
+            // z-index: 9999;
+            padding-left: .5em;
+            padding-right: .5em;
+            line-height: 1;
+          }
+
+          &:before {
+            content: '[';
+          }
+          &:after {
+            content: ']';
+          }
         }
       }
     }
@@ -214,7 +241,7 @@
       display: none;
     }
 
-    .site-branding {
+    .site-branding.flex-child {
       flex: 1 1 10%;
       .pbc-logo {
         // margin-bottom: -2.4em;
@@ -260,7 +287,8 @@
   }
 
   @include respond-to(medium) {
-    .site-branding {
+    .site-branding.flex-child {
+      flex: 1 1 30%;
       .pbc-logo {
         display: flex;
         align-items: center;
@@ -269,6 +297,10 @@
           display: block;
         }
       }
+    }
+
+    #site-navigation {
+      flex: 1 1 70%;
     }
   }
 }

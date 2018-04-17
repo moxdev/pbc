@@ -260,6 +260,21 @@ function promo_box_club_add_editor_styles() {
 }
 add_action( 'admin_init', 'promo_box_club_add_editor_styles' );
 
+function promo_box_club_newsletter_signup_map() {
+  ?>
+  <script type='text/javascript'>
+    var localizedErrMap = {};
+    localizedErrMap['required']       = 'This field is required.';
+    localizedErrMap['ca']             = 'An unexpected error occurred while attempting to send email.';
+    localizedErrMap['email']          = 'Please enter your email address in name@email.com format.';
+    var postURL = 'https://visitor2.constantcontact.com/api/signup';
+  </script>
+<?php
+
+  wp_enqueue_script( 'promo-box-club-form-validate-lib', get_template_directory_uri() . '/js/min/validate.min.js', array(), '20151001', true );
+  wp_enqueue_script( 'promo-box-club-news-signup', '//static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js', array(), '', true );
+}
+
 /**
  * Implement the Custom Header feature.
  */

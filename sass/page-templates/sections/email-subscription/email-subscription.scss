@@ -1,5 +1,5 @@
 section.email-subscription {
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 1em;
   background-color: $color__brand-3;
 
@@ -21,6 +21,23 @@ section.email-subscription {
     padding: 10px 0 10px 15px;
   }
 
+  /* CONSTANT CONTACT EMAIL SIGNUP FORM */
+
+  .ctct-custom-form #success_message {
+    padding: 0;
+    margin: 0;
+    color: $color__brand-4;
+  }
+
+  .ctct-custom-form #success_message > div {
+    margin: 1.5em 0 1em;
+  }
+
+  .ctct-form-errorMessage {
+    margin: -0.5em 0 1em 0;
+    color: #F00;
+  }
+
   @include respond-to(small) {
     input[type="email"] {
       width: 100%;
@@ -29,19 +46,42 @@ section.email-subscription {
     #embed-signup-scroll {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
 
       .field-group {
         flex: 2;
         padding-right: 2em;
       }
 
-      button {
+      .ctct-button {
         flex: 1;
         margin-bottom: 1em;
         border: 0;
         border-radius: 8px;
         padding: 0;
         max-width: 150px;
+        height: 43px;
+      }
+    }
+
+    .ctct-custom-form #success_message {
+      flex: 0 0 100%;
+    }
+
+    .ctct-custom-form #success_message > div {
+      margin: .5em 0;
+    }
+  }
+
+  @include respond-to(large) {
+    input[type="email"] {
+      width: 100%;
+    }
+
+    #embed-signup-scroll {
+      .ctct-button {
+        height: 47px;
       }
     }
   }

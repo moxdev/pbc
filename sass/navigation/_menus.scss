@@ -1,7 +1,6 @@
 .main-nav {
   display: none;
   width: 100%;
-  @include test(green);
   @include respond-to(small) {
     display: inline-flex;
     margin-left: auto;
@@ -17,7 +16,6 @@
     margin-left: auto;
 
     #main-menu {
-      @include test(red);
       margin-left: auto;
       display: flex;
 
@@ -25,7 +23,7 @@
         display: block;
         float: left;
         position: absolute;
-        top: 97%;
+        top: 91%;
         left: -999em;
         z-index: 99999;
         opacity: 0;
@@ -111,6 +109,13 @@
         background-position: top center;
         width: 50px;
         height: 33px;
+
+        @include respond-to(large) {
+          top: 10px;
+          left: 10px;
+          width: 58px;
+          height: 38px;
+        }
       }
 
       a {
@@ -123,7 +128,18 @@
     /*--------------------------------------------------------------
     ### Current Page Item Styles
     --------------------------------------------------------------*/
-    // @import 'current-page-item'
+    @import 'current-page-item';
+
+    @include respond-to(medium) {
+
+      li {
+        margin-right: 1em;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
   }
 }
 

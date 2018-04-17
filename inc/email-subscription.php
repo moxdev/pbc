@@ -25,7 +25,7 @@ function promo_box_club_email_subscription_section() {
             <div id="embed-signup-scroll">
 
               <div class="field-group">
-                <label data-id="Email Address:label" data-name="email" class="ctct-form-required"><input data-id="Email Address:input" name="email" value="" maxlength="80" type="email" placeholder="Enter your email address"></label>
+                <label data-id="Email Address:label" data-name="email" class="ctct-form-required"><input data-id="Email Address:input" name="email" value="" maxlength="80" type="email" placeholder="* Enter your email address"></label>
               </div>
 
               <button type="submit" class="Button ctct-button Button--block Button-secondary" data-enabled="enabled">Sign Up</button>
@@ -42,7 +42,7 @@ function promo_box_club_email_subscription_section() {
       </div>
     </section>
 
-  <?php endif; ?>
+  <?php endif;
 
-<?php
+  if( function_exists( 'promo_box_club_newsletter_signup_map' ) ) : promo_box_club_newsletter_signup_map(); endif;
 }

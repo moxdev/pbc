@@ -169,6 +169,20 @@ if (! function_exists( 'promo_box_club_seo_page_titles' ) ) :
 							)
 						); ?>
 					</h1>
+
+          <?php if ( is_page( 7 ) ) :
+            $product_img = get_field( 'product_image' );  ?>
+
+            <?php if ( $product_img ): ?>
+
+              <div class="product-image-wrapper">
+                <img src="<?php echo esc_url( $product_img['sizes']['medium'] ); ?>" alt="<?php echo esc_attr( $product_img['alt'] ); ?>" description="<?php echo esc_attr( $product_img['description'] ); ?>">
+              </div>
+
+            <?php endif; ?>
+
+          <?php endif; ?>
+
 				</header><!-- .entry-header -->
 			<?php } else { ?>
 				<header class="entry-header">

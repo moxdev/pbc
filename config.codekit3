@@ -7,7 +7,7 @@
 		"uuidString": "D9C7B47F-4ADE-4E7B-996C-C57E906D1D9C"
 		}
 	],
-"creatorBuild": "26667",
+"creatorBuild": "26680",
 "files": {
 	"\/*notes-1.php\/notes.php": {
 		"cB": 0,
@@ -595,6 +595,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/min\/validate.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/validate.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/navigation-copy.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1083,6 +1093,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/b1316558e4e982139817ec96bb40b87de616623f\/_sections.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/b2025cc1b1fa4c78b9c567fb534bb8ff36d8c941\/_current-page-item.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/b2025cc1b1fa4c78b9c567fb534bb8ff36d8c941\/_current-page-item.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/b2025cc1b1fa4c78b9c567fb534bb8ff36d8c941\/_links.scssc": {
