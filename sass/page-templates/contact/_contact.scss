@@ -9,6 +9,10 @@
       text-decoration: none;
       font-family: $font__bold;
       font-size: 1.2em;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
     .orange-letter-span {
       color: $color__brand-1;
@@ -39,10 +43,28 @@
       margin: .5em 0 1em;
     }
 
+    .g-recaptcha {
+      margin-bottom: 1em;
+    }
+
+    .msg-box.error {
+      margin-bottom: 1em;
+
+      span {
+        display: block;
+        color: red;
+      }
+    }
+
     input[type="submit"] {
       display: block;
       border: none;
       border-radius: 10px;
+      margin: 0 auto;
+
+      @include respond-to(small) {
+        margin: 0;
+      }
     }
   }
 }

@@ -1,6 +1,10 @@
 .blog, .single, .archive, .categories, .tag {
 
   #content {
+    background-color: #fff;
+  }
+
+  .news-wrapper {
     @include max-width($max_width);
 
     a {
@@ -83,6 +87,10 @@
       background: #f9f9f9;
       color: $color__brand-1;
     }
+
+    .nav-links > * {
+      margin-bottom: 10px;
+    }
   }
 
   .single-navigation {
@@ -113,11 +121,12 @@
   }
 
   @include respond-to(medium) {
-    #content {
+    .news-wrapper {
       display: flex;
 
       #primary {
         flex: 0 0 70%;
+        max-width: 70%;
         order: 2;
         padding-left: 5em;
         padding-top: 1.8em;
@@ -125,13 +134,14 @@
 
       #secondary {
         flex: 0 0 30%;
+        max-width: 30%;
         order: 1;
       }
     }
   }
 
   @include respond-to(large) {
-    #content {
+    .news-wrapper {
       #primary {
         padding-left: 7em;
       }

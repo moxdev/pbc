@@ -5,5 +5,16 @@
 
   section.custom-editor {
     padding-top: 0;
+
+    .col-4 {
+      p {
+        &:last-child {
+          text-align: center;
+          @include respond-to(x-small) {
+            text-align: left;
+          }
+        }
+      }
+    }
   }
 }

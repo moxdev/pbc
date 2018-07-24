@@ -127,8 +127,8 @@ function mm4_you_contact_form() {
 
 	<form name="contact-form" id="contact-form" method="POST" action="<?php echo $form_action; ?>" novalidate>
 		<input type="hidden" value="<?php echo $subject_line; ?>" name="subject" id="subject">
-		<label for="first-name">Your Name*
-			<input type="text" name="first-name" id="first-name" class="required" data-error-label="First Name">
+		<label for="your-name">Your Name*
+			<input type="text" name="your-name" id="your-name" class="required" data-error-label="Your Name">
 		</label>
 		<label for="email-address">Your Email Address*
 			<input type="email" name="email-address" id="email-address" class="required" data-error-label="Email">

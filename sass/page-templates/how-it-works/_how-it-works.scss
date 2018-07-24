@@ -1,0 +1,77 @@
+// How It Works Page /about/how-it-works
+
+.page-template-page-flexible-content.page-id-17 {
+  #primary {
+    display: none;
+  }
+
+  section.how-it-works {
+    .inner-wrapper p {
+      display: block;
+    }
+  }
+
+  section.orange-section {
+    text-align: left;
+
+    .wrapper {
+      max-width: 59.75em;
+    }
+
+    img.icon-vip {
+      margin-bottom: 1em;
+      width: 120px;
+    }
+  }
+
+  @include respond-to(small) {
+
+    section.orange-section {
+
+      .wrapper {
+        display: flex;
+      }
+
+      .flex-wrapper-img {
+        flex: 0 0 20%;
+      }
+
+      .flex-wrapper-content {
+        flex: 0 0 70%;
+      }
+    }
+  }
+
+  @include respond-to(medium) {
+    section.how-it-works {
+      .inner-wrapper {
+        padding-left: 5em;
+        padding-right: 0;
+      }
+
+      .center-wrapper {
+        padding-right: 1em;
+      }
+    }
+
+  }
+
+  @include respond-to(x-large) {
+
+    section.orange-section {
+
+      img.icon-vip {
+        margin-bottom: 1em;
+        width: 140px;
+      }
+
+      .flex-wrapper-img {
+        flex: 0 0 25%;
+      }
+
+      .flex-wrapper-content {
+        flex: 0 0 75%;
+      }
+    }
+  }
+}

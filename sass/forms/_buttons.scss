@@ -3,13 +3,11 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   min-width: 160px;
-  // height: 35px;
   font-family: $font__bold;
 	background: $color__background-button;
 	border: none;
 	border-radius: 10px;
 	color: $color__button;
-	// @include font-size(1.1);
 	line-height: 1;
   padding: 1em 1.5em;
   @include font-smooth;
@@ -17,7 +15,7 @@ input[type="submit"] {
   transition: all .2s ease-in-out;
 
 	&:hover {
-     transform: scale(1.1);
+    transform: scale(1.1);
 	}
 
 	&:active,
@@ -33,27 +31,40 @@ input[type="submit"] {
   }
 }
 
-// .btn {
-//   // width: 115px;
-//   // height: 35px;
-//   display: block;
-//   font-family: $font__bold;
-//   background: $color__background-button;
-//   border: none;
-//   border-radius: 10px;
-//   color: #fff;
-//   // @include font-size(0.75);
-//   line-height: 1;
-//   padding: .8em 1.5em;
-//   text-decoration: none;
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  text-align: center;
+  font-family: $font__bold;
+	background: $color__background-button;
+  color: $color__button;
+  border-radius: 10px;
+  text-decoration: none;
+	line-height: 1;
+  padding: 1em 1.5em;
+  @include font-smooth;
+  -webkit-appearance: none;
+  transition: all .2s ease-in-out;
 
-//   &:hover {
-//     border-color: $color__border-button-hover;
-//   }
+	&:hover {
+    transform: scale(1.1);
+    color: $color__button;
+  }
 
-//   &:active,
-//   &:focus,
-//   &:visited {
-//     color: #fff;
-//   }
-// }
+  &:visited {
+    color: $color__button;
+  }
+
+	&:active,
+	&:focus {
+    border-color: $color__border-button-focus;
+    color: $color__button;
+  }
+
+  @include respond-to(x-small) {
+    @include font-size(1.1);
+  }
+  @include respond-to(large) {
+    @include font-size(.9);
+  }
+}

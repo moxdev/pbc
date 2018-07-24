@@ -43,7 +43,7 @@ function promo_box_club_home_why_join_section() {
 
                 <?php if( $why_join_button_text ) : ?>
                   <div class="flex-column button-wrapper">
-                    <a class="btn" href="<?php echo wp_kses_post( $why_join_button_page_link ); ?>"><button><?php echo wp_kses_post( $why_join_button_text ); ?></button></a>
+                    <a class="btn" href="<?php echo wp_kses_post( $why_join_button_page_link ); ?>"><?php echo wp_kses_post( $why_join_button_text ); ?></a>
                   </div>
                 <?php endif; ?>
 

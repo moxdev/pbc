@@ -1,0 +1,35 @@
+// How It Works Frontpage and About page custom styles
+
+.home, .page-id-7 {
+  section.how-it-works {
+
+    .inner-wrapper {
+      padding-left: 2em;
+      padding-right: 0;
+    }
+
+    @include respond-to(small) {
+      .inner-wrapper {
+        padding-left: 3em;
+      }
+    }
+
+    @include respond-to(medium) {
+      .inner-wrapper {
+        padding-left: 4em;
+      }
+    }
+
+    @include respond-to(large) {
+      .inner-wrapper {
+        padding-left: 5em;
+      }
+    }
+
+    @include respond-to(x-large) {
+      .inner-wrapper {
+        padding-left: 6em;
+      }
+    }
+  }
+}

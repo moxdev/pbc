@@ -11,7 +11,9 @@ function promo_box_club_email_subscription_section() {
 
     <section class="email-subscription">
       <div class="wrapper">
-        <h2><?php echo wp_kses_post( $email_subscription_headline ); ?></h2>
+        <div class="email-subscription-content">
+          <?php echo wp_kses_post( $email_subscription_headline ); ?>
+        </div>
         <div id="embed-signup-form">
           <form data-id="embedded_signup:form" id="mc-embedded-subscribe-form" class="ctct-custom-form Form" name="embedded_signup" method="POST" action="https://visitor2.constantcontact.com/api/signup">
 
@@ -28,7 +30,7 @@ function promo_box_club_email_subscription_section() {
                 <label data-id="Email Address:label" data-name="email" class="ctct-form-required"><input data-id="Email Address:input" name="email" value="" maxlength="80" type="email" placeholder="* Enter your email address"></label>
               </div>
 
-              <button type="submit" class="Button ctct-button Button--block Button-secondary" data-enabled="enabled">Sign Up</button>
+              <button type="submit" class="ctct-button" data-enabled="enabled">Sign Up</button>
 
               <span id="success_message" style="display:none;">
                 <div>Thank you for signing up!</div>

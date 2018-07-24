@@ -21,7 +21,7 @@ function promo_box_club_custom_header_section() {
         <div class="title-wrapper">
           <span class="hero-title"><?php echo wp_kses_post( $hero_title ); ?></span>
           <span class="accent-title"><?php echo wp_kses_post( $hero_accent_title ); ?></span>
-          <a href="<?php echo wp_kses_post( $hero_btn_link ); ?>"><button><?php echo wp_kses_post( $hero_btn_text ); ?></button></a>
+          <a class="btn" href="<?php echo wp_kses_post( $hero_btn_link ); ?>"><?php echo wp_kses_post( $hero_btn_text ); ?></a>
         </div>
 
       <?php endif; ?>
@@ -30,7 +30,7 @@ function promo_box_club_custom_header_section() {
 
     <?php
 
-  } elseif ( is_home() || is_archive() || is_single() ) {
+  } elseif ( is_home() || is_archive() || is_single() || is_404() ) {
     $news_feature_img = get_the_post_thumbnail( get_option( 'page_for_posts' ), 'feature-img' ); ?>
 
     <section class="hero">

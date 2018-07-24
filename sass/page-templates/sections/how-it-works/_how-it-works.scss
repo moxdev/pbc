@@ -1,4 +1,4 @@
-// How It Works Section Styles
+// How It Works Section Code
 section.how-it-works {
   background-color: $color__brand-2;
   @include section-padding;
@@ -17,20 +17,6 @@ section.how-it-works {
   .inner-wrapper {
     text-align: left;
     padding-bottom: 2em;
-
-    a {
-      color: #fff;
-      text-decoration: none;
-
-      &:hover {
-        color: $color__text-main;
-      }
-
-      &:active,
-      &:focus {
-        color: #fff;
-      }
-    }
 
     p {
       display: none;
@@ -81,7 +67,7 @@ section.how-it-works {
     letter-spacing: .9px;
   }
 
-  .btn {
+  button {
     background-color: $color__background-button-alt;
     color: $color__button-alt;
   }

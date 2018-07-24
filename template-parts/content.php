@@ -29,7 +29,6 @@
     if ( 'post' === get_post_type() ) : ?>
     <div class="entry-meta">
       <?php
-        promo_box_club_posted_on();
         promo_box_club_posted_in();
       ?>
     </div><!-- .entry-meta -->

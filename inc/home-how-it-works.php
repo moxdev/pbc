@@ -43,7 +43,7 @@ function promo_box_club_home_how_it_works_section() {
 
         </div>
 
-        <a href="<?php echo wp_kses_post( $home_how_it_works_section_button_page_link ); ?>"><button><?php echo wp_kses_post( $home_how_it_works_section_button_text ); ?></button></a>
+        <a class="btn" href="<?php echo wp_kses_post( $home_how_it_works_section_button_page_link ); ?>"><?php echo wp_kses_post( $home_how_it_works_section_button_text ); ?></a>
 
       </div>
     </section>

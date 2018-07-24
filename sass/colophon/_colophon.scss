@@ -24,6 +24,10 @@
       text-decoration: none;
       font-family: $font__bold;
       color: $color__text-main;
+
+      &:hover {
+        color: $color__brand-1;
+      }
     }
     ul {
       list-style-type: none;
