@@ -2,28 +2,29 @@
  * File navigation.js.
  *
  */
-const btn = document.getElementById('menu-toggle');
+const openBtn = document.getElementById('open-menu-toggle');
+const closeBtn = document.getElementById('close-menu-toggle');
 const pane = document.getElementById('mobile-menu');
 const activeClass = 'open';
 
-btn.addEventListener('click', function () {
-  if (this.classList.contains(activeClass)) {
-    this.setAttribute('aria-expanded', 'false');
-    this.classList.remove(activeClass);
+openBtn.addEventListener('click', function () {
+  closeBtn.setAttribute('aria-expanded', 'true');
+  closeBtn.classList.add(activeClass);
 
-    pane.setAttribute('aria-expanded', 'false');
-    pane.classList.remove(activeClass);
+  pane.setAttribute('aria-expanded', 'true');
+  pane.classList.add(activeClass);
 
-    document.getElementsByTagName('body')[0].classList.remove(activeClass);
-  } else {
-    this.setAttribute('aria-expanded', 'true');
-    this.classList.add(activeClass);
+  document.getElementsByTagName('body')[0].classList.add(activeClass);
+});
 
-    pane.setAttribute('aria-expanded', 'true');
-    pane.classList.add(activeClass);
+closeBtn.addEventListener('click', function () {
+  this.setAttribute('aria-expanded', 'false');
+  this.classList.remove(activeClass);
 
-    document.getElementsByTagName('body')[0].classList.add(activeClass);
-  }
+  pane.setAttribute('aria-expanded', 'false');
+  pane.classList.remove(activeClass);
+
+  document.getElementsByTagName('body')[0].classList.remove(activeClass);
 });
 
 const icons = Array.prototype.slice.call(

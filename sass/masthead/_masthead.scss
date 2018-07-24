@@ -28,7 +28,7 @@
     }
   }
 
-  #menu-toggle {
+  #open-menu-toggle {
 
     align-self: flex-start;
     min-width: 20px;
@@ -201,7 +201,7 @@
     }
   }
 
-  #menu-toggle.open {
+  #open-menu-toggle.open {
 
     #nav-icon span:nth-child(1) {
       top: 18px;
@@ -215,7 +215,7 @@
   }
 
   @include respond-to(x-small) {
-    #menu-toggle {
+    #open-menu-toggle {
       #nav-icon {
         width: 45px;
       }

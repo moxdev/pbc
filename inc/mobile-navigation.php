@@ -3,7 +3,7 @@
 		<div id="mobile-menu">
       <div class='header-wrapper'>
         <div class="button-wrapper flex-child">
-          <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+          <button id="close-menu-toggle" aria-controls="primary-menu" aria-expanded="false">
             <div class="hamburger-wrapper">
               <span class="menu-title">Menu</span>
               <div id="nav-icon">

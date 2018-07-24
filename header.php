@@ -40,7 +40,7 @@
     <div class="masthead-inner-wrapper">
 
       <div class="button-wrapper flex-child">
-        <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+        <button id="open-menu-toggle">
           <div class="hamburger-wrapper">
             <span class="menu-title">Menu</span>
             <div id="nav-icon">
