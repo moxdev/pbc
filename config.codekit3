@@ -509,6 +509,13 @@
 		"oAP": "\/inc\/home-see-whats-inside.php",
 		"oF": 0
 		},
+	"\/inc\/home-video-carousel.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/home-video-carousel.php",
+		"oF": 0
+		},
 	"\/inc\/home-why-join.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -558,6 +565,13 @@
 		"oAP": "\/inc\/whats-new.php",
 		"oF": 0
 		},
+	"\/inc\/yearly-archive-widget.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/yearly-archive-widget.php",
+		"oF": 0
+		},
 	"\/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -571,6 +585,46 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/customizer-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/flickity.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/flickity-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/home-video-carousel.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/home-video-carousel-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/min\/flickity-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/flickity-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/min\/home-video-carousel-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/home-video-carousel-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -686,6 +740,16 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/old-style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/old-style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/page-contact.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -783,13 +847,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/readme.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/readme.txt",
-		"oF": 0
 		},
 	"\/rtl.css": {
 		"aP": 1,
@@ -1002,6 +1059,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/6bcd19a3b1c1bc7010f4a97af0914b0c3ff12352\/_media.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/6eb495e630005015ab401e3edc04a1868f837d37\/_404-page.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/6eb495e630005015ab401e3edc04a1868f837d37\/_404-page.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/8c93c24c1d54193546d3538ccea10a4097e12e44\/_copy.scssc": {
@@ -1233,6 +1297,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/f43c40c2121d7bfa5c8811c0b881b7b6c644e2de\/_site.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/fec84c55a6fc6ee45862771b0cd639c13baa22a4\/_thank-you.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/fec84c55a6fc6ee45862771b0cd639c13baa22a4\/_thank-you.scssc",
 		"oF": 0
 		},
 	"\/sass\/_normalize.scss": {
@@ -1469,6 +1540,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/modules\/_flickity.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/modules\/_flickity.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/modules\/_infinite-scroll.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1556,6 +1640,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/navigation\/_navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/404\/_404-page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/404\/_404-page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1729,6 +1826,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/page-templates\/how-it-works\/_how-it-works.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/how-it-works\/_how-it-works.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/page-templates\/membership\/_membership.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1790,6 +1900,45 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/sections\/how-it-works-section\/_how-it-works-section.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/sections\/how-it-works\/_how-it-works-home-about.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/sections\/how-it-works\/_how-it-works-home-about.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/sections\/how-it-works\/_how-it-works.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/sections\/how-it-works\/_how-it-works.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/thank-you\/_thank-you.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/thank-you\/_thank-you.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
