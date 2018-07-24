@@ -6,7 +6,7 @@
           <button id="close-menu-toggle" aria-controls="primary-menu" aria-expanded="false">
             <div class="hamburger-wrapper">
               <span class="menu-title">Menu</span>
-              <div id="nav-icon">
+              <div class="nav-icon">
                 <span></span>
                 <span></span>
               </div>
@@ -37,110 +37,104 @@
           </div>
         </div><!-- .site-branding -->
 
-        <nav class="aux-nav flex-child">
-          <?php
-            wp_nav_menu( array(
-              'theme_location' => 'aux-menu',
-              'menu_id'        => 'aux-menu',
-            ) );
-          ?>
-        </nav><!-- aux-nav -->
+        <?php
+          wp_nav_menu( array(
+            'theme_location'  => 'aux-menu',
+            'menu_id'         => 'mobile-aux-menu',
+            'container'       => 'nav',
+            'container_class' => 'mobile-aux-nav flex-child'
+          ) );
+        ?>
 
       </div><!-- header-wrapper -->
 
 			<?php
 				wp_nav_menu( array(
-					'theme_location' => 'mobile-menu',
-					'menu_id' => 'mobile-main-menu',
-          'container' => 'nav',
+					'theme_location'  => 'mobile-menu',
+					'menu_id'         => 'mobile-main-menu',
+          'container'       => 'nav',
           'container_class' => 'mobile-menu-navigation'
 				) );
 			?>
 
-      <div class="wrapper">
-        <div class="flex-container">
+      <div class="flex-container">
 
-          <?php if( function_exists( 'acf_add_options_page' ) ) :
-            $fb   = get_field( 'facebook_url', 'social' );
-            $pin  = get_field( 'pinterest_url', 'social' );
-            $tw   = get_field( 'twitter_url', 'social' );
-            $inst = get_field( 'instagram_url', 'social' );
-            $yt   = get_field( 'youtube_url', 'social' );
-            $goo  = get_field( 'google_plus_url', 'social' );
-            $link = get_field( 'linkedin_url', 'social' );
+        <?php if( function_exists( 'acf_add_options_page' ) ) :
+          $fb   = get_field( 'facebook_url', 'social' );
+          $pin  = get_field( 'pinterest_url', 'social' );
+          $tw   = get_field( 'twitter_url', 'social' );
+          $inst = get_field( 'instagram_url', 'social' );
+          $yt   = get_field( 'youtube_url', 'social' );
+          $goo  = get_field( 'google_plus_url', 'social' );
+          $link = get_field( 'linkedin_url', 'social' );
 
-            if( $fb || $pin || $tw || $insta || $yt || $goo || $link ) : ?>
+          if( $fb || $pin || $tw || $insta || $yt || $goo || $link ) : ?>
 
-            <div class="social">
-              <div class="social-wrapper">
-                <ul class="social-media">
+          <div class="social">
+            <div class="social-wrapper">
+              <ul class="social-media">
 
-                  <? if ( $fb ): ?>
-                    <li class="fb">
-                      <a href="<?php echo wp_kses_post( $fb ); ?>" target="_blank">Find Us On Facebook</a>
-                    </li>
-                  <?php endif; ?>
+                <? if ( $fb ): ?>
+                  <li class="fb">
+                    <a href="<?php echo wp_kses_post( $fb ); ?>" target="_blank">Find Us On Facebook</a>
+                  </li>
+                <?php endif; ?>
 
-                  <? if ( $pin ): ?>
-                    <li class="pin">
-                      <a href="<?php echo wp_kses_post( $pin ); ?>" target="_blank">Find Us On Pinterest</a>
-                    </li>
-                  <?php endif; ?>
+                <? if ( $pin ): ?>
+                  <li class="pin">
+                    <a href="<?php echo wp_kses_post( $pin ); ?>" target="_blank">Find Us On Pinterest</a>
+                  </li>
+                <?php endif; ?>
 
-                  <? if ( $tw ): ?>
-                    <li class="tw">
-                      <a href="<?php echo wp_kses_post( $tw ); ?>" target="_blank">Follow Us On Twitter</a>
-                    </li>
-                  <?php endif; ?>
+                <? if ( $tw ): ?>
+                  <li class="tw">
+                    <a href="<?php echo wp_kses_post( $tw ); ?>" target="_blank">Follow Us On Twitter</a>
+                  </li>
+                <?php endif; ?>
 
-                  <? if ( $inst ): ?>
-                    <li class="insta">
-                      <a href="<?php echo wp_kses_post( $inst ); ?>" target="_blank">Find Us On Instagram</a>
-                    </li>
-                  <?php endif; ?>
+                <? if ( $inst ): ?>
+                  <li class="insta">
+                    <a href="<?php echo wp_kses_post( $inst ); ?>" target="_blank">Find Us On Instagram</a>
+                  </li>
+                <?php endif; ?>
 
-                  <? if ( $yt ): ?>
-                    <li class="yt">
-                      <a href="<?php echo wp_kses_post( $yt ); ?>" target="_blank">Watch Us On YouTube</a>
-                    </li>
-                  <?php endif; ?>
+                <? if ( $yt ): ?>
+                  <li class="yt">
+                    <a href="<?php echo wp_kses_post( $yt ); ?>" target="_blank">Watch Us On YouTube</a>
+                  </li>
+                <?php endif; ?>
 
-                  <? if ( $goo ): ?>
-                    <li class="goo">
-                      <a href="<?php echo wp_kses_post( $goo ); ?>" target="_blank">Find Us On Google+</a>
-                    </li>
-                  <?php endif; ?>
+                <? if ( $goo ): ?>
+                  <li class="goo">
+                    <a href="<?php echo wp_kses_post( $goo ); ?>" target="_blank">Find Us On Google+</a>
+                  </li>
+                <?php endif; ?>
 
-                  <? if ( $link ): ?>
-                    <li class="linked">
-                      <a href="<?php echo wp_kses_post( $link ); ?>" target="_blank">Find Us On LinkedIn</a>
-                    </li>
-                  <?php endif; ?>
+                <? if ( $link ): ?>
+                  <li class="linked">
+                    <a href="<?php echo wp_kses_post( $link ); ?>" target="_blank">Find Us On LinkedIn</a>
+                  </li>
+                <?php endif; ?>
 
-                </ul>
+              </ul>
 
-              </div>
             </div>
-
-            <?php endif; ?>
+          </div>
 
           <?php endif; ?>
 
-          <nav class="marcom-navigation">
+        <?php endif; ?>
 
-          <?php
-            wp_nav_menu( array(
-              'theme_location' => 'marcom-menu',
-              'menu_id' => 'mobile-marcom-menu',
-              'container' => '',
-            ) );
-          ?>
+        <?php
+          wp_nav_menu( array(
+            'theme_location'  => 'marcom-menu',
+            'menu_id'         => 'mobile-marcom-menu',
+            'container'       => 'nav',
+            'container_class' => 'marcom-navigation'
+          ) );
+        ?>
 
-          </nav>
-
-        </div><!-- flex-container -->
-
-      </div><!-- wrapper -->
+      </div><!-- flex-container -->
 
 		</div><!-- mobile-menu -->
 	<?php }

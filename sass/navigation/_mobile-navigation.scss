@@ -27,81 +27,49 @@
     }
   }
 
-  @include respond-to(x-small) {
-    #close-menu-toggle {
-      #nav-icon {
-        width: 45px;
-      }
-    }
-  }
-
   .site-branding {
-
-    .pbc-logo {
-
-      .logo-title {
-        display: none;
-        padding-left: 1em;
-        font-size: .8em;
-      }
-
-      span {
-        display: block;
-      }
-
-      .mm4 {
-        font-family: $font__bold;
-      }
-
-      svg {
-        display: block;
-        width: 72px;
-        height: 60px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    svg {
+      display: block;
+      width: 72px;
+      height: 60px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
-  #aux-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  .mobile-aux-nav {
+    align-self: center;
 
-    .join-now-link {
-      background-color: $color__brand-1;
-      color: #fff;
-      padding: .5em 1em;
-      margin-left: auto;
-      font-size: .9em;
+    #mobile-aux-menu {
+      list-style: none;
 
-      &:hover {
-        background-color: lighten($color__brand-1, 5%);
-      }
-
-      a {
+      .join-now-link {
+        background-color: $color__brand-1;
         color: #fff;
-        font-family: $font__bold;
-        text-decoration: none;
+        padding: .5em 1em;
+        font-size: .9em;
+        min-width: 90px;
+        max-width: 125px;
+        margin-left: auto;
+        text-align: center;
 
-        &:hover {
-          color: $color__brand-4;
+        @media only screen and (min-width: 400px) {
+          min-width: 100px;
+          font-size: 1em;
+        }
+
+        a {
+          color: #fff;
+          font-family: $font__bold;
+          text-decoration: none;
         }
       }
+
+      .contact-us-link {
+        display: none;
+      }
     }
 
-    .contact-us-link {
-      display: none;
-    }
-  }
-
-  @media only screen and (min-width: 400px) {
-    #aux-menu .join-now-link {
-      font-size: 1em;
-    }
   }
 
   #mobile-main-menu {
@@ -164,10 +132,15 @@
     }
   }
 
-  .wrapper {
+  .flex-container {
+    display: block;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
 
-    .flex-container {
-      display: block;
+    @media only screen and (min-width: 400px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
     }
 
     .social {
@@ -177,10 +150,15 @@
       margin-bottom: 3em;
       text-align: center;
 
+      @media only screen and (min-width: 400px) {
+        margin-bottom: 0;
+      }
+
       .social-title {
         flex: 0 0 100%;
         margin-bottom: 5px;
       }
+
       .social-media {
         flex: 0 0 100%;
         list-style: none;
@@ -291,21 +269,6 @@
         }
       }
     }
-
-  }
-
-  @media only screen and (min-width: 400px) {
-    .wrapper {
-      .flex-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-      }
-
-      .social {
-        margin-bottom: 0;
-      }
-    }
   }
 
   @include respond-to(small) {
@@ -313,113 +276,49 @@
   }
 }
 
-#open-menu-toggle {
-
-  align-self: flex-start;
+#open-menu-toggle,
+#close-menu-toggle.open {
   min-width: 20px;
-  margin: 1em 0 0;
+  margin-top: 10px;
   padding: 0;
   background: transparent;
   border-radius: 0;
   outline: 0;
   background-color: transparent;
   color: $color__brand-4;
-  transform: rotate(0deg);
-  transition: .5s ease-in-out;
   cursor: pointer;
   position: relative;
+}
 
-  .menu-title {
-    text-transform: uppercase;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
+#open-menu-toggle {
 
-  #nav-icon {
-    width: 40px;
-    height: auto;
-    position: relative;
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
-    cursor: pointer;
-    margin-top: 1em;
-  }
+  .nav-icon {
+    span:nth-child(1) {
+      top: 9px;
+    }
 
-  #nav-icon span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #d3531a;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-    left: 0;
-  }
-
-  #nav-icon span:nth-child(1) {
-    top: 9px;
-  }
-
-  #nav-icon span:nth-child(2) {
-    top: 19px;
+    span:nth-child(2) {
+      top: 19px;
+    }
   }
 }
 
 #close-menu-toggle.open {
-  // align-self: flex-start;
-  min-width: 20px;
   margin: 0;
-  padding: 0;
-  background: transparent;
-  border-radius: 0;
-  outline: 0;
-  background-color: transparent;
-  color: $color__brand-4;
-  // transform: rotate(0deg);
-  // transition: .5s ease-in-out;
-  cursor: pointer;
-  position: relative;
-  animation: fadein 3s;
+  animation: fadein 4s;
 
-  .menu-title {
-    text-transform: uppercase;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  #nav-icon {
-    width: 40px;
-    height: auto;
-    position: relative;
-    // transform: rotate(0deg);
-    // transition: .5s ease-in-out;
-    cursor: pointer;
+  .nav-icon {
     margin-top: 20px;
-  }
 
-  #nav-icon span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #d3531a;
-    // transform: rotate(0deg);
-    // transition: .25s ease-in-out;
-    left: 0;
-  }
+    span:nth-child(1) {
+      top: 18px;
+      transform: rotate(135deg);
+    }
 
-  #nav-icon span:nth-child(1) {
-    top: 18px;
-    transform: rotate(135deg);
-  }
-
-  #nav-icon span:nth-child(2) {
-    top: 18px;
-    transform: rotate(-135deg);
+    span:nth-child(2) {
+      top: 18px;
+      transform: rotate(-135deg);
+    }
   }
 
   /* Animate button fadein */
@@ -450,5 +349,36 @@
   @-o-keyframes fadein {
       from { opacity: 0; }
       to   { opacity: 1; }
+  }
+}
+
+.hamburger-wrapper {
+  .menu-title {
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.nav-icon {
+  width: 40px;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  margin-top: 1em;
+
+  @include respond-to(x-small) {
+    width: 45px;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #d3531a;
+    left: 0;
   }
 }

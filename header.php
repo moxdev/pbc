@@ -44,7 +44,7 @@
         <button id="open-menu-toggle">
           <div class="hamburger-wrapper">
             <span class="menu-title">Menu</span>
-            <div id="nav-icon">
+            <div class="nav-icon">
               <span></span>
               <span></span>
             </div>
