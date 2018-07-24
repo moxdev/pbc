@@ -26,12 +26,13 @@
 
 	<header id="masthead" class="site-header">
     <?php if( function_exists( 'get_field' ) ) :
-      $dicount_content = get_field( 'discount_code_content', 'discount-code' );
+      $activate_discount = get_field( 'activate_the_discount_code', 'discount-code' );
+      $discount_content = get_field( 'discount_code_content', 'discount-code' );
 
-      if ( $dicount_content ): ?>
+      if ( $activate_discount == 'yes' ): ?>
 
         <section class="discount-code">
-          <?php echo wp_kses_post( $dicount_content ); ?>
+          <?php echo wp_kses_post( $discount_content ); ?>
         </section>
 
       <?php endif; ?>

@@ -27,8 +27,7 @@
     }
   }
 
-  #close-menu-toggle {
-
+  #close-menu-toggle.open {
     align-self: flex-start;
     min-width: 20px;
     margin: 1em 0 0;
@@ -55,7 +54,7 @@
       width: 40px;
       height: auto;
       position: relative;
-      transform: rotate(0deg);
+      // transform: rotate(0deg);
       transition: .5s ease-in-out;
       cursor: pointer;
       margin-top: 1em;
@@ -80,6 +79,27 @@
     #nav-icon span:nth-child(2) {
       top: 18px;
       transform: rotate(-135deg);
+    }
+  }
+
+  #close-menu-toggle {
+
+    #nav-icon span:nth-child(1) {
+      top: 18px;
+      transform: rotate(0deg);
+    }
+
+    #nav-icon span:nth-child(2) {
+      top: 18px;
+      transform: rotate(0deg);
+    }
+  }
+
+  @include respond-to(x-small) {
+    #close-menu-toggle {
+      #nav-icon {
+        width: 45px;
+      }
     }
   }
 
@@ -155,7 +175,6 @@
   #mobile-main-menu {
     list-style: none;
     margin: 0;
-    padding-top: 6em;
 
     li {
       margin: 0;

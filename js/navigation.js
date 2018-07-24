@@ -6,8 +6,12 @@ const openBtn = document.getElementById('open-menu-toggle');
 const closeBtn = document.getElementById('close-menu-toggle');
 const pane = document.getElementById('mobile-menu');
 const activeClass = 'open';
+const icons = Array.prototype.slice.call(
+  document.querySelectorAll('#mobile-main-menu .icon-plus')
+);
 
 openBtn.addEventListener('click', function () {
+  this.classList.add(activeClass);
   closeBtn.setAttribute('aria-expanded', 'true');
   closeBtn.classList.add(activeClass);
 
@@ -24,12 +28,10 @@ closeBtn.addEventListener('click', function () {
   pane.setAttribute('aria-expanded', 'false');
   pane.classList.remove(activeClass);
 
+  openBtn.classList.remove(activeClass);
+
   document.getElementsByTagName('body')[0].classList.remove(activeClass);
 });
-
-const icons = Array.prototype.slice.call(
-  document.querySelectorAll('#mobile-main-menu .icon-plus')
-);
 
 icons.map(item => {
   item.addEventListener('click', function () {
