@@ -48,17 +48,14 @@
 
       </div><!-- header-wrapper -->
 
-			<nav>
-
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'mobile-menu',
 					'menu_id' => 'mobile-main-menu',
-					'container' => '',
+          'container' => 'nav',
+          'container_class' => 'mobile-menu-navigation'
 				) );
 			?>
-
-			</nav>
 
       <div class="wrapper">
         <div class="flex-container">
