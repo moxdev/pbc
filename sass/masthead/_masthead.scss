@@ -70,17 +70,14 @@
       .join-now-link {
         background-color: $color__brand-1;
         color: #fff;
-        padding: .5em 1em;
-        margin-left: auto;
         font-size: .9em;
-        min-width: 90px;
-        max-width: 125px;
         margin-left: auto;
+        padding: .5em 1em;
         text-align: center;
 
         @media only screen and (min-width: 400px) {
-          min-width: 100px;
           font-size: 1em;
+          padding: .5em 1.5em;
         }
 
         &:hover {
@@ -156,25 +153,6 @@
     }
   }
 
-  // #open-menu-toggle.open {
-
-  //   #nav-icon span:nth-child(1) {
-  //     top: 18px;
-  //     transform: rotate(135deg);
-  //   }
-
-  //   #nav-icon span:nth-child(2) {
-  //     top: 18px;
-  //     transform: rotate(-135deg);
-  //   }
-  // }
-
-  // @include respond-to(x-small) {
-  //   #open-menu-toggle {
-
-  //   }
-  // }
-
   @include respond-to(small) {
     margin-bottom: -5px;
 
@@ -191,8 +169,6 @@
     .site-branding.flex-child {
       flex: 1 1 10%;
       .pbc-logo {
-        // margin-bottom: -2.4em;
-        // margin-top: 1em;
         svg {
           width: 100px;
           height: 83px;
@@ -209,6 +185,7 @@
 
       #aux-menu {
         padding: 1em 0 0;
+
         .join-now-link {
           background-color: $color__brand-1;
           color: #fff;
@@ -251,82 +228,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-  //   @include respond-to(small) {
-  //     .flex-wrapper {
-  //       #menu-toggle {
-  //         display: none;
-  //       }
-  //       .flex-child {
-  //         flex: none;
-  //       }
-  //     }
-
-  //     .pbc-logo {
-  //       margin-bottom: -2.4em;
-  //       margin-top: 1em;
-  //       svg {
-  //         width: 100px;
-  //         height: 83px;
-  //       }
-  //     }
-
-  //     #aux-menu {
-  //       padding: 1em 0 0;
-  //       .join-now-link {
-  //         background-color: $color__brand-1;
-  //         color: #fff;
-  //         padding: .25em 1em .35em;
-
-  //         a {
-  //           color: #fff;
-  //           font-family: $font__bold;
-  //           text-decoration: none;
-  //         }
-  //       }
-
-  //       .contact-us-link {
-  //         display: inline-flex;
-  //       }
-  //     }
-  //   }
-
-  //   @include respond-to(medium) {
-  //     .pbc-logo {
-  //       display: flex;
-  //       align-items: center;
-
-  //       .logo-title {
-  //         display: block;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // @include respond-to(small) {
-  //   .masthead-inner-wrapper {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //     justify-content: flex-end;
-  //   }
-
-  //   .site-branding {
-  //     flex: 0 0 100%;
-  //   }
-
-  //   .main-navigation {
-  //     // flex: 0 0 100%;
-  //     text-align: right;
-  //     margin-right: auto;
-  //   }
-
-  // }
